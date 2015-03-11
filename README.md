@@ -1,4 +1,4 @@
-# Arduino_AVR_Boards
+# Arduino Boards
 
 This repository contains support for the following SparkFun Arduino-compatible development boards:
 * [ProMicro 5V](https://www.sparkfun.com/products/11098)
