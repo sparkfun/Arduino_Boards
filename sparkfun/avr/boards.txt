@@ -202,6 +202,33 @@ Serial7Seg.build.core=arduino:arduino
 Serial7Seg.build.variant=ser7seg
 
 ##############################################################
+################### Mega Pro (Mini) 3.3V #####################
+##############################################################
+
+mega2560v.name=Mega Pro 2560V 3.3V
+
+mega2560v.upload.tool=avrdude
+#mega2560v.upload.protocol=stk500v2
+mega2560v.upload.protocol=wiring
+mega2560v.upload.maximum_size=258048
+mega2560v.upload.maximum_data_size=8192
+mega2560v.upload.speed=57600
+
+mega2560v.bootloader.tool=avrdude
+mega2560v.bootloader.low_fuses=0xFD
+mega2560v.bootloader.high_fuses=0xD4
+mega2560v.bootloader.extended_fuses=0xFD
+mega2560v.bootloader.file=mega/MegaPro3.3V-8MHz-57600.hex
+mega2560v.bootloader.unlock_bits=0x3F
+mega2560v.bootloader.lock_bits=0x0F
+
+mega2560v.build.mcu=atmega2560
+mega2560v.build.f_cpu=8000000L
+mega2560v.build.board=AVR_MEGA2560_PRO_3V3
+mega2560v.build.core=arduino:arduino
+mega2560v.build.variant=mega2560pro
+
+##############################################################
 ############# ATmega128RFA1 Development Board ################
 ##############################################################
 
