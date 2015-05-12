@@ -1,0 +1,51 @@
+
+   "packages":[
+      {
+         "name":"SparkFun",
+         "maintainer":"SparkFun Electronics",
+         "websiteURL":"https://SparkFun.com",
+         "email":"TechSupport@SparkFun.com",
+         "help":{
+            "online":"https://forum.sparkfun.com"
+         },
+         "platforms":[
+            {
+               "name":"SparkFun AVR Boards",
+               "architecture":"avr",
+               "version":"1.0.0",
+               "category":"Contributed",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.tar.bz2",
+               "archiveFileName":"sparkfunboards.tar.bz2",
+               "checksum":"SHA-256:0ee3ef5a90dc9d35eb5d63e1dff5132cab38da6a4fedd6138b1e91cf03142473",
+               "size":"819573",
+               "help":{
+                  "online":"https://forums.sparkfun.com"
+               },
+               "boards":[
+                  { "name":"ATmega128RFA1 Dev Board" },
+                  { "name":"Digital Sandbox" },
+                  { "name":"Fio V3 3.3V / 8MHz" },
+                  { "name":"MaKey MaKey" },
+                  { "name":"Mega Pro Mini 3.3V / 8MHz" },
+                  { "name":"ProMicro 3.3V / 8MHz" },
+                  { "name":"ProMicro 5V / 16MHz" },
+                  { "name":"Serial 7-segment Display" }
+               ],
+               "toolsDependencies":[
+                  {
+                     "packager":"arduino",
+                     "name":"avr-gcc",
+                     "version":"4.8.1-arduino5"
+                  },
+                  {
+                     "packager":"arduino",
+                     "name":"avrdude",
+                     "version":"6.0.1-arduino5"
+                  }
+               ]
+            }
+         ],
+         "tools":[]
+      }
+   ]
+}
