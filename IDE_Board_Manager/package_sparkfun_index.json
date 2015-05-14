@@ -16,8 +16,8 @@
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.tar.bz2",
                "archiveFileName":"sparkfunboards.tar.bz2",
-               "checksum":"SHA-256:0ee3ef5a90dc9d35eb5d63e1dff5132cab38da6a4fedd6138b1e91cf03142473",
-               "size":"819573",
+               "checksum":"SHA-256:e7c98943126f250a55bb59f11704552ed5d47f8b582b5bb9b4e3d940ec2d6919",
+               "size":"819686",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },

@@ -203,7 +203,7 @@ Serial7Seg.bootloader.tool=arduino:avrdude
 Serial7Seg.build.mcu=atmega328p
 Serial7Seg.build.f_cpu=8000000L
 Serial7Seg.build.core=arduino:arduino
-Serial7Seg.build.variant=arduino:standard
+Serial7Seg.build.variant=ser7seg
 
 ################################################################################
 ############################## Other Processors ################################
