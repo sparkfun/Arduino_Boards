@@ -39,4 +39,5 @@ Each entry in the boards list is defined in [boards.txt](https://github.com/spar
 ### Notes
 
 * **Please note: This will only work under Arduino IDE versions 1.5 and up.**
+* Some boards such as the Pro Micro and the Mega Pro come in more than one form.  For these **you must select the correct processor** in the 'Tools' menu.
 * Information on compiling and programming the bootloaders can be found in the bootloaders directory.
