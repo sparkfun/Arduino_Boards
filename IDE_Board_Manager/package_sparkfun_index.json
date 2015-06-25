@@ -12,24 +12,25 @@
             {
                "name":"SparkFun AVR Boards",
                "architecture":"avr",
-               "version":"1.0.0",
+               "version":"1.0.1",
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.tar.bz2",
                "archiveFileName":"sparkfunboards.tar.bz2",
-               "checksum":"SHA-256:e7c98943126f250a55bb59f11704552ed5d47f8b582b5bb9b4e3d940ec2d6919",
-               "size":"819686",
+               "checksum":"SHA-256:be06eaf398931b03de7446ac5c8e40035be52d49a12cb240d09e6e2e42f6c9e3",
+               "size":"817537",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
                "boards":[
-                  { "name":"ATmega128RFA1 Dev Board" },
-                  { "name":"Digital Sandbox" },
-                  { "name":"Fio V3 3.3V / 8MHz" },
+                  { "name":"RedBoard" },
                   { "name":"MaKey MaKey" },
-                  { "name":"Mega Pro Mini 3.3V / 8MHz" },
-                  { "name":"ProMicro 3.3V / 8MHz" },
-                  { "name":"ProMicro 5V / 16MHz" },
-                  { "name":"Serial 7-segment Display" }
+                  { "name":"Pro Micro" },
+                  { "name":"Fio v3 3.3V / 8MHz" },
+                  { "name":"Digital Sandbox" },
+                  { "name":"Mega Pro" },
+                  { "name":"RedBot" },
+                  { "name":"Serial 7-segment Display" },
+                  { "name":"ATmega128RFA1 Dev Board" }
                ],
                "toolsDependencies":[
                   {

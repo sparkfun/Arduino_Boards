@@ -1,83 +1,63 @@
 
 menu.cpu=Processor
 
-##############################################################
-#################### Pro Micro 5V / 16MHz ####################
-##############################################################
-promicro16.name=SparkFun Pro Micro 5V/16MHz
-promicro16.build.board=AVR_PROMICRO16
-promicro16.build.vid.0=0x1B4F
-promicro16.build.pid.0=0x9205
-promicro16.build.vid.1=0x1B4F
-promicro16.build.pid.1=0x9206
+################################################################################
+################################## Pro Micro ###################################
+################################################################################
+promicro.name=SparkFun Pro Micro
 
-promicro16.upload.tool=avrdude
-promicro16.upload.protocol=avr109
-promicro16.upload.maximum_size=28672
-promicro16.upload.data_size=2560
-promicro16.upload.maximum_data_size=2560
-promicro16.upload.speed=57600
-promicro16.upload.disable_flushing=true
-promicro16.upload.use_1200bps_touch=true
-promicro16.upload.wait_for_upload_port=true
+promicro.upload.tool=avrdude
+promicro.upload.protocol=avr109
+promicro.upload.maximum_size=28672
+promicro.upload.maximum_data_size=2560
+promicro.upload.speed=57600
+promicro.upload.disable_flushing=true
+promicro.upload.use_1200bps_touch=true
+promicro.upload.wait_for_upload_port=true
 
-promicro16.bootloader.tool=avrdude
-promicro16.bootloader.low_fuses=0xff
-promicro16.bootloader.high_fuses=0xd8
-promicro16.bootloader.extended_fuses=0xcb
-promicro16.bootloader.file=caterina/Caterina-promicro16.hex
-promicro16.bootloader.unlock_bits=0x3F
-promicro16.bootloader.lock_bits=0x2F
+promicro.bootloader.tool=avrdude
+promicro.bootloader.unlock_bits=0x3F
+promicro.bootloader.lock_bits=0x2F
+promicro.bootloader.low_fuses=0xFF
+promicro.bootloader.high_fuses=0xD8
 
-promicro16.build.mcu=atmega32u4
-promicro16.build.f_cpu=16000000L
-promicro16.build.vid=0x1B4F
-promicro16.build.pid=0x9206
-promicro16.build.usb_product="SparkFun Pro Micro"
-promicro16.build.core=arduino:arduino
-promicro16.build.variant=promicro
-promicro16.build.extra_flags={build.usb_flags}
+promicro.build.board=AVR_PROMICRO
+promicro.build.core=arduino:arduino
+promicro.build.variant=promicro
+promicro.build.mcu=atmega32u4
+promicro.build.usb_product="SparkFun Pro Micro"
+promicro.build.vid=0x1b4f
+#promicro.build.vid.1=0x1b4f
+promicro.build.extra_flags={build.usb_flags}
 
-##############################################################
-################### Pro Micro 3.3V / 8MHz ####################
-##############################################################
+######################### Pro Micro 3.3V / 8MHz ################################
+promicro.menu.cpu.8MHzatmega32U4=ATmega32U4 (3.3V, 8 MHz)
 
-promicro8.name=SparkFun Pro Micro 3.3V/8MHz
-promicro8.build.board=AVR_PROMICRO8
-promicro8.build.vid.0=0x1B4F
-promicro8.build.pid.0=0x9203
-promicro8.build.vid.1=0x1B4F
-promicro8.build.pid.1=0x9204
 
-promicro8.upload.tool=avrdude
-promicro8.upload.protocol=avr109
-promicro8.upload.maximum_size=28672
-promicro8.upload.maximum_data_size=2560
-promicro8.upload.speed=57600
-promicro8.upload.disable_flushing=true
-promicro8.upload.use_1200bps_touch=true
-promicro8.upload.wait_for_upload_port=true
+promicro.menu.cpu.8MHzatmega32U4.build.pid.0=0x9203
+promicro.menu.cpu.8MHzatmega32U4.build.pid.1=0x9204
+promicro.menu.cpu.8MHzatmega32U4.build.pid=0x9204
 
-promicro8.bootloader.tool=avrdude
-promicro8.bootloader.low_fuses=0xff
-promicro8.bootloader.high_fuses=0xd8
-promicro8.bootloader.extended_fuses=0xfe
-promicro8.bootloader.file=caterina/Caterina-promicro8.hex
-promicro8.bootloader.unlock_bits=0x3F
-promicro8.bootloader.lock_bits=0x2F
+promicro.menu.cpu.8MHzatmega32U4.bootloader.extended_fuses=0xFE
+promicro.menu.cpu.8MHzatmega32U4.bootloader.file=caterina/Caterina-promicro8.hex
 
-promicro8.build.mcu=atmega32u4
-promicro8.build.f_cpu=8000000L
-promicro8.build.vid=0x1B4F
-promicro8.build.pid=0x9204
-promicro8.build.usb_product="SparkFun Pro Micro"
-promicro8.build.core=arduino:arduino
-promicro8.build.variant=promicro
-promicro8.build.extra_flags={build.usb_flags}
+promicro.menu.cpu.8MHzatmega32U4.build.f_cpu=8000000L
 
-##############################################################
-##################### Fio v3 3.3V / 8MHz #####################
-##############################################################
+############################# Pro Micro 5V / 16MHz #############################
+promicro.menu.cpu.16MHzatmega32U4=ATmega32U4 (5V, 16 MHz)
+
+promicro.menu.cpu.16MHzatmega32U4.build.pid.0=0x9205
+promicro.menu.cpu.16MHzatmega32U4.build.pid.1=0x9206
+promicro.menu.cpu.16MHzatmega32U4.build.pid=0x9206
+
+promicro.menu.cpu.16MHzatmega32U4.bootloader.extended_fuses=0xCB
+promicro.menu.cpu.16MHzatmega32U4.bootloader.file=caterina/Caterina-promicro16.hex
+
+promicro.menu.cpu.16MHzatmega32U4.build.f_cpu=16000000L
+
+################################################################################
+################################ Fio v3 3.3V / 8MHz ############################
+################################################################################
 
 fiov3.name=SparkFun Fio V3 3.3V/8MHz
 fiov3.build.board=AVR_FIOV3
