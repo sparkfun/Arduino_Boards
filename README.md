@@ -25,12 +25,12 @@ https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manag
 
 This field can be found in 'Prefrences...' in the Arduino menu.
 
-To add this support to your Arduino IDE, simply copy the "sparkfun" folder, and all of its contents, into a "hardware" directory in one of two
-places:
-* The actual Arduino directory
-	* Directory structure example: C:/Program Files (x86)/Arduino/hardware/sparkfun/avr
-* Inside your Sketchbook directory
-	* Directory structure example: C:/Users/userName/Arduino/hardware/sparkfun/avr
+~~To add this support to your Arduino IDE, simply copy the "sparkfun" folder, and all of its contents, into a "hardware" directory in one of two
+places:~~
+* ~~The actual Arduino directory~~
+	* ~~Directory structure example: C:/Program Files (x86)/Arduino/hardware/sparkfun/avr~~
+* ~~Inside your Sketchbook directory~~
+	* ~~Directory structure example:~~ ~~C:/Users/userName/Arduino/hardware/sparkfun/avr~~
 
 ### Cleaning up the Boards Menu
 
