@@ -23,7 +23,15 @@ Each board will be added as an entry to the Arduino **Tools** > **Board** menu.
 
 https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
 
-This field can be found in 'Prefrences...' in the Arduino menu.
+This field can be found in 'Preferences...' under the Arduino File menu.
+
+Now, under the Tools Menu --> Board --> Boards Manager, if you type in "sparkfun", you will see an option to install board files for SparkFun Arduino compatible boards. Click "Install" to add these to your list.
+
+![SparkFun Boards image](SparkFunBoards.png)
+
+Now, when you select the Boards list, you will see a collection of new boards for SparkFun.
+
+![SparkFun Boards List](boards_list.png)
 
 ~~To add this support to your Arduino IDE, simply copy the "sparkfun" folder, and all of its contents, into a "hardware" directory in one of two
 places:~~
