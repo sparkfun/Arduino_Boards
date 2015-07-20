@@ -12,11 +12,11 @@
             {
                "name":"SparkFun AVR Boards",
                "architecture":"avr",
-               "version":"1.0.1",
+               "version":"1.0.2",
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.tar.bz2",
                "archiveFileName":"sparkfunboards.tar.bz2",
-               "checksum":"SHA-256:be06eaf398931b03de7446ac5c8e40035be52d49a12cb240d09e6e2e42f6c9e3",
+               "checksum":"SHA-256:30e1ebbde1a61e8bd56c060b998d930b16931a9998fa6504b60739a5e8234745",
                "size":"817537",
                "help":{
                   "online":"https://forums.sparkfun.com"
