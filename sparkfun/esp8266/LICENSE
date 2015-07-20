@@ -1,0 +1,11 @@
+### License and credits
+
+Arduino IDE is based on Wiring and Processing. It is developed and maintained by the Arduino team. The IDE is licensed under GPL, and the core libraries are licensed under LGPL.
+
+This build includes an xtensa gcc toolchain, which is also under GPL.
+
+Espressif SDK included in this build is under Espressif Public License.
+
+Esptool written by Christian Klippel is licensed under GPLv2, currently maintained by Ivan Grokhotkov: https://github.com/igrr/esptool-ck.
+
+ESP8266 core support, ESP8266WiFi, Ticker, ESP8266WebServer libraries were written by Ivan Grokhotkov, ivan@esp8266.com.
