@@ -1,6 +1,9 @@
 # Arduino Boards
 
 This repository contains support for the following SparkFun Arduino-compatible development boards:
+
+#### AVR Boards
+
 * [RedBoard](https://www.sparkfun.com/products/12757)
 * [MaKey MaKey](https://www.sparkfun.com/products/11511)
 * [Pro Micro 3.3V](https://www.sparkfun.com/products/10999)
@@ -12,6 +15,11 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [RedBot](https://www.sparkfun.com/products/12097)
 * [Serial 7-Segment Display](https://www.sparkfun.com/products/11441)
 * [ATmega128RFA1 Development Board](https://www.sparkfun.com/products/11197)
+
+#### ESP8266 Boards
+
+* [ESP8266 Thing](https://www.sparkfun.com/products/13231)
+* [ESP8266 WiFi Shield](https://www.sparkfun.com/products/13287)
 
 Each board will be added as an entry to the Arduino **Tools** > **Board** menu.
 
