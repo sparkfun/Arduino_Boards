@@ -35,6 +35,8 @@ This field can be found in 'Preferences...' under the Arduino File menu.
 
 Now, under the Tools Menu --> Board --> Boards Manager, if you type in "sparkfun", you will see an option to install board files for SparkFun Arduino compatible boards. Click "Install" to add these to your list.
 
+NOTE: If you are using Arduino 1.6.6 and the link isn't working for you, change "https" at the beginning of the link to "http" and try again. We're working to figure out why this is happening in version 1.6.6. 
+
 ![SparkFun Boards image](SparkFunBoards.png)
 
 Now, when you select the Boards list, you will see a collection of new boards for SparkFun.
