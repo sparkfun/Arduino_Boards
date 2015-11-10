@@ -134,7 +134,7 @@
 			},
 			{
 			  "name": "bossac",
-			  "version": "1.6.1-arduino",
+			  "version": "1.6.1-ard",
 			  "systems": [
 				{
 				  "host": "i686-mingw32",
