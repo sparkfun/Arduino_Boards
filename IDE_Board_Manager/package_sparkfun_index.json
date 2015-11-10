@@ -58,7 +58,7 @@
          },
          "platforms":[
             {
-               "name":"SparkFun SAMD Boards",
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.2)",
                "architecture":"samd",
                "version":"1.0.0",
                "category":"Contributed",
