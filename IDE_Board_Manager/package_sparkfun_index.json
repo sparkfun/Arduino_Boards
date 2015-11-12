@@ -49,6 +49,38 @@
          "tools":[]
       },
 	  {
+         "name":"SparkFun",
+         "maintainer":"SparkFun Electronics",
+         "websiteURL":"https://SparkFun.com",
+         "email":"TechSupport@SparkFun.com",
+         "help":{
+            "online":"https://forum.sparkfun.com"
+         },
+         "platforms":[
+            {
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.2)",
+               "architecture":"samd",
+               "version":"1.0.0",
+               "category":"Contributed",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.0.0.tar.bz2",
+               "archiveFileName":"sparkfun-samd-1.0.0.tar.bz2",
+               "checksum":"SHA-256:12e0be6862a3a28b6515755dcad2842757caf4e5270326554f95059512ebaab5",
+               "size":"268954",
+               "help":{
+                  "online":"https://forums.sparkfun.com"
+               },
+               "boards":[
+                  { "name":"SparkFun SAMD21 Mini Breakout" },
+                  { "name":"SparkFun SAMD21 Dev Breakout" }
+               ],
+               "toolsDependencies":[
+               ]
+            }
+         ],
+         "tools":[
+		 ]
+      },
+	  {
 		"name":"SparkFun",
 		"maintainer":"SparkFun Electroncs",
 		"websiteURL":"https://www.sparkfun.com",
@@ -61,7 +93,7 @@
 			"architecture":"esp8266",
 			"version":"1.6.4-673-g8cd3697",
 			"category":"Contributed",
-			"url":"https://github.com/jimblom/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-1.1.0.tar.bz2",
+			"url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-1.1.0.tar.bz2",
 			"archiveFileName":"sparkfun-esp8266-1.1.0.tar.bz2",
 			"checksum":"SHA-256:613c59a517465083f9259d3d4db22caf10e49b1e97cfc65bf914437140a5eaf4",
 			"size":"1929115",
@@ -90,7 +122,7 @@
 			"architecture":"esp8266",
 			"version":"1.6.4-628-g545ffde",
 			"category":"Contributed",
-			"url":"https://github.com/jimblom/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-1.0.0.tar.bz2",
+			"url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-1.0.0.tar.bz2",
 			"archiveFileName":"sparkfun-esp8266-1.0.0.tar.bz2",
 			"checksum":"SHA-256:e28a9ea802f91c6ee79c40525fdd0f081999405d37acaaa04001ebac30e75c38",
 			"size":"1929225",
