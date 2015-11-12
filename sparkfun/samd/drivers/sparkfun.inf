@@ -44,7 +44,7 @@ ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
 Signature="$Windows NT$"
 Provider=%ManufacturerName%
 DriverPackageDisplayName=%DriverPackageDisplayName%
-CatalogFile=arduino.cat
+CatalogFile=sparkfun.cat
 DriverVer=06/15/2015,1.2.2.0
 
 [Manufacturer]
