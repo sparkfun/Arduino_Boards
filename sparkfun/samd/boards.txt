@@ -1,0 +1,69 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+samd21_dev.name=SparkFun SAMD21 Dev Breakout
+samd21_dev.vid.0=0x1B4F
+samd21_dev.pid.0=0x8D21
+samd21_dev.vid.1=0x1B4F
+samd21_dev.pid.1=0x0D21
+samd21_dev.upload.tool=bossac
+samd21_dev.upload.protocol=sam-ba
+samd21_dev.upload.maximum_size=262144
+samd21_dev.upload.use_1200bps_touch=true
+samd21_dev.upload.wait_for_upload_port=true
+samd21_dev.upload.native_usb=true
+samd21_dev.build.mcu=cortex-m0plus
+samd21_dev.build.f_cpu=48000000L
+samd21_dev.build.usb_product="SFE SAMD21"
+samd21_dev.build.usb_manufacturer="SparkFun"
+samd21_dev.build.board=SAMD_ZERO
+samd21_dev.build.core=arduino
+samd21_dev.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+samd21_dev.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+samd21_dev.build.openocdscript=openocd_scripts/arduino_zero.cfg
+samd21_dev.build.variant=arduino_zero
+samd21_dev.build.variant_system_lib=
+samd21_dev.build.vid=0x1B4F
+samd21_dev.build.pid=0x8D21
+samd21_dev.bootloader.tool=openocd
+samd21_dev.bootloader.file=zero/samd21_sam_ba.bin
+
+samd21_mini.name=SparkFun SAMD21 Mini Breakout
+samd21_mini.vid.0=0x1B4F
+samd21_mini.pid.0=0x8D21
+samd21_mini.vid.1=0x1B4F
+samd21_mini.pid.1=0x0D21
+samd21_mini.upload.tool=bossac
+samd21_mini.upload.protocol=sam-ba
+samd21_mini.upload.maximum_size=262144
+samd21_mini.upload.use_1200bps_touch=true
+samd21_mini.upload.wait_for_upload_port=true
+samd21_mini.upload.native_usb=true
+samd21_mini.build.mcu=cortex-m0plus
+samd21_mini.build.f_cpu=48000000L
+samd21_mini.build.usb_product="SFE SAMD21"
+samd21_mini.build.usb_manufacturer="SparkFun"
+samd21_mini.build.board=SAMD_ZERO
+samd21_mini.build.core=arduino
+samd21_mini.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+samd21_mini.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+samd21_mini.build.openocdscript=openocd_scripts/arduino_zero.cfg
+samd21_mini.build.variant=SparkFun_SAMD_Mini
+samd21_mini.build.variant_system_lib=
+samd21_mini.build.vid=0x1B4F
+samd21_mini.build.pid=0x8D21
+samd21_mini.bootloader.tool=openocd
+samd21_mini.bootloader.file=zero/samd21_sam_ba.bin

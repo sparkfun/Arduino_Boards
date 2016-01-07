@@ -4,18 +4,18 @@
 
 
 [Version]
-Signature="$Windows NT$"
 Class=Ports
 ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Signature="$Windows NT$"
 Provider=%MFGNAME%
-LayoutFile=layout.inf
 CatalogFile=%MFGFILENAME%.cat
-DriverVer=10/27/2014,5.1.2600.0
+DriverVer=08/26/2015,1.0.0.0
 
 [Manufacturer]
 %MFGNAME%=DeviceList, NTamd64
 
 [DestinationDirs]
+FakeModemCopyFileSection=12
 DefaultDestDir=12
 
 [DefaultInstall]
@@ -26,12 +26,9 @@ CopyINF=sparkfun.inf
 ;------------------------------------------------------------------------------
 
 [DriverInstall.nt]
-include=mdmcpq.inf
-CopyFiles=DriverCopyFiles.nt
+include=mdmcpq.inf,usb.inf
+CopyFiles=FakeModemCopyFileSection
 AddReg=DriverInstall.nt.AddReg
-
-[DriverCopyFiles.nt]
-usbser.sys,,,0x20
 
 [DriverInstall.nt.AddReg]
 HKR,,DevLoader,,*ntkern
@@ -39,6 +36,7 @@ HKR,,NTMPDriver,,%DRIVERFILENAME%.sys
 HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
 
 [DriverInstall.nt.Services]
+include=mdmcpq.inf
 AddService=usbser, 0x00000002, DriverService.nt
 
 [DriverService.nt]
@@ -47,6 +45,7 @@ ServiceType=1
 StartType=3
 ErrorControl=1
 ServiceBinary=%12%\%DRIVERFILENAME%.sys
+LoadOrderGroup=Base
 
 ;------------------------------------------------------------------------------
 ;  Vista-64bit Sections
@@ -54,11 +53,8 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 
 [DriverInstall.NTamd64]
 include=mdmcpq.inf
-CopyFiles=DriverCopyFiles.NTamd64
+CopyFiles=FakeModemCopyFileSection
 AddReg=DriverInstall.NTamd64.AddReg
-
-[DriverCopyFiles.NTamd64]
-%DRIVERFILENAME%.sys,,,0x20
 
 [DriverInstall.NTamd64.AddReg]
 HKR,,DevLoader,,*ntkern
@@ -85,8 +81,6 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 ; Note: One INF file can be used for multiple devices with different VID and PIDs.
 ; For each supported device, append ",USB\VID_xxxx&PID_yyyy" to the end of the line.
 ;------------------------------------------------------------------------------
-[SourceDisksFiles]
-[SourceDisksNames]
 [DeviceList]
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9205
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9206&MI_00
@@ -123,7 +117,7 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 ;Modify these strings to customize your device
 ;------------------------------------------------------------------------------
 [Strings]
-MFGFILENAME="sparkfun"
+MFGFILENAME="SparkFun"
 DRIVERFILENAME ="usbser"
 MFGNAME="SparkFun Electronics"
 INSTDISK="SparkFun Driver Installer"

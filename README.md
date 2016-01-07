@@ -1,4 +1,4 @@
-# Arduino Boards
+# SparkFun Arduino Boards
 
 This repository contains support for the following SparkFun Arduino-compatible development boards:
 
@@ -16,6 +16,11 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [Serial 7-Segment Display](https://www.sparkfun.com/products/11441)
 * [ATmega128RFA1 Development Board](https://www.sparkfun.com/products/11197)
 
+#### SAMD (ARM Cortex-M0+) Boards
+
+* [SparkFun SAMD21 Dev Breakout](https://www.sparkfun.com/products/13672)
+* [SparkFun SAMD21 Mini Breakout](https://www.sparkfun.com/products/13664)
+
 #### ESP8266 Boards
 
 * [ESP8266 Thing](https://www.sparkfun.com/products/13231)
@@ -27,26 +32,23 @@ Each board will be added as an entry to the Arduino **Tools** > **Board** menu.
 
 ### Installation Instructions
 
-<span style="color:red">New:</span> To add board support for our products simply paste this URL into the 'Additional Boards Manager URLs' input field:
+To add board support for our products, go to **File** > **Preferences**, and paste this URL into the 'Additional Boards Manager URLs' input field:
 
-https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
+	https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
+
+![Adding a board manager list](https://cdn.sparkfun.com/assets/learn_tutorials/4/5/4/arduino-board-add.png)
 
 This field can be found in 'Preferences...' under the Arduino File menu.
 
-Now, under the Tools Menu --> Board --> Boards Manager, if you type in "sparkfun", you will see an option to install board files for SparkFun Arduino compatible boards. Click "Install" to add these to your list.
+Now, under the **Tools** > **Board** > **Boards Manager...**, if you type in "sparkfun", you will see an option to install board files for SparkFun Arduino compatible boards. Click "Install" to add these to your list.
 
-![SparkFun Boards image](SparkFunBoards.png)
+**NOTE: If you are using Arduino 1.6.6 and the link isn't working for you, change "https" at the beginning of the link to "http" and try again. We're working to figure out why this is happening in version 1.6.6.**
+
+![SparkFun Boards image](https://cdn.sparkfun.com/assets/learn_tutorials/4/5/4/sparkfun-arduino-board-install.png)
 
 Now, when you select the Boards list, you will see a collection of new boards for SparkFun.
 
 ![SparkFun Boards List](boards_list.png)
-
-~~To add this support to your Arduino IDE, simply copy the "sparkfun" folder, and all of its contents, into a "hardware" directory in one of two
-places:~~
-* ~~The actual Arduino directory~~
-	* ~~Directory structure example: C:/Program Files (x86)/Arduino/hardware/sparkfun/avr~~
-* ~~Inside your Sketchbook directory~~
-	* ~~Directory structure example:~~ ~~C:/Users/userName/Arduino/hardware/sparkfun/avr~~
 
 ### Cleaning up the Boards Menu
 
