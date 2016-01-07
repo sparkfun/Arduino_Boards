@@ -90,7 +90,7 @@
 #undef OCR2_6
 #undef OCR2_7
 
-#define NUM_DIGITAL_PINS  30
+#define NUM_DIGITAL_PINS  31
 #define NUM_ANALOG_INPUTS 12
 
 #define TX_RX_LED_INIT  DDRD |= (1<<5), DDRB |= (1<<0)
@@ -102,6 +102,8 @@
 static const uint8_t SDA = 2;
 static const uint8_t SCL = 3;
 #define LED_BUILTIN 13
+#define LED_BUILTIN_RX 17					
+#define LED_BUILTIN_TX 30
 
 // Map SPI port to 'new' pins D14..D17
 static const uint8_t SS   = 17;
@@ -174,7 +176,7 @@ extern const uint8_t PROGMEM analog_pin_to_channel_PGM[];
 // SS       D17     PB0                 RXLED,SS/PCINT0
 //
 // Connected LEDs on board for TX and RX
-// TXLED    D24     PD5                 XCK1
+// TXLED    D30     PD5                 XCK1
 // RXLED    D17     PB0
 // HWB              PE2                 HWB
 
@@ -246,6 +248,7 @@ const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
     PB, // D27 / D9 - A9 - PB5
     PB, // D28 / D10 - A10 - PB6
     PD, // D29 / D12 - A11 - PD6
+    PD, // D30 / TX Led - PD5
 };
 
 const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
@@ -277,12 +280,13 @@ const uint8_t PROGMEM digital_pin_to_bit_mask_PGM[] = {
     _BV(1), // D22 - A4 - PF1
     _BV(0), // D23 - A5 - PF0
     
-    _BV(5), // D24 / PD5
+	  _BV(4), // D24 / D4 - A6 - PD4
     _BV(7), // D25 / D6 - A7 - PD7
     _BV(4), // D26 / D8 - A8 - PB4
     _BV(5), // D27 / D9 - A9 - PB5
     _BV(6), // D28 / D10 - A10 - PB6
     _BV(6), // D29 / D12 - A11 - PD6
+    _BV(5), // D30 / TX Led - PD5
 };
 
 const uint8_t PROGMEM digital_pin_to_timer_PGM[] = {
@@ -358,5 +362,8 @@ const uint8_t PROGMEM analog_pin_to_channel_PGM[] = {
 #define SERIAL_PORT_USBVIRTUAL     Serial
 #define SERIAL_PORT_HARDWARE       Serial1
 #define SERIAL_PORT_HARDWARE_OPEN  Serial1
+
+// Alias SerialUSB to Serial
+#define SerialUSB SERIAL_PORT_USBVIRTUAL
 
 #endif /* Pins_Arduino_h */
