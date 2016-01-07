@@ -160,6 +160,43 @@ fiov3.build.usb_manufacturer="SparkFun Electronics"
 
 
 ################################################################################
+################################ Qduino Mini ###################################
+################################################################################
+qduinomini.name=Qduino Mini
+qduinomini.build.vid.0=0x1B4F
+qduinomini.build.pid.0=0x514D
+qduinomini.build.vid.1=0x1B4F
+qduinomini.build.pid.1=0x516D
+
+qduinomini.upload.tool=arduino:avrdude
+qduinomini.upload.protocol=avr109
+qduinomini.upload.maximum_size=28672
+qduinomini.upload.maximum_data_size=2560
+qduinomini.upload.speed=57600
+qduinomini.upload.disable_flushing=true
+qduinomini.upload.use_1200bps_touch=true
+qduinomini.upload.wait_for_upload_port=true
+
+qduinomini.bootloader.tool=arduino:avrdude
+qduinomini.bootloader.low_fuses=0xFF
+qduinomini.bootloader.high_fuses=0xD8
+qduinomini.bootloader.extended_fuses=0xCC
+qduinomini.bootloader.file=caterina/Caterina-qduinomini.hex
+qduinomini.bootloader.unlock_bits=0x3F
+qduinomini.bootloader.lock_bits=0x2F
+
+qduinomini.build.mcu=atmega32u4
+qduinomini.build.f_cpu=8000000L
+qduinomini.build.vid=0x1B4F
+qduinomini.build.pid=0x516D
+qduinomini.build.usb_product="Qtechknow Qduino Mini"
+qduinomini.build.board=AVR_QDUINOMINI
+qduinomini.build.core=arduino:arduino
+qduinomini.build.variant=promicro
+qduinomini.build.extra_flags={build.usb_flags}
+qduinomini.build.usb_manufacturer="SparkFun Electronics"
+
+################################################################################
 ################################ Digital Sandbox ###############################
 ################################################################################
 digitalsandbox.name=SparkFun Digital Sandbox
