@@ -12,12 +12,12 @@
             {
                "name":"SparkFun AVR Boards",
                "architecture":"avr",
-               "version":"1.0.4",
+               "version":"1.1.0",
                "category":"Contributed",
-               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.0.4.tar.bz2",
-               "archiveFileName":"sparkfunboards.1.0.4.tar.bz2",
-               "checksum":"SHA-256:18c8d8ef55de1142a2580f3afa140b79e06bf1d4c5cc32f1d290c4c0f2dcc9b1",
-               "size":"755406",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.0.tar.bz2",
+               "archiveFileName":"sparkfunboards.1.1.0.tar.bz2",
+               "checksum":"SHA-256:549fcb48caa3ed7f28a45a5bb600d38556549939c2b5854839070d008c469db3",
+               "size":"755985",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
@@ -26,6 +26,7 @@
                   { "name":"MaKey MaKey" },
                   { "name":"Pro Micro" },
                   { "name":"Fio v3" },
+                  { "name":"Qduino Mini" },
                   { "name":"Digital Sandbox" },
                   { "name":"Mega Pro" },
                   { "name":"RedBot" },
