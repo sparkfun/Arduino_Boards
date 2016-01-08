@@ -31,17 +31,19 @@
 #define MAX1704_COMMAND         0xFE
 #define MAX1704_ALERT_LEVEL     0x97
 
-class qduino{
-    
+enum colors
+{
+  RED = 0, GREEN, BLUE, CYAN, PINK, WHITE, PURPLE, YELLOW, ORANGE
+};
+
+class qduino
+{
 public:
-    void setup();
-    void setRGB(int r, int g, int b);
-    void setRGB(String color);
-    void rainbow(int duration);
-    void ledOff();
-    
-private:
-    
+  void setup();
+  void setRGB(uint8_t r, uint8_t g, uint8_t b);
+  void setRGB(colors color);
+  void rainbow(uint8_t duration);
+  void ledOff();
 };
 
 class fuelGauge{
@@ -57,8 +59,7 @@ public:
   boolean inAlert();
   void goToSleep();
   void wakeUp();
-  
-    
+
 private:
   void performCommand(byte address, int value);
   void readFrom(byte address, byte &msb, byte &lsb);

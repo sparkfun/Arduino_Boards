@@ -18,18 +18,20 @@
 
 fuelGauge battery;  // initialize the library
 
-void setup(){
+void setup()
+{
   
- Wire.begin(); 
- Serial.begin(9600);  // start Serial port
- battery.setup();  // setup fuel gauge
+  Wire.begin(); 
+  Serial.begin(9600);  // start Serial port
+  battery.setup();  // setup fuel gauge
  
- while(!Serial);  // wait for Serial port to be opened
+  while(!Serial);  // wait for Serial port to be opened
  
- Serial.println("Begin");
+  Serial.println("Begin");
 }
 
-void loop(){
+void loop()
+{
   int charge = battery.chargePercentage();  // get %
   battery.reset();  // reset for next data request
   Serial.print(charge); // print out the battery %

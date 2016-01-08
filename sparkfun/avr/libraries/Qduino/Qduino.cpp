@@ -23,97 +23,92 @@
 
 void qduino::setup(){
     
-    pinMode(13, OUTPUT);
-    digitalWrite(13, HIGH);
-    pinMode(11, OUTPUT);
-    digitalWrite(11, HIGH);
-    pinMode(10, OUTPUT);
-    digitalWrite(10, HIGH);
+  pinMode(13, OUTPUT);
+  digitalWrite(13, HIGH);
+  pinMode(11, OUTPUT);
+  digitalWrite(11, HIGH);
+  pinMode(10, OUTPUT);
+  digitalWrite(10, HIGH);
 }
 
-void qduino::setRGB(int r, int g, int b){
+void qduino::setRGB(uint8_t r, uint8_t g, uint8_t b){
     
-    // ratio for R:G:B is 4:7:7 for forward voltage
+  // ratio for R:G:B is 4:7:7 for forward voltage
     
-    r = 255 - r; // set all values to opposite values
-    g = 255 - g; // because LED is common anode
-    b = 255 - b;
+  r = 255 - r; // set all values to opposite values
+  g = 255 - g; // because LED is common anode
+  b = 255 - b;
     
-    int newr = map(r, 0, 255, 0, 146);
+  int newr = map(r, 0, 255, 0, 146);
     
-    analogWrite(10, newr);
-    analogWrite(11, g);
-    analogWrite(13, b);
+  analogWrite(10, newr);
+  analogWrite(11, g);
+  analogWrite(13, b);
 }
 
-void qduino::setRGB(String color){
-    
-    int intcolor;
-    
-    if(color == "red") { intcolor = 1; }
-    if(color == "green") { intcolor = 2; }
-    if(color == "blue") { intcolor = 3; }
-    if(color == "cyan") { intcolor = 4; }
-    if(color == "pink") { intcolor = 5; }
-    if(color == "white") { intcolor = 6; }
-    if(color == "purple") { intcolor = 7; }
-    if(color == "yellow") { intcolor = 8; }
-    if(color == "orange") { intcolor = 9; }
-    
-    switch (intcolor) {
-        case 1:
-            analogWrite(10, 0);
-            analogWrite(11, 255);
-            analogWrite(13, 255);
-            break;
-        case 2:
-            analogWrite(10, 255);
-            analogWrite(11, 0);
-            analogWrite(13, 255);
-            break;
-        case 3:
-            analogWrite(10, 255);
-            analogWrite(11, 255);
-            analogWrite(13, 0);
-            break;
-        case 4:
-            analogWrite(10, 255);
-            analogWrite(11, 0);
-            analogWrite(13, 0);
-            break;
-        case 5:
-            analogWrite(10, 109);
-            analogWrite(11, 255);
-            analogWrite(13, 0);
-            break;
-        case 6:
-            analogWrite(10, 109);
-            analogWrite(11, 0);
-            analogWrite(13, 0);
-            break;
-        case 7:
-            analogWrite(10, 210);
-            analogWrite(11, 255);
-            analogWrite(13, 0);
-            break;
-        case 8:
-            analogWrite(10, 100);
-            analogWrite(11, 0);
-            analogWrite(13, 255);
-            break;
-        case 9:
-            analogWrite(10, 109);
-            analogWrite(11, 150);
-            analogWrite(13, 255);
-            break;
-    }
+void qduino::setRGB(colors color){    
+  switch (color) {
+  case RED:
+    analogWrite(10, 0);
+    analogWrite(11, 255);
+    analogWrite(13, 255);
+    break;
+  case GREEN:
+    analogWrite(10, 255);
+    analogWrite(11, 0);
+    analogWrite(13, 255);
+    break;
+  case BLUE:
+    analogWrite(10, 255);
+    analogWrite(11, 255);
+    analogWrite(13, 0);
+    break;
+  case CYAN:
+    analogWrite(10, 255);
+    analogWrite(11, 0);
+    analogWrite(13, 0);
+    break;
+  case PINK:
+    analogWrite(10, 109);
+    analogWrite(11, 255);
+    analogWrite(13, 0);
+    break;
+  case WHITE:
+    analogWrite(10, 109);
+    analogWrite(11, 0);
+    analogWrite(13, 0);
+    break;
+  case PURPLE:
+    analogWrite(10, 210);
+    analogWrite(11, 255);
+    analogWrite(13, 0);
+    break;
+  case YELLOW:
+    analogWrite(10, 100);
+    analogWrite(11, 0);
+    analogWrite(13, 255);
+    break;
+  case ORANGE:
+    analogWrite(10, 109);
+    analogWrite(11, 150);
+    analogWrite(13, 255);
+    break;
+  }
 }
 
-void qduino::rainbow(int duration){
-    
-unsigned int rgbColor[3];
- 
-    int newduration = map(duration, 1, 5, 500, 3000);
+void qduino::rainbow(uint8_t duration)
+{    
+  unsigned int rgbColor[3];
+  if (duration < 1)
+  {
+    duration = 1;
+  }
+  else if (duration > 5)
+  {
+    duration = 5;
+  }
+
+  unsigned int newDuration = map(duration, 1, 5, 500, 3000);
     
   // Start off with red.
   rgbColor[0] = 255;
@@ -121,32 +116,35 @@ unsigned int rgbColor[3];
   rgbColor[2] = 0;  
  
   // Choose the colours to increment and decrement.
-  for (int decColor = 0; decColor < 3; decColor += 1) {
+  for (int decColor = 0; decColor < 3; decColor += 1)
+  {
     int incColor = decColor == 2 ? 0 : decColor + 1;
  
     // cross-fade the two colours.
-    for(int i = 0; i < 255; i += 1) {
+    for(int i = 0; i < 255; i += 1)
+    {
       rgbColor[decColor] -= 1;
       rgbColor[incColor] += 1;
       
       analogWrite(10, rgbColor[0]);
       analogWrite(11, rgbColor[1]);
       analogWrite(13, rgbColor[2]);
-      delayMicroseconds(newduration);
+Serial.print("newDuration: ");
+Serial.println(newDuration);
+      delayMicroseconds(newDuration);
     }
   }
 }
 
-void qduino::ledOff(){
-    
-    analogWrite(10, 255);
-    analogWrite(11, 255);
-    analogWrite(13, 255);
-    
+void qduino::ledOff()
+{    
+  analogWrite(10, 255);
+  analogWrite(11, 255);
+  analogWrite(13, 255);
 }
 
-int fuelGauge::chargePercentage(){
-
+int fuelGauge::chargePercentage()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -158,31 +156,32 @@ int fuelGauge::chargePercentage(){
   return percentage;
 }
 
-void fuelGauge::setup(){
-    reset();
-    performCommand(MAX1704_QUICK_START, 0x00); // aka quickStart();
+void fuelGauge::setup()
+{
+  reset();
+  performCommand(MAX1704_QUICK_START, 0x00); // aka quickStart();
 }
 
-void fuelGauge::reset(){
-
+void fuelGauge::reset()
+{
   performCommand(MAX1704_POWER_ON_RESET, 0x00);
 }
 
-char fuelGauge::getVersion(){
-
+char fuelGauge::getVersion()
+{
   int value = 0;
   byte msb = 0;
   byte lsb = 0;
   readFrom(MAX1704_VERSION, msb, lsb);
   
-    value  = 0xFF00 & (msb<<8);
-    value |=   0xFF & lsb;
+  value  = 0xFF00 & (msb<<8);
+  value |=   0xFF & lsb;
 
   return value;
 }
 
-void fuelGauge::setThreshold(uint8_t level){
-
+void fuelGauge::setThreshold(uint8_t level)
+{
   Wire.beginTransmission(MAX1704_ADDR);
   Wire.write(MAX1704_CONFIG);
   Wire.write(MAX1704_ALERT_LEVEL);
@@ -190,8 +189,8 @@ void fuelGauge::setThreshold(uint8_t level){
   Wire.endTransmission();
 }
 
-int fuelGauge::currentThreshold(){
-
+int fuelGauge::currentThreshold()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -201,8 +200,8 @@ int fuelGauge::currentThreshold(){
   return 32 - threshold;
 }
 
-boolean fuelGauge::inAlert(){
-
+boolean fuelGauge::inAlert()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -212,8 +211,8 @@ boolean fuelGauge::inAlert(){
   return int(alert) == 1;
 }
 
-boolean fuelGauge::inSleep(){
-
+boolean fuelGauge::inSleep()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -223,7 +222,8 @@ boolean fuelGauge::inSleep(){
   return int(sleep) == 1;
 }
 
-void fuelGauge::goToSleep(){
+void fuelGauge::goToSleep()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -244,7 +244,8 @@ void fuelGauge::goToSleep(){
   delay(150);
 }
 
-void fuelGauge::wakeUp(){
+void fuelGauge::wakeUp()
+{
   byte msb = 0;
   byte lsb = 0;
 
@@ -264,8 +265,8 @@ void fuelGauge::wakeUp(){
   delay(150); 
 }
 
-void fuelGauge::performCommand(byte address, int value){
-
+void fuelGauge::performCommand(byte address, int value)
+{
   Wire.beginTransmission(MAX1704_ADDR);
   Wire.write(MAX1704_COMMAND);
   Wire.write(address);
@@ -273,19 +274,19 @@ void fuelGauge::performCommand(byte address, int value){
   Wire.endTransmission();
 }
 
-void fuelGauge::readFrom(byte address, byte &msb, byte &lsb){
-
+void fuelGauge::readFrom(byte address, byte &msb, byte &lsb)
+{
   Wire.beginTransmission(MAX1704_ADDR);
   Wire.write(address);
   Wire.endTransmission();
 
   Wire.requestFrom(MAX1704_ADDR, 2);
 
-  int numread = Wire.available();
-  //if (numread == 2) {
-  msb = Wire.read();
-  lsb = Wire.read();
-  //}
+  if (Wire.available() == 2)
+  {
+    msb = Wire.read();
+    lsb = Wire.read();
+  }
   Wire.endTransmission();
 }
 

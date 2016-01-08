@@ -5,15 +5,15 @@
    
    Possible colors for setRGB(color) function:
    
-   red
-   orange
-   yellow
-   green
-   cyan
-   blue
-   purple
-   pink
-   white
+   RED
+   ORANGE
+   YELLOW
+   GREEN
+   CYAN
+   BLUE
+   PURPLE
+   PINK
+   WHITE
   
    created on 30 Jun 15
    made by Quin Etnyre
@@ -36,39 +36,39 @@ void loop() {
   
   delay(500);
   
-  q.setRGB("red");
+  q.setRGB(RED);
   
   delay(500);
   
-  q.setRGB("orange");
+  q.setRGB(ORANGE);
   
   delay(500);
   
-  q.setRGB("yellow");
+  q.setRGB(YELLOW);
 
   delay(500);
   
-  q.setRGB("green");
+  q.setRGB(GREEN);
   
   delay(500);
   
-  q.setRGB("cyan");
+  q.setRGB(CYAN);
   
   delay(500);
   
-  q.setRGB("blue");
+  q.setRGB(BLUE);
   
   delay(500);
   
-  q.setRGB("purple");
+  q.setRGB(PURPLE);
   
   delay(500);
   
-  q.setRGB("pink");
+  q.setRGB(PINK);
   
   delay(500);
   
-  q.setRGB("white");
+  q.setRGB(WHITE);
   
   delay(500);
   
@@ -77,5 +77,4 @@ void loop() {
   q.ledOff();
   
   delay(500);
-  
 }
