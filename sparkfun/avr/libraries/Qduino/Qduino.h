@@ -19,8 +19,8 @@
 
 #include "Arduino.h"
 
-#ifndef _Qduino_h
-#define _Qduino_h
+#ifndef _QDUINO_H_
+#define _QDUINO_H_
 
 #define MAX1704_ADDR            0x36
 #define MAX1704_SOC             0x04
@@ -31,23 +31,21 @@
 #define MAX1704_COMMAND         0xFE
 #define MAX1704_ALERT_LEVEL     0x97
 
-enum colors
-{
-  RED = 0, GREEN, BLUE, CYAN, PINK, WHITE, PURPLE, YELLOW, ORANGE
-};
+// Predefined named colors for use in setRGB method
+enum COLORS { RED, GREEN, BLUE, CYAN, PINK, WHITE, PURPLE, YELLOW, ORANGE };
 
 class qduino
-{
+{    
 public:
   void setup();
   void setRGB(uint8_t r, uint8_t g, uint8_t b);
-  void setRGB(colors color);
-  void rainbow(uint8_t duration);
+  void setRGB(COLORS color);
+  void rainbow(uint8_t duration); // [1,5] valid
   void ledOff();
 };
 
-class fuelGauge{
-    
+class fuelGauge
+{    
 public:
   int chargePercentage();
   void setup();
@@ -59,7 +57,8 @@ public:
   boolean inAlert();
   void goToSleep();
   void wakeUp();
-
+  
+    
 private:
   void performCommand(byte address, int value);
   void readFrom(byte address, byte &msb, byte &lsb);

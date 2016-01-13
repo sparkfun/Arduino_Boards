@@ -46,7 +46,7 @@ void qduino::setRGB(uint8_t r, uint8_t g, uint8_t b){
   analogWrite(13, b);
 }
 
-void qduino::setRGB(colors color){    
+void qduino::setRGB(COLORS color){    
   switch (color) {
   case RED:
     analogWrite(10, 0);
@@ -98,17 +98,13 @@ void qduino::setRGB(colors color){
 
 void qduino::rainbow(uint8_t duration)
 {    
-  unsigned int rgbColor[3];
-  if (duration < 1)
-  {
-    duration = 1;
-  }
-  else if (duration > 5)
-  {
-    duration = 5;
-  }
+  uint8_t rgbColor[3];
 
-  unsigned int newDuration = map(duration, 1, 5, 500, 3000);
+  // Keep values for duration bounded
+  if (duration < 1) duration = 1;
+  if (duration > 5) duration = 5;
+ 
+  int newDuration = map(duration, 1, 5, 500, 3000);
     
   // Start off with red.
   rgbColor[0] = 255;
@@ -116,12 +112,12 @@ void qduino::rainbow(uint8_t duration)
   rgbColor[2] = 0;  
  
   // Choose the colours to increment and decrement.
-  for (int decColor = 0; decColor < 3; decColor += 1)
+  for (uint8_t decColor = 0; decColor < 3; decColor += 1)
   {
     int incColor = decColor == 2 ? 0 : decColor + 1;
  
     // cross-fade the two colours.
-    for(int i = 0; i < 255; i += 1)
+    for(uint8_t i = 0; i < 255; i += 1)
     {
       rgbColor[decColor] -= 1;
       rgbColor[incColor] += 1;
@@ -129,8 +125,6 @@ void qduino::rainbow(uint8_t duration)
       analogWrite(10, rgbColor[0]);
       analogWrite(11, rgbColor[1]);
       analogWrite(13, rgbColor[2]);
-Serial.print("newDuration: ");
-Serial.println(newDuration);
       delayMicroseconds(newDuration);
     }
   }
