@@ -110,7 +110,7 @@
         {
           "category": "Contributed", 
           "name": "SparkFun ESP8266 Boards", 
-		  "url":"https://cdn.sparkfun.com/assets/learn_tutorials/4/9/5/sparkfun-esp8266-2.1.0.tar.bz2",
+		  "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-2.1.0.tar.bz2",
 		  "checksum":"SHA-256:FE3E0504B38A5A4C912801A3E4633380A666DC77B8D3043548187AF8675477DA",
 		  "help":{
 			"online":"https://learn.sparkfun.com"
