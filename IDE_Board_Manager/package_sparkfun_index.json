@@ -59,7 +59,7 @@
          },
          "platforms":[
             {
-               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.2)",
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
                "architecture":"samd",
                "version":"1.0.0",
                "category":"Contributed",
@@ -78,7 +78,7 @@
                ]
             },
 			{
-               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.2)",
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
                "architecture":"samd",
                "version":"1.1.0",
                "category":"Contributed",
@@ -86,6 +86,25 @@
                "archiveFileName":"sparkfun-samd-1.1.0.tar.bz2",
                "checksum":"SHA-256:5d71cbf8ccf5781eef9809d7b3141041daf3ed1a1272f5278762ece5a0aecf44",
                "size":"279683",
+               "help":{
+                  "online":"https://forums.sparkfun.com"
+               },
+               "boards":[
+                  { "name":"SparkFun SAMD21 Mini Breakout" },
+                  { "name":"SparkFun SAMD21 Dev Breakout" }
+               ],
+               "toolsDependencies":[
+               ]
+            },
+			{
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
+               "architecture":"samd",
+               "version":"1.2.0",
+               "category":"Contributed",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.2.0.tar.bz2",
+               "archiveFileName":"sparkfun-samd-1.1.0.tar.bz2",
+               "checksum":"SHA-256:50E055F311E07BA4D154BF00AA10579648024BEF680BB3EB267401C496F791E6",
+               "size":"281932",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
