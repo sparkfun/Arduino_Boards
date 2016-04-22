@@ -86,9 +86,8 @@ typedef enum
 
 typedef enum
 {
-	SAMPLE_RATE_x16 = 0,	//Arithmetic
-	SAMPLE_RATE_x8 = 0x2,	//Arithmetic
-	SAMPLE_RATE_x3 = 0x3	//Arithmetic
+	SAMPLE_RATE_x16 = 0x1,	//Fractional
+	SAMPLE_RATE_x8 = 0x3,	//Fractional
 } SercomUartSampleRate;
 
 typedef enum
@@ -173,6 +172,7 @@ class SERCOM
 		void enableSPI( void ) ;
 		void disableSPI( void ) ;
 		void setDataOrderSPI(SercomDataOrder dataOrder) ;
+		SercomDataOrder getDataOrderSPI( void ) ;
 		void setBaudrateSPI(uint8_t divider) ;
 		void setClockModeSPI(SercomSpiClockMode clockMode) ;
 		void writeDataSPI(uint8_t data) ;
@@ -191,13 +191,14 @@ class SERCOM
     void disableWIRE( void );
     void prepareNackBitWIRE( void ) ;
     void prepareAckBitWIRE( void ) ;
-    void prepareCommandBitsWire(SercomMasterCommandWire cmd);
+    void prepareCommandBitsWire(uint8_t cmd);
 		bool startTransmissionWIRE(uint8_t address, SercomWireReadWriteFlag flag) ;
 		bool sendDataMasterWIRE(uint8_t data) ;
 		bool sendDataSlaveWIRE(uint8_t data) ;
 		bool isMasterWIRE( void ) ;
 		bool isSlaveWIRE( void ) ;
 		bool isBusIdleWIRE( void ) ;
+		bool isBusOwnerWIRE( void ) ;
 		bool isDataReadyWIRE( void ) ;
 		bool isStopDetectedWIRE( void ) ;
 		bool isRestartDetectedWIRE( void ) ;
