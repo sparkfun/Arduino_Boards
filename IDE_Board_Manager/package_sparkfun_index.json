@@ -33,18 +33,7 @@
                   { "name":"Serial 7-segment Display" },
                   { "name":"ATmega128RFA1 Dev Board" }
                ],
-               "toolsDependencies":[
-                  {
-                     "packager":"arduino",
-                     "name":"avr-gcc",
-                     "version":"4.8.1-arduino5"
-                  },
-                  {
-                     "packager":"arduino",
-                     "name":"avrdude",
-                     "version":"6.0.1-arduino5"
-                  }
-               ]
+               "toolsDependencies":[]
             }
          ],
          "tools":[]
@@ -74,8 +63,7 @@
                   { "name":"SparkFun SAMD21 Mini Breakout" },
                   { "name":"SparkFun SAMD21 Dev Breakout" }
                ],
-               "toolsDependencies":[
-               ]
+               "toolsDependencies":[]
             },
 			{
                "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
@@ -93,8 +81,7 @@
                   { "name":"SparkFun SAMD21 Mini Breakout" },
                   { "name":"SparkFun SAMD21 Dev Breakout" }
                ],
-               "toolsDependencies":[
-               ]
+               "toolsDependencies":[]
             },
 			{
                "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
@@ -112,12 +99,10 @@
                   { "name":"SparkFun SAMD21 Mini Breakout" },
                   { "name":"SparkFun SAMD21 Dev Breakout" }
                ],
-               "toolsDependencies":[
-               ]
+               "toolsDependencies":[]
             }
          ],
-         "tools":[
-		 ]
+         "tools":[]
       },
 	  {
       "maintainer": "SparkFun Electronics", 
