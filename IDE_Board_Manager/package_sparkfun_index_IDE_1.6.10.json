@@ -34,16 +34,6 @@
                   { "name":"ATmega128RFA1 Dev Board" }
                ],
                "toolsDependencies":[
-                  {
-                     "packager":"arduino",
-                     "name":"avr-gcc",
-                     "version":"4.9.2-atmel3.5.3-arduino2"
-                  },
-                  {
-                     "packager":"arduino",
-                     "name":"avrdude",
-                     "version":"6.3.0-arduino2"
-                  }
                ]
             }
          ],
