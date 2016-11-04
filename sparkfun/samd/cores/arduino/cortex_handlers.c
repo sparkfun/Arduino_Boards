@@ -36,7 +36,7 @@ void Dummy_Handler(void)
 
 /* Cortex-M0+ core handlers */
 void HardFault_Handler(void) __attribute__ ((weak, alias("Dummy_Handler")));
-void Reest_Handler    (void);
+void Reset_Handler    (void);
 void NMI_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void SVC_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void PendSV_Handler   (void) __attribute__ ((weak, alias("Dummy_Handler")));
@@ -134,7 +134,6 @@ __attribute__ ((section(".isr_vector"))) const DeviceVectors exception_table =
 };
 
 extern int main(void);
-extern void __libc_init_array(void);
 
 /* This is called on processor reset to initialize the device and call main() */
 void Reset_Handler(void)
@@ -155,9 +154,6 @@ void Reset_Handler(void)
     for (pDest = &__bss_start__; pDest < &__bss_end__; pDest++)
       *pDest = 0;
   }
-
-  /* Initialize the C library */
-  __libc_init_array();
 
   SystemInit();
 
