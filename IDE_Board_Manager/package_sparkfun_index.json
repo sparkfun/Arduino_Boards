@@ -452,7 +452,7 @@
 		  "help":{
 			"online":"http://sfe.io/t549"
 		  },
-		  "url":"https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/sparkfun-nrf5-hardware-0.2.3.tar.bz2",
+		  "url":"https://github.com/sparkfun/Arduino_Boards/raw/nrf5/IDE_Board_Manager/sparkfun-nrf5-hardware-0.2.3.tar.bz2",
           "archiveFileName":"sparkfun-nrf5-hardware-0.2.3.tar.bz2",
 		  "checksum":"SHA-256:c053c99ab4cae9aea00ccd3c323cb83867b379c87098b52874912223a24a891c",
           "size": "341212",
