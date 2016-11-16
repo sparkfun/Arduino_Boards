@@ -434,6 +434,161 @@
       ], 
       "email": "ivan@esp8266.com", 
       "name": "esp8266"
+    },
+	{
+      "name": "SparkFun",
+      "maintainer": "SparkFun Electronics", 
+      "websiteURL": "https://github.com/sparkfun/Arduino_Boards", 
+      "email": "techsupport@sparkfun.com", 
+      "help": {
+        "online": "http://SparkFun.com"
+      }, 
+      "platforms": [
+        {
+          "name": "SparkFun nRF52 Boards", 
+          "architecture": "nRF5", 
+          "version": "0.2.3", 
+          "category": "Contributed", 
+		  "help":{
+			"online":"http://sfe.io/t549"
+		  },
+		  "url":"https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/sparkfun-nrf5-hardware-0.2.3.tar.bz2",
+          "archiveFileName":"sparkfun-nrf5-hardware-0.2.3.tar.bz2",
+		  "checksum":"SHA-256:c053c99ab4cae9aea00ccd3c323cb83867b379c87098b52874912223a24a891c",
+          "size": "341212",
+          "boards":[ 
+				{"name": "nRF52 DK"},
+				{"name": "Bluz DK"},
+				{"name": "RedBearLab BLE Nano"},
+				{"name": "RedBearLab nRF51822"},
+				{"name": "BBC micro:bit"},
+				{"name": "OSHChip"},
+				{"name": "Generic nRF51822"},
+				{"name": "SparkFun nRF52832 Breakout Board" }
+		  ],
+          "toolsDependencies": [
+            {
+              "packager": "SparkFun",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "SparkFun",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            },
+            {
+              "packager": "SparkFun", 
+              "name": "nrfutil",
+              "version": "0.5.2-SFE"
+            }
+          ]
+        }
+      ], 
+      "tools": [
+        {
+          "name": "gcc-arm-none-eabi",
+          "version": "5_2-2015q4",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
+              "size": "96372129",
+              "checksum": "MD5:603bcce8e59683ac27054b3197a53254"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "size": "92811866",
+              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "size": "92811866",
+              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
+              "size": "102981732",
+              "checksum": "MD5:32d950225b6c7c886f6225c1fc578934"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "0.10.0-dev.nrf5",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-osx-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-osx-0.10.0-dev-nrf5.tar.gz",
+              "size": "1345243",
+              "checksum": "MD5:3ffaa4e7cd4b96770eec65002c5959e3"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "size": "3585042",
+              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "size": "3585042",
+              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-win32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-win32-0.10.0-dev-nrf5.tar.gz",
+              "size": "5498373",
+              "checksum": "MD5:3acd3b08afda2bb09e75a0de5ac7c3cd"
+            }
+          ]
+        },
+        {
+          "name": "nrfutil",
+          "version": "0.5.2-SFE",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-mac.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-mac.tar.bz2",
+              "size": "11327272",
+              "checksum": "SHA-256:4c695c1acc82f1b1adedc1de05d09694c576ad3dba7da713b848cd1c93426773"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux.tar.bz2",
+              "size": "13481914",
+              "checksum": "SHA-256:3b137e477e263b294350480ba566251e07a79b26f4536f1f6ebf136667868888"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux.tar.bz2",
+              "size": "13481914",
+              "checksum": "SHA-256:3b137e477e263b294350480ba566251e07a79b26f4536f1f6ebf136667868888"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-windows.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-windows.tar.bz2",
+              "size": "11746447",
+              "checksum": "SHA-256:84d78202970a33e40711bf40a97fcfee02bc7462419d6c9026529afd0c9b2f4a"
+            }
+          ]
+        }
+      ]
     }
    ]
 }
