@@ -34,6 +34,8 @@ ServiceName="USB RS-232 Emulation Driver"
 bossa.name="Bossa Program Port"
 samd21Breakout.sketch.name="SparkFun SAMD21 Breakout"
 samd21Breakout.bootloader.name="SparkFun SAMD21 Bootloader"
+samd21IMU.sketch.name="SparkFun 9DoF Razor IMU M0"
+samd21IMU.bootloader.name="SparkFun 9DoF Razor IMU M0 BL"
 
 [DefaultInstall]
 CopyINF=sparkfun.inf
@@ -57,14 +59,20 @@ DefaultDestDir=12
 [DeviceList]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
+%samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
+%samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 
 [DeviceList.NTamd64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
+%samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
+%samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 
 [DeviceList.NTia64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
+%samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
+%samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 
 [DriverInstall]
 include=mdmcpq.inf,usb.inf
