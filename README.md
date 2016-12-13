@@ -21,6 +21,8 @@ This repository contains support for the following SparkFun Arduino-compatible d
 
 * [SparkFun SAMD21 Dev Breakout](https://www.sparkfun.com/products/13672)
 * [SparkFun SAMD21 Mini Breakout](https://www.sparkfun.com/products/13664)
+* [SparkFun LilyMini ProtoSnap (SAMD11)](https://www.sparkfun.com/products/14063)
+* [SparkFun LilyMini (SAMD11)](https://www.sparkfun.com/products/14064)
 
 #### ESP8266 Boards
 
