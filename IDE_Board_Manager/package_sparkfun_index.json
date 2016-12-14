@@ -155,6 +155,25 @@
                   { "name":"SparkFun 9DoF Razor IMU M0" }
                ],
                "toolsDependencies":[]
+            },
+			{
+               "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.9)",
+               "architecture":"samd",
+               "version":"1.3.1",
+               "category":"Contributed",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/9DoF_M0/IDE_Board_Manager/sparkfun-samd-1.3.1.tar.bz2",
+               "archiveFileName":"sparkfun-samd-1.3.1.tar.bz2",
+               "checksum":"SHA-256:e4fc2642672b6b28935ce1ea5df07adecdb82e050a048d8b375269c63dd12a47",
+               "size":"196626",
+               "help":{
+                  "online":"https://forums.sparkfun.com"
+               },
+               "boards":[
+                  { "name":"SparkFun SAMD21 Mini Breakout" },
+                  { "name":"SparkFun SAMD21 Dev Breakout" },
+                  { "name":"SparkFun 9DoF Razor IMU M0" }
+               ],
+               "toolsDependencies":[]
             }
          ],
          "tools":[]
