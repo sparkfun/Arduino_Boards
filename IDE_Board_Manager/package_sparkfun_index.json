@@ -159,12 +159,12 @@
 			{
                "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.9)",
                "architecture":"samd",
-               "version":"1.3.1",
+               "version":"1.3.2",
                "category":"Contributed",
-               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.3.1.tar.bz2",
-               "archiveFileName":"sparkfun-samd-1.3.1.tar.bz2",
-               "checksum":"SHA-256:5e5523c5c86bcaa3827dc2737b4d2cc82a66c7b676e444384ede25fa46031e0d",
-               "size":"204901",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.3.2.tar.bz2",
+               "archiveFileName":"sparkfun-samd-1.3.2.tar.bz2",
+               "checksum":"SHA-256:4765b696b5cafcab9de28663e50600e78e3724ecf21763d8762983d8960741df",
+               "size":"204905",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
