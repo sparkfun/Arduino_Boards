@@ -163,8 +163,8 @@
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.3.2.tar.bz2",
                "archiveFileName":"sparkfun-samd-1.3.2.tar.bz2",
-               "checksum":"SHA-256:4765b696b5cafcab9de28663e50600e78e3724ecf21763d8762983d8960741df",
-               "size":"204905",
+               "checksum":"SHA-256:eb4274a3df4c6c4dbc1396600b1efc9cd9454e5be4880530ff87ba4fb3e6216a",
+               "size":"206253",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },

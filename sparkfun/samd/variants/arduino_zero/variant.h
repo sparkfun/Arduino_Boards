@@ -19,8 +19,8 @@
 #ifndef _VARIANT_ARDUINO_ZERO_
 #define _VARIANT_ARDUINO_ZERO_
 
-// The definitions here needs a SAMD core >=1.6.3
-#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10603
+// The definitions here needs a SAMD core >=1.6.6
+#define ARDUINO_SAMD_VARIANT_COMPLIANCE 10606
 
 /*----------------------------------------------------------------------------
  *        Definitions
@@ -54,9 +54,10 @@ extern "C"
 
 // Number of pins defined in PinDescription array
 #define PINS_COUNT           (26u)
-#define NUM_DIGITAL_PINS     (14u)
+#define NUM_DIGITAL_PINS     (20u)
 #define NUM_ANALOG_INPUTS    (6u)
 #define NUM_ANALOG_OUTPUTS   (1u)
+#define analogInputToDigitalPin(p)  ((p < 6u) ? (p) + 14u : -1)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
 #define digitalPinToBitMask(P)     ( 1 << g_APinDescription[P].ulPin )
@@ -74,9 +75,6 @@ extern "C"
  * https://github.com/arduino/Arduino/issues/1833
  */
 // #define digitalPinToTimer(P)
-
-// Interrupts
-#define digitalPinToInterrupt(P)   ( g_APinDescription[P].ulExtInt )
 
 // LEDs
 #define PIN_LED_13           (13u)
@@ -153,12 +151,26 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define PERIPH_WIRE          sercom3
 #define WIRE_IT_HANDLER      SERCOM3_Handler
 
+static const uint8_t SDA = PIN_WIRE_SDA;
+static const uint8_t SCL = PIN_WIRE_SCL;
+
 /*
  * USB
  */
 #define PIN_USB_HOST_ENABLE (27ul)
 #define PIN_USB_DM          (28ul)
 #define PIN_USB_DP          (29ul)
+
+/*
+ * I2S Interfaces
+ */
+#define I2S_INTERFACES_COUNT 1
+
+#define I2S_DEVICE          0
+#define I2S_CLOCK_GENERATOR 3
+#define PIN_I2S_SD          (9u)
+#define PIN_I2S_SCK         (1u)
+#define PIN_I2S_FS          (0u)
 
 #ifdef __cplusplus
 }
