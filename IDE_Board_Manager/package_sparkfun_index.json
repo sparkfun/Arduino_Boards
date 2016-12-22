@@ -201,12 +201,12 @@
             }
           ],
           "toolsDependencies": [
-            {
-              "packager": "SparkFun Electronics",
-              "name": "bossac",
-              "version": "1.5"
-            }
-          ]
+		    {
+				"packager": "SparkFun",
+				"name": "bossac",
+				"version": "1.5"
+			}
+		  ]
         }
       ],
       "tools": [
