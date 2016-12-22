@@ -180,10 +180,10 @@
         {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.8)",
           "architecture": "samd",
-          "version": "1.3.0a",
+          "version": "1.3.0",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.3.0a.tar.bz2",
-          "archiveFileName": "sparkfun-samd-1.3.0a.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.3.0.tar.bz2",
+          "archiveFileName": "sparkfun-samd-1.3.0.tar.bz2",
           "checksum": "SHA-256:4770878652A8976F03B2F65DAEC54139408DBF218D2A4ED0E008F1D1827555CA",
           "size": "348835",
           "help": {
