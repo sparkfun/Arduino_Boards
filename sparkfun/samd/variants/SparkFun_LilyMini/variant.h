@@ -53,14 +53,13 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (12u)//(26u)
-#define NUM_DIGITAL_PINS     (10u)//(14u)
-#define NUM_ANALOG_INPUTS    (6u)//(6u)
-#define NUM_ANALOG_OUTPUTS   (0u)//(1u)
+#define PINS_COUNT           (12u)
+#define NUM_DIGITAL_PINS     (10u)
+#define NUM_ANALOG_INPUTS    (6u)
+#define NUM_ANALOG_OUTPUTS   (0u)
 
 #define digitalPinToPort(P)        ( &(PORT->Group[g_APinDescription[P].ulPort]) )
 #define digitalPinToBitMask(P)     ( 1 << g_APinDescription[P].ulPin )
-//#define analogInPinToBit(P)        ( )
 #define portOutputRegister(port)   ( &(port->OUT.reg) )
 #define portInputRegister(port)    ( &(port->IN.reg) )
 #define portModeRegister(port)     ( &(port->DIR.reg) )
@@ -117,12 +116,6 @@ static const uint8_t A4  = PIN_A4;
 #define PAD_SERIAL_TX       (UART_TX_PAD_0)
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
-// Serial1
-//#define PIN_SERIAL1_RX       (0ul)
-//#define PIN_SERIAL1_TX       (1ul)
-//#define PAD_SERIAL1_TX       (UART_TX_PAD_2)
-//#define PAD_SERIAL1_RX       (SERCOM_RX_PAD_3)
-
 /*
  * SPI Interfaces
  */
@@ -137,10 +130,12 @@ static const uint8_t A4  = PIN_A4;
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI_RX           SERCOM_RX_PAD_3
 
+/*
 static const uint8_t SS	  = PIN_SPI_SS;
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
+*/
 
 /*
  * Wire Interfaces
@@ -155,7 +150,7 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 /*
  * USB
  */
-//#define PIN_USB_HOST_ENABLE (27ul)
+//#define PIN_USB_HOST_ENABLE (XXul)
 #define PIN_USB_DM          (9ul)
 #define PIN_USB_DP          (10ul)
 
@@ -176,12 +171,8 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 extern SERCOM sercom0;
 extern SERCOM sercom1;
 extern SERCOM sercom2;
-//extern SERCOM sercom3;
-//extern SERCOM sercom4;
-//extern SERCOM sercom5;
 
 extern Uart Serial0;
-//extern Uart Serial1; // SHOULD THIS BE ZERO?
 
 #endif
 
@@ -209,5 +200,5 @@ extern Uart Serial0;
 #define Serial                      SerialUSB
 #define SerialPins					Serial0
 
-#endif /* _VARIANT_ARDUINO_ZERO_ */
+#endif /* _VARIANT_SPARKFUN_LILYMINI_ */
 
