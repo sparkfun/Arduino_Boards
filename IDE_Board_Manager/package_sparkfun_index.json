@@ -204,7 +204,7 @@
 		    {
 				"packager": "SparkFun",
 				"name": "bossac",
-				"version": "1.5"
+				"version": "1.5_D11"
 			}
 		  ]
         }
@@ -212,28 +212,28 @@
       "tools": [
         {
           "name": "bossac",
-          "version": "1.5",
+          "version": "1.5_D11",
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-win.tar.bz2",
-              "archiveFileName": "bossac-win.tar.bz2",
-              "checksum": "SHA-256:117B32BEFE67F0C07BAEE8E2989ED070DC4A9540BB7D74673789DD11FA5DDBA4",
-              "size": "309296"
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-1.5_D11-win.zip",
+              "archiveFileName": "bossac-1.5_D11-win.zip",
+              "checksum": "SHA-256:8A005E45B3206E6262AB5DFC708F5E901CE9DA8D636CB53D7966DBC0E7BA8708",
+              "size": "314713"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-linux64.tar.bz2",
-              "archiveFileName": "bossac-linux64.tar.bz2",
-              "checksum": "SHA-256:3515407B41F640C7EA50A4911A28F2A062C49633A147BF25F341F009D31A790D",
-              "size": "225623"
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-1.5_D11-linux64.tar.bz2",
+              "archiveFileName": "bossac-1.5_D11-linux64.tar.bz2",
+              "checksum": "SHA-256:FE4F2F50F51F8A40351B3FF08E982AF2E5611488BEE3D5BA4331D2689D0A39AF",
+              "size": "225786"
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-osx.tar.bz2",
-              "archiveFileName": "bossac-osx.tar.bz2",
-              "checksum": "SHA-256:D875B83A5971737F5D7248BFBF3801BB3ADFA6860F52FDB7A572540C49B458B1",
-              "size": "74439"
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd/tools/bossac/bossac-1.5_D11-osx.tar.bz2",
+              "archiveFileName": "bossac-1.5_D11-osx.tar.bz2",
+              "checksum": "SHA-256:0627EB14645396529FBBAE1FD66139A0A04BC42A3A56258C7A77F054B31EFD60",
+              "size": "74464"
             }
           ]
         }
