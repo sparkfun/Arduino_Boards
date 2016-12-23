@@ -177,21 +177,6 @@
           ],
           "toolsDependencies": []
         },
-		
-		---------------------------
-Checksum information
----------------------------
-Name: sparkfun-samd-1.4.0.tar.bz2
-Size: 349612 bytes (0 MB)
-
-SHA256: 488B086A783A91CA5EB6C6B7BBC1AD1C84E0B522562B8AC1E560A1169684564F
-
----------------------------
-OK   
----------------------------
-
-		
-		
         {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.8)",
           "architecture": "samd",
