@@ -567,17 +567,17 @@
             },
             {
               "host": "i686-linux-gnu",
-              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux.tar.bz2",
-              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux.tar.bz2",
-              "size": "13481914",
-              "checksum": "SHA-256:3b137e477e263b294350480ba566251e07a79b26f4536f1f6ebf136667868888"
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux64.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux64.tar.bz2",
+              "size": "11555072",
+              "checksum": "SHA-256:96d8a733a0136e6cd372c64c70b1f663dc29566562de6bf0467896fbf5d2b0a3"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux.tar.bz2",
-              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux.tar.bz2",
-              "size": "13481914",
-              "checksum": "SHA-256:3b137e477e263b294350480ba566251e07a79b26f4536f1f6ebf136667868888"
+              "url": "https://cdn.sparkfun.com/assets/learn_tutorials/5/4/9/nrfutil-src-0.5.2-SFE-linux64.tar.bz2",
+              "archiveFileName": "nrfutil-src-0.5.2-SFE-linux64.tar.bz2",
+              "size": "11555072",
+              "checksum": "SHA-256:96d8a733a0136e6cd372c64c70b1f663dc29566562de6bf0467896fbf5d2b0a3"
             },
             {
               "host": "i686-mingw32",
