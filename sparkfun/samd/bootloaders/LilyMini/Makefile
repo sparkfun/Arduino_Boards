@@ -16,6 +16,13 @@
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 # -----------------------------------------------------------------------------
+# Boards definitions
+BOARD_ID?=LilyMini
+NAME?=samd11_sam_ba
+MCU?=__SAMD11D14AM__
+LINKER_SCRIPT?=bootloader4k_samd11.ld
+
+# -----------------------------------------------------------------------------
 # Paths
 ifeq ($(OS),Windows_NT)
   # Are we using mingw/msys/msys2/cygwin?
@@ -56,14 +63,8 @@ NM=$(ARM_GCC_PATH)nm
 SIZE=$(ARM_GCC_PATH)size
 
 # -----------------------------------------------------------------------------
-# Boards definitions
-BOARD_ID?=sparkfun_9dof
-NAME?=SparkFun_9DoF_Razor_M0
-#SparkFun_9DoF_Razor
-
-# -----------------------------------------------------------------------------
 # Compiler options
-CFLAGS_EXTRA=-D__SAMD21G18A__ -DBOARD_ID_$(BOARD_ID)
+CFLAGS_EXTRA=-D__SAMD11D14AM__ -DBOARD_ID_$(BOARD_ID)
 CFLAGS=-mthumb -mcpu=cortex-m0plus -Wall -c -std=gnu99 -ffunction-sections -fdata-sections -nostdlib -nostartfiles --param max-inline-insns-single=500
 ifdef DEBUG
   CFLAGS+=-g3 -O1 -DDEBUG=1
@@ -86,15 +87,25 @@ LDFLAGS+=-Wl,--warn-common -Wl,--warn-section-align -Wl,--warn-unresolved-symbol
 # Source files and objects
 SOURCES= \
   board_driver_led.c \
-  board_driver_serial.c \
   board_driver_usb.c \
   board_init.c \
   board_startup.c \
   main.c \
   sam_ba_usb.c \
   sam_ba_cdc.c \
-  sam_ba_monitor.c \
-  sam_ba_serial.c
+  sam_ba_monitor.c
+
+#SOURCES= \
+#  board_driver_led.c \
+#  board_driver_serial.c \
+#  board_driver_usb.c \
+#  board_init.c \
+#  board_startup.c \
+#  main.c \
+#  sam_ba_usb.c \
+#  sam_ba_cdc.c \
+#  sam_ba_monitor.c \
+#  sam_ba_serial.c
 
 OBJECTS=$(addprefix $(BUILD_PATH)/, $(SOURCES:.c=.o))
 DEPS=$(addprefix $(BUILD_PATH)/, $(SOURCES:.c=.d))
@@ -107,13 +118,12 @@ else
   AS_CLEAN=
 endif
 
-
 all: print_info $(SOURCES) $(BIN) $(HEX) $(AS_BUILD)
 
 $(ELF): Makefile $(BUILD_PATH) $(OBJECTS)
 	@echo ----------------------------------------------------------
 	@echo Creating ELF binary
-	"$(CC)" -L. -L$(BUILD_PATH) $(LDFLAGS) -Os -Wl,--gc-sections -save-temps -Tbootloader_samd21x18.ld -Wl,-Map,"$(BUILD_PATH)/$(NAME).map" -o "$(BUILD_PATH)/$(ELF)" -Wl,--start-group $(OBJECTS) -lm -Wl,--end-group
+	"$(CC)" -L. -L$(BUILD_PATH) $(LDFLAGS) -Os -Wl,--gc-sections -save-temps -T$(LINKER_SCRIPT) -Wl,-Map,"$(BUILD_PATH)/$(NAME).map" -o "$(BUILD_PATH)/$(ELF)" -Wl,--start-group $(OBJECTS) -lm -Wl,--end-group
 	"$(NM)" "$(BUILD_PATH)/$(ELF)" >"$(BUILD_PATH)/$(NAME)_symbols.txt"
 	"$(SIZE)" --format=sysv -t -x $(BUILD_PATH)/$(ELF)
 
@@ -143,10 +153,10 @@ print_info:
 	@echo Compiling bootloader using
 	@echo BASE PATH = $(MODULE_PATH)
 	@echo GCC  PATH = $(ARM_GCC_PATH)
-#	@echo OS        = $(OS)
-#	@echo SHELL     = $(SHELL)
-#	@echo TERM      = $(TERM)
-#	"$(CC)" -v
+	@echo OS        = $(OS)
+	@echo SHELL     = $(SHELL)
+	@echo TERM      = $(TERM)
+	"$(CC)" -v
 #	env
 
 copy_for_atmel_studio: $(BIN) $(HEX)
