@@ -40,9 +40,9 @@ const PinDescription g_APinDescription[]=
 /*USB DM  9*/{ PORTA, 24, PIO_COM, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },            // 9
 /*USB DP 10*/{ PORTA, 25, PIO_COM, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },            // 10
 /*button 11*/{ PORTA,  5, PIO_DIGITAL, (PIN_ATTR_EXTINT), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_5 },       // 11
-/*unused 12*/{ NOT_A_PORT, 0, PIO_NOT_A_PIN, PIN_ATTR_NONE, NOT_ON_TIMER, No_ADC_Channel, EXTERNAL_INT_NONE },              // 12
+/*unused 12*/{ NOT_A_PORT, 0, PIO_NOT_A_PIN, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE },  // 12
 /*red LED 13*/{ PORTA, 30, PIO_OUTPUT, (PIN_ATTR_DIGITAL|PIN_ATTR_PWM),No_ADC_Channel,PWM2_CH0,TC2_CH0,EXTERNAL_INT_NONE }, // 13 
-// Note that pin 13 is mapped to red LED to support example code that blinks pin 13
+// Note that pin 13 is mapped to red LED to support example code that uses pin 13
 };
 
 const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TC1, TC2 } ;

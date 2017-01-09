@@ -77,15 +77,19 @@ extern "C"
 // Interrupts
 #define digitalPinToInterrupt(P)   ( g_APinDescription[P].ulExtInt )
 
-// LEDs
+// Digital pins
+#define LED_RED              (5u)
+#define LED_GREEN            (6u)
+#define LED_BLUE             (7u)
+#define LED_BUILTIN			 (5u) // Introduced in Arduino 1.8, tied to red LED
+
 #define PIN_LED_RED          (5u)
 #define PIN_LED_GREEN        (6u)
 #define PIN_LED_BLUE         (7u)
 #define PIN_POWER			 (8u)
 #define PIN_BUTTON			 (11u)
-/*
- * Analog pins
- */
+
+// Analog pins
 #define PIN_A0               (1ul)
 #define PIN_A1               (1ul)
 #define PIN_A2               (2ul)
@@ -99,7 +103,7 @@ static const uint8_t A3  = PIN_A3;
 static const uint8_t A4  = PIN_A4;
 #define ADC_RESOLUTION		10
 
-// Other pins
+// Internal "pins"
 #define PIN_BATT			(ADC_INPUTCTRL_MUXPOS_SCALEDIOVCC_Val)
 #define PIN_1V				(ADC_INPUTCTRL_MUXPOS_BANDGAP_Val)
 #define PIN_TEMP			(ADC_INPUTCTRL_MUXPOS_TEMP_Val)
@@ -107,18 +111,13 @@ static const uint8_t A4  = PIN_A4;
 #define analogReadBattVolts() ((analogRead(PIN_BATT)*4000)/((analogRead(PIN_1V)*100)/11))	// will be e.g. 199 for 1.99V
 #define analogReadVolts(pin) ((analogRead(pin)*1000)/((analogRead(PIN_1V)*100)/11))			// will be e.g. 199 for 1.99V
 
-/*
- * Serial interfaces
- */
 // Serial (SERCOM0)
 #define PIN_SERIAL_RX       (3ul)
 #define PIN_SERIAL_TX       (4ul)
 #define PAD_SERIAL_TX       (UART_TX_PAD_0)
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
-/*
- * SPI Interfaces
- */
+// SPI
 #define SPI_INTERFACES_COUNT 1
 #define PIN_SPI_MISO         (4u)
 #define PIN_SPI_MOSI         (1u)
@@ -130,16 +129,12 @@ static const uint8_t A4  = PIN_A4;
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI_RX           SERCOM_RX_PAD_3
 
-/*
 static const uint8_t SS	  = PIN_SPI_SS;
 static const uint8_t MOSI = PIN_SPI_MOSI;
 static const uint8_t MISO = PIN_SPI_MISO;
 static const uint8_t SCK  = PIN_SPI_SCK;
-*/
 
-/*
- * Wire Interfaces
- */
+// I2C (wire)
 #define WIRE_INTERFACES_COUNT 1
 
 #define PIN_WIRE_SDA         (1u)
@@ -147,10 +142,7 @@ static const uint8_t SCK  = PIN_SPI_SCK;
 #define PERIPH_WIRE          sercom2
 #define WIRE_IT_HANDLER      SERCOM2_Handler
 
-/*
- * USB
- */
-//#define PIN_USB_HOST_ENABLE (XXul)
+// USB
 #define PIN_USB_DM          (9ul)
 #define PIN_USB_DP          (10ul)
 
