@@ -172,8 +172,7 @@ void SystemInit( void )
     fine = 0x1ff;
   }
 
-  SYSCTRL->DFLLVAL.bit.COARSE = coarse;
-  SYSCTRL->DFLLVAL.bit.FINE = fine;
+  SYSCTRL->DFLLVAL.reg = SYSCTRL_DFLLVAL_COARSE(coarse) | SYSCTRL_DFLLVAL_FINE(fine);
   /* Write full configuration to DFLL control register */
   SYSCTRL->DFLLCTRL.reg =  SYSCTRL_DFLLCTRL_USBCRM | /* USB correction */
                            SYSCTRL_DFLLCTRL_CCDIS |
