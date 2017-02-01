@@ -1,0 +1,237 @@
+GAS LISTING C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s 			page 1
+
+
+   1               		.file	"oddebug.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.section	.debug_abbrev,"",@progbits
+   9               	.Ldebug_abbrev0:
+  10               		.section	.debug_info,"",@progbits
+  11               	.Ldebug_info0:
+  12               		.section	.debug_line,"",@progbits
+  13               	.Ldebug_line0:
+  14               		.text
+  15               	.Ltext0:
+  16               	.Letext0:
+  17               		.section	.debug_info
+  18 0000 6000 0000 		.long	0x60
+  19 0004 0200      		.word	0x2
+  20 0006 0000 0000 		.long	.Ldebug_abbrev0
+  21 000a 04        		.byte	0x4
+  22 000b 01        		.uleb128 0x1
+  23 000c 0000 0000 		.long	.LASF7
+  24 0010 01        		.byte	0x1
+  25 0011 0000 0000 		.long	.LASF8
+  26 0015 0000 0000 		.long	.LASF9
+  27 0019 0000 0000 		.long	.Ltext0
+  28 001d 0000 0000 		.long	.Letext0
+  29 0021 0000 0000 		.long	.Ldebug_line0
+  30 0025 02        		.uleb128 0x2
+  31 0026 01        		.byte	0x1
+  32 0027 06        		.byte	0x6
+  33 0028 0000 0000 		.long	.LASF0
+  34 002c 02        		.uleb128 0x2
+  35 002d 01        		.byte	0x1
+  36 002e 08        		.byte	0x8
+  37 002f 0000 0000 		.long	.LASF1
+  38 0033 03        		.uleb128 0x3
+  39 0034 02        		.byte	0x2
+  40 0035 05        		.byte	0x5
+  41 0036 696E 7400 		.string	"int"
+  42 003a 02        		.uleb128 0x2
+  43 003b 02        		.byte	0x2
+  44 003c 07        		.byte	0x7
+  45 003d 0000 0000 		.long	.LASF2
+  46 0041 02        		.uleb128 0x2
+  47 0042 04        		.byte	0x4
+  48 0043 05        		.byte	0x5
+  49 0044 0000 0000 		.long	.LASF3
+  50 0048 02        		.uleb128 0x2
+  51 0049 04        		.byte	0x4
+  52 004a 07        		.byte	0x7
+  53 004b 0000 0000 		.long	.LASF4
+  54 004f 02        		.uleb128 0x2
+  55 0050 08        		.byte	0x8
+  56 0051 05        		.byte	0x5
+  57 0052 0000 0000 		.long	.LASF5
+GAS LISTING C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s 			page 2
+
+
+  58 0056 02        		.uleb128 0x2
+  59 0057 08        		.byte	0x8
+  60 0058 07        		.byte	0x7
+  61 0059 0000 0000 		.long	.LASF6
+  62 005d 04        		.uleb128 0x4
+  63 005e 01        		.byte	0x1
+  64 005f 06        		.byte	0x6
+  65 0060 04        		.uleb128 0x4
+  66 0061 01        		.byte	0x1
+  67 0062 08        		.byte	0x8
+  68 0063 00        		.byte	0x0
+  69               		.section	.debug_abbrev
+  70 0000 01        		.uleb128 0x1
+  71 0001 11        		.uleb128 0x11
+  72 0002 01        		.byte	0x1
+  73 0003 25        		.uleb128 0x25
+  74 0004 0E        		.uleb128 0xe
+  75 0005 13        		.uleb128 0x13
+  76 0006 0B        		.uleb128 0xb
+  77 0007 03        		.uleb128 0x3
+  78 0008 0E        		.uleb128 0xe
+  79 0009 1B        		.uleb128 0x1b
+  80 000a 0E        		.uleb128 0xe
+  81 000b 11        		.uleb128 0x11
+  82 000c 01        		.uleb128 0x1
+  83 000d 12        		.uleb128 0x12
+  84 000e 01        		.uleb128 0x1
+  85 000f 10        		.uleb128 0x10
+  86 0010 06        		.uleb128 0x6
+  87 0011 00        		.byte	0x0
+  88 0012 00        		.byte	0x0
+  89 0013 02        		.uleb128 0x2
+  90 0014 24        		.uleb128 0x24
+  91 0015 00        		.byte	0x0
+  92 0016 0B        		.uleb128 0xb
+  93 0017 0B        		.uleb128 0xb
+  94 0018 3E        		.uleb128 0x3e
+  95 0019 0B        		.uleb128 0xb
+  96 001a 03        		.uleb128 0x3
+  97 001b 0E        		.uleb128 0xe
+  98 001c 00        		.byte	0x0
+  99 001d 00        		.byte	0x0
+ 100 001e 03        		.uleb128 0x3
+ 101 001f 24        		.uleb128 0x24
+ 102 0020 00        		.byte	0x0
+ 103 0021 0B        		.uleb128 0xb
+ 104 0022 0B        		.uleb128 0xb
+ 105 0023 3E        		.uleb128 0x3e
+ 106 0024 0B        		.uleb128 0xb
+ 107 0025 03        		.uleb128 0x3
+ 108 0026 08        		.uleb128 0x8
+ 109 0027 00        		.byte	0x0
+ 110 0028 00        		.byte	0x0
+ 111 0029 04        		.uleb128 0x4
+ 112 002a 24        		.uleb128 0x24
+ 113 002b 00        		.byte	0x0
+ 114 002c 0B        		.uleb128 0xb
+GAS LISTING C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s 			page 3
+
+
+ 115 002d 0B        		.uleb128 0xb
+ 116 002e 3E        		.uleb128 0x3e
+ 117 002f 0B        		.uleb128 0xb
+ 118 0030 00        		.byte	0x0
+ 119 0031 00        		.byte	0x0
+ 120 0032 00        		.byte	0x0
+ 121               		.section	.debug_line
+ 122 0000 2000 0000 		.long	.LELT0-.LSLT0
+ 123               	.LSLT0:
+ 124 0004 0200      		.word	0x2
+ 125 0006 1000 0000 		.long	.LELTP0-.LASLTP0
+ 126               	.LASLTP0:
+ 127 000a 01        		.byte	0x1
+ 128 000b 01        		.byte	0x1
+ 129 000c F6        		.byte	0xf6
+ 130 000d F5        		.byte	0xf5
+ 131 000e 0A        		.byte	0xa
+ 132 000f 00        		.byte	0x0
+ 133 0010 01        		.byte	0x1
+ 134 0011 01        		.byte	0x1
+ 135 0012 01        		.byte	0x1
+ 136 0013 01        		.byte	0x1
+ 137 0014 00        		.byte	0x0
+ 138 0015 00        		.byte	0x0
+ 139 0016 00        		.byte	0x0
+ 140 0017 01        		.byte	0x1
+ 141 0018 00        		.byte	0x0
+ 142 0019 00        		.byte	0x0
+ 143               	.LELTP0:
+ 144 001a 00        		.byte	0x0
+ 145 001b 05        		.uleb128 0x5
+ 146 001c 02        		.byte	0x2
+ 147 001d 0000 0000 		.long	.Letext0
+ 148 0021 00        		.byte	0x0
+ 149 0022 01        		.uleb128 0x1
+ 150 0023 01        		.byte	0x1
+ 151               	.LELT0:
+ 152 0024 1600 0000 		.section	.debug_str,"MS",@progbits,1
+ 152      0200 1000 
+ 152      0000 0101 
+ 152      FB0E 0A00 
+ 152      0101 0101 
+ 153               	.LASF2:
+ 154 0000 756E 7369 		.string	"unsigned int"
+ 154      676E 6564 
+ 154      2069 6E74 
+ 154      00
+ 155               	.LASF4:
+ 156 000d 6C6F 6E67 		.string	"long unsigned int"
+ 156      2075 6E73 
+ 156      6967 6E65 
+ 156      6420 696E 
+ 156      7400 
+ 157               	.LASF8:
+ 158 001f 7573 6264 		.string	"usbdrv/oddebug.c"
+ 158      7276 2F6F 
+ 158      6464 6562 
+GAS LISTING C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s 			page 4
+
+
+ 158      7567 2E63 
+ 158      00
+ 159               	.LASF0:
+ 160 0030 7369 676E 		.string	"signed char"
+ 160      6564 2063 
+ 160      6861 7200 
+ 161               	.LASF9:
+ 162 003c 433A 5C55 		.ascii	"C:\\Users\\shawn.hymel\\"
+ 162      7365 7273 
+ 162      5C73 6861 
+ 162      776E 2E68 
+ 162      796D 656C 
+ 163 0051 446F 6375 		.string	"Documents\\GitHub\\Arduino_Boards\\sparkfun\\tiny\\bootloaders\\attiny"
+ 163      6D65 6E74 
+ 163      735C 4769 
+ 163      7448 7562 
+ 163      5C41 7264 
+ 164               	.LASF1:
+ 165 0092 756E 7369 		.string	"unsigned char"
+ 165      676E 6564 
+ 165      2063 6861 
+ 165      7200 
+ 166               	.LASF3:
+ 167 00a0 6C6F 6E67 		.string	"long int"
+ 167      2069 6E74 
+ 167      00
+ 168               	.LASF6:
+ 169 00a9 6C6F 6E67 		.string	"long long unsigned int"
+ 169      206C 6F6E 
+ 169      6720 756E 
+ 169      7369 676E 
+ 169      6564 2069 
+ 170               	.LASF7:
+ 171 00c0 474E 5520 		.string	"GNU C 4.3.3"
+ 171      4320 342E 
+ 171      332E 3300 
+ 172               	.LASF5:
+ 173 00cc 6C6F 6E67 		.string	"long long int"
+ 173      206C 6F6E 
+ 173      6720 696E 
+ 173      7400 
+GAS LISTING C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 oddebug.c
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:2      *ABS*:0000003f __SREG__
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:3      *ABS*:0000003e __SP_H__
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:4      *ABS*:0000003d __SP_L__
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:5      *ABS*:00000034 __CCP__
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\SHAWN~1.HYM\AppData\Local\Temp/cc2aJ1A4.s:7      *ABS*:00000001 __zero_reg__
+
+NO UNDEFINED SYMBOLS
