@@ -489,8 +489,8 @@
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.0.tar.bz2",
                "archiveFileName":"sparkfunboards-tiny-0.1.0.tar.bz2",
-               "checksum":"SHA-256:%%%SHA%%%",
-               "size":"%%%SIZE IN BYTES%%%",
+               "checksum":"SHA-256:1C671C33E6B04E20696E13B43F94C385E903AA267D2F9EFCBC894DC38D2200CC",
+               "size":"369238",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
@@ -513,10 +513,10 @@
               "systems": [
                 {
                   "host": "i686-mingw32",
-                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/micronucleus-2.03-SFE-windows.tar.bz2",
-                  "archiveFileName": "nrfutil-src-0.5.2-windows.tar.bz2",
-                  "size": " 13465",
-                  "checksum": "SHA-256:1873EA97B25F348850C4A045D250EA6143FACC93DE427D5B6648438DD6D636AB"
+                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/micronucleus-2.03-windows.tar.bz2",
+                  "archiveFileName": "micronucleus-2.03-windows.tar.bz2",
+                  "size": " 13479",
+                  "checksum": "SHA-256:D8D15A43CEB636B2C76ADEC7D30112E69DD67C445ECC3E1923798838E9F95476"
                 }
               ]
             }    
