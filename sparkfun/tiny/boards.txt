@@ -22,7 +22,7 @@ Roshamglo.build.usb_product="SparkFun Roshamglo"
 Roshamglo.build.vid=0x1B4F
 Roshamglo.build.pid=0x0014
 
-Roshamglo.bootloader.tool=arduino:avrdude
+Roshamglo.bootloader.tool=avrdude
 Roshamglo.bootloader.low_fuses=0xE2
 Roshamglo.bootloader.high_fuses=0xDD
 Roshamglo.bootloader.extended_fuses=0xFE
