@@ -7,7 +7,7 @@
  * License: GNU GPL v2 (see License.txt), GNU GPL v3 or proprietary (CommercialLicense.txt)
  * This Revision: $Id: usbconfig.h 799 2010-07-27 17:30:13Z cs $
  * 
- * Modified by SparkFun Electronics
+ * Modified by SparkFun Electronics to change USB VID/PID for ATtiny bootlaoder.
  * Date: 2017-02-01
  */
 
@@ -210,7 +210,7 @@ return;\
 /* -------------------------- Device Description --------------------------- */
 
 #define USB_CFG_VENDOR_ID 0x4F, 0x1B    /* = 0x1B4F VID for SparkFun */
-#define USB_CFG_DEVICE_ID 0x14, 0x00    /* = 0x0014 PID for Roshamglo */
+#define USB_CFG_DEVICE_ID 0x14, 0x00    /* = 0x0014 PID for ATtiny bootloader */
 /* SparkFun VID and PID for ATtiny84a Roshamglo project*/
 
 //#define USB_CFG_VENDOR_ID 0xD0, 0x16 /* = 0x16d0 */

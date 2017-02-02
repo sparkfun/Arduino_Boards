@@ -56,10 +56,14 @@ recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
 
 # Micronucleus Loader
 # -------------------
-tools.micronucleus.cmd.path={runtime.hardware.path}/../tools
+
+tools.micronucleus.path={runtime.tools.micronucleus-2.03.path}
+tools.micronucleus.cmd=micronucleus
+tools.micronucleus.cmd.windows=micronucleus.exe
+
 tools.micronucleus.upload.params.verbose=-verbose
 tools.micronucleus.upload.params.quiet=
-tools.micronucleus.upload.pattern="{cmd.path}/micronucleus" --timeout 30 "{build.path}/{build.project_name}.hex"
+tools.micronucleus.upload.pattern="{path}/{cmd}" --timeout 30 "{build.path}/{build.project_name}.hex"
 
 # USB Default Flags
 # Default blank usb manufacturer will be filled it at compile time

@@ -5,7 +5,7 @@ menu.cpu=Processor
 ################################################################################
 ################################## Roshamglo ###################################
 ################################################################################
-Roshamglo.name=Roshamglo (ATtiny 84, 3.3V, 8MHz)
+Roshamglo.name=Roshamglo (ATtiny84, 3.3V, 8MHz)
 
 Roshamglo.upload.using=micronucleusprog
 Roshamglo.upload.protocol=usb

@@ -501,7 +501,7 @@
                   {
                     "packager": "SparkFun",
                     "name": "micronucleus",
-                    "version": "2.03-SFE"
+                    "version": "2.03"
                   }
                ]
             }
@@ -509,12 +509,12 @@
          "tools":[
             {
               "name": "micronucleus",
-              "version": "2.03-SFE",
+              "version": "2.03",
               "systems": [
                 {
                   "host": "i686-mingw32",
-                  "url": "",
-                  "archiveFileName": "nrfutil-src-0.5.2-SFE-windows.tar.bz2",
+                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/micronucleus-2.03-SFE-windows.tar.bz2",
+                  "archiveFileName": "nrfutil-src-0.5.2-windows.tar.bz2",
                   "size": " 13465",
                   "checksum": "SHA-256:1873EA97B25F348850C4A045D250EA6143FACC93DE427D5B6648438DD6D636AB"
                 }
