@@ -6,6 +6,8 @@
   (c) 2012 by ihsan Kehribar <ihsan@kehribar.me>
   Changes for Micronucleus protocol version V2.x
   (c) 2014 T. Bo"scke
+  Modified for custom ATtiny USB VID/PID
+  (c) 2017 SparkFun Electronics
   
   Permission is hereby granted, free of charge, to any person obtaining a copy of
   this software and associated documentation files (the "Software"), to deal in
@@ -43,8 +45,8 @@
 /********************************************************************************
 * USB details
 ********************************************************************************/
-#define MICRONUCLEUS_VENDOR_ID   0x16D0
-#define MICRONUCLEUS_PRODUCT_ID  0x0753
+#define MICRONUCLEUS_VENDOR_ID   0x1B4F
+#define MICRONUCLEUS_PRODUCT_ID  0x0014
 #define MICRONUCLEUS_USB_TIMEOUT 0xFFFF
 #define MICRONUCLEUS_MAX_MAJOR_VERSION 2
 
