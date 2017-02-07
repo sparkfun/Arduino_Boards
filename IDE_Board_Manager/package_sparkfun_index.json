@@ -1,6 +1,6 @@
 {
    "packages":[
-      {
+	  {
          "name":"SparkFun",
          "maintainer":"SparkFun Electronics",
          "websiteURL":"https://SparkFun.com",
@@ -34,19 +34,7 @@
                   { "name":"ATmega128RFA1 Dev Board" }
                ],
                "toolsDependencies":[]
-            }
-         ],
-         "tools":[]
-      },
-	  {
-         "name":"SparkFun",
-         "maintainer":"SparkFun Electronics",
-         "websiteURL":"https://SparkFun.com",
-         "email":"TechSupport@SparkFun.com",
-         "help":{
-            "online":"https://forum.sparkfun.com"
-         },
-         "platforms":[
+            },
             {
                "name":"SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
                "architecture":"samd",
