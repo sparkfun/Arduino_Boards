@@ -26,8 +26,10 @@ else ifeq ($(shell uname), OpenBSD)
 	EXE_SUFFIX =
 	OSFLAG = -D OPENBSD
 else
-	USBFLAGS = -I C:\MinGW\include
-	USBLIBS = -L C:\MinGW\lib -lusb
+	#USBFLAGS = -I C:\MinGW\include
+	#USBLIBS = -L C:\MinGW\lib -lusb
+	USBFLAGS = -I library\libusb-win32\include
+	USBLIBS = -L library\libusb-win32\lib\gcc -lusb
 	EXE_SUFFIX = .exe
 	OSFLAG = -D WIN
 endif

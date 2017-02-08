@@ -1,6 +1,8 @@
 This commandline application for the Micronucleus bootloader is written by
 ihsan Kehribar <ihsan@kehribar.me> and Bluebie <a@creativepony.com>
 
+Modified by SparkFun Electronics, 2017.
+
 It's been tested casually on Mac, Windows, and Linux, and aught to work on all
 three. To make and install, do the regular 'make; sudo make install' on unixes.
 On windows just 'make' with mingw and do whatever people do with windows exes.
@@ -24,3 +26,19 @@ directly to unknown USB devices. You can fix this by installing some config
 files, or you can just use sudo. Either way you're going to need root. To
 configure your system to allow micronucleus access from non-root users, copy
 49-micronucleus.rules from this folder to /etc/udev/rules.d/
+
+To Build
+--------
+
+You might want to re-compile the micronucleus uploader tool if you plan to use
+different USB VID/PID identifiers. To start, change the MICRONUCLEUS_VENDOR_ID
+and MICRONUCLEUS_PRODUCT_ID constants in library/micronucleus_lib.h to your
+VID/PID pair. Then compile for your operating system:
+
+Ubuntu:
+
+Mac:
+
+Windows: 
+  Install MinGW and MSYS. Navigate to this directory and enter "make". Copy
+  micronucleus.exe to wherever you need it and enter "make clean" to remove 

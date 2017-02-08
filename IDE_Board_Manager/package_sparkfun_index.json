@@ -485,12 +485,12 @@
             {
                "name":"SparkFun ATtiny Boards",
                "architecture":"tiny",
-               "version":"0.1.1",
+               "version":"0.1.2",
                "category":"Contributed",
-               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.1.tar.bz2",
-               "archiveFileName":"sparkfun-tiny-0.1.1.tar.bz2",
-               "checksum":"SHA-256:32FA1F16545A745BD36B6882DE0790C14C82B89411FB9382ABBED0BD452468C8",
-               "size":"425335",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.2.tar.bz2",
+               "archiveFileName":"sparkfun-tiny-0.1.2.tar.bz2",
+               "checksum":"SHA-256:3C4E5AF98D49A492FD417E96F9815EC09838438877FEB83F1D49652A58D17522",
+               "size":"531940",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
@@ -501,7 +501,7 @@
                   {
                     "packager": "SparkFun",
                     "name": "micronucleus",
-                    "version": "2.03"
+                    "version": "2.03-SFE"
                   }
                ]
             }
@@ -509,14 +509,14 @@
          "tools":[
             {
               "name": "micronucleus",
-              "version": "2.03",
+              "version": "2.03-SFE",
               "systems": [
                 {
                   "host": "i686-mingw32",
-                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/micronucleus-2.03-windows.tar.bz2",
-                  "archiveFileName": "micronucleus-2.03-windows.tar.bz2",
-                  "size": " 13479",
-                  "checksum": "SHA-256:D8D15A43CEB636B2C76ADEC7D30112E69DD67C445ECC3E1923798838E9F95476"
+                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/windows/micronucleus-2.03-SFE-windows.tar.bz2",
+                  "archiveFileName": "micronucleus-2.03-SFE-windows.tar.bz2",
+                  "size": " 43157",
+                  "checksum": "SHA-256:71F027A7EF571DB44BCB771BBFD477647E794D61BBE6F6B235984F07C2C6826B"
                 }
               ]
             }    
