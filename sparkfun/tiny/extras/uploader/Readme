@@ -36,9 +36,17 @@ and MICRONUCLEUS_PRODUCT_ID constants in library/micronucleus_lib.h to your
 VID/PID pair. Then compile for your operating system:
 
 Ubuntu:
-
+  sudo apt-get install libusb-dev
+  make
+  cp micronucleus builds/linux64
+  make clean
 Mac:
 
 Windows: 
   Install MinGW and MSYS. Navigate to this directory and enter "make". Copy
   micronucleus.exe to wherever you need it and enter "make clean" to remove 
+
+To zip the tool for Arduino, move to the directory with your build (e.g.
+builds/windows), create a version directory (e.g. 2.03-SFE), copy the
+executable to that directory, and enter:
+  tar -cvjSf micronucleus-2.03-SFE-windows.tar.bz2 2.03-SFE/
