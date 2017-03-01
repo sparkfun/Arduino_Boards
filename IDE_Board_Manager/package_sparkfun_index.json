@@ -524,6 +524,13 @@
                   "archiveFileName": "micronucleus-2.03-SFE-linux64.tar.bz2",
                   "size": "20805",
                   "checksum": "SHA-256:5C17B30326654BA0333E1255801B70B1993842C73A94E9B46FE08826E04B8B0E"
+		        },
+                {
+                  "host": "i686-pc-linux-gnu",
+                  "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/linux32/micronucleus-2.03-SFE-linux32.tar.bz2",
+                  "archiveFileName": "micronucleus-2.03-SFE-linux32.tar.bz2",
+                  "size": "19880",
+                  "checksum": "SHA-256:AB44CF67A8F5C4182B0C840EFC6EEF4AAECCC9E8AC86E172B75AAAD2CD3D11E4"
 		        }
               ]
             }    
