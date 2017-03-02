@@ -41,7 +41,10 @@ Ubuntu:
   cp micronucleus builds/linux64
   make clean
 Mac:
-
+  brew install libusb-compat --universal
+  make
+  cp micronucleus builds/osx
+  make clean
 Windows: 
   Install MinGW and MSYS. Navigate to this directory and enter "make". Copy
   micronucleus.exe to wherever you need it and enter "make clean" to remove 
