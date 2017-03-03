@@ -522,15 +522,15 @@
                   "host": "x86_64-apple-darwin",
                   "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/osx/micronucleus-2.03-SFE-osx.tar.bz2",
                   "archiveFileName": "micronucleus-2.03-SFE-osx.tar.bz2",
-                  "size": "12653",
-                  "checksum": "SHA-256:A9FBD10DF45996819AB5C1465BBA2E54F619E532D030360261FDCC8FC63C9C82"
+                  "size": "7679",
+                  "checksum": "SHA-256:CF95C51929EAA755F06871D2CA22A850B27105A4A08A6B85EC3550EB19B39224"
 		        },
                 {
                   "host": "i386-apple-darwin",
                   "url": "https://github.com/sparkfun/Arduino_Boards/raw/tiny/sparkfun/tiny/extras/uploader/builds/osx/micronucleus-2.03-SFE-osx.tar.bz2",
                   "archiveFileName": "micronucleus-2.03-SFE-osx.tar.bz2",
-                  "size": "12653",
-                  "checksum": "SHA-256:A9FBD10DF45996819AB5C1465BBA2E54F619E532D030360261FDCC8FC63C9C82"
+                  "size": "7679",
+                  "checksum": "SHA-256:CF95C51929EAA755F06871D2CA22A850B27105A4A08A6B85EC3550EB19B39224"
                 },
                 {
                   "host": "x86_64-pc-linux-gnu",
