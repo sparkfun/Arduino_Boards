@@ -216,7 +216,7 @@
           "toolsDependencies": []
         },
         {
-          "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.12)",
+          "name": "SparkFun SAMD Boards",
           "architecture": "samd",
           "version": "1.4.0",
           "category": "Contributed",
