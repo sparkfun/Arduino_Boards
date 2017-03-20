@@ -188,7 +188,6 @@ void SPIClass::setClockDivider(uint8_t div)
 byte SPIClass::transfer(uint8_t data)
 {
   return _p_sercom->transferDataSPI(data);
-
 }
 
 uint16_t SPIClass::transfer16(uint16_t data) {
@@ -206,6 +205,7 @@ uint16_t SPIClass::transfer16(uint16_t data) {
 
   return t.val;
 }
+
 void SPIClass::transfer(void *buf, size_t count)
 {
   uint8_t *buffer = reinterpret_cast<uint8_t *>(buf);

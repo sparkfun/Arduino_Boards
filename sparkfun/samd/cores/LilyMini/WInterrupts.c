@@ -18,6 +18,7 @@
 
 #include "Arduino.h"
 #include "wiring_private.h"
+
 #include <string.h>
 
 static voidFuncPtr callbacksInt[EXTERNAL_NUM_INTERRUPTS];
@@ -55,14 +56,14 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
   static int enabled = 0;
   uint32_t config;
   uint32_t pos;
-  int result = 0;
-  
+
+#if ARDUINO_SAMD_VARIANT_COMPLIANCE >= 10606
+  EExt_Interrupts in = g_APinDescription[pin].ulExtInt;
+#else
   EExt_Interrupts in = digitalPinToInterrupt(pin);
-  
+#endif
   if (in == NOT_AN_INTERRUPT || in == EXTERNAL_INT_NMI)
-  {
-    return 0;
-  }
+    return;
 
   if (!enabled) {
     __initialize();
@@ -74,7 +75,7 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
 
   // Assign pin to EIC
   pinPeripheral(pin, PIO_EXTINT);
-  
+
   // Assign callback to interrupt
   callbacksInt[in] = callback;
 
@@ -119,7 +120,11 @@ void attachInterrupt(uint32_t pin, voidFuncPtr callback, uint32_t mode)
  */
 void detachInterrupt(uint32_t pin)
 {
+#if (ARDUINO_SAMD_VARIANT_COMPLIANCE >= 10606)
+  EExt_Interrupts in = g_APinDescription[pin].ulExtInt;
+#else
   EExt_Interrupts in = digitalPinToInterrupt(pin);
+#endif 
   if (in == NOT_AN_INTERRUPT || in == EXTERNAL_INT_NMI)
     return;
 
@@ -140,8 +145,7 @@ void EIC_Handler(void)
     if ((EIC->INTFLAG.reg & (1 << i)) != 0)
     {
       // Call the callback function if assigned
-      if (callbacksInt[i])
-	  {
+      if (callbacksInt[i]) {
         callbacksInt[i]();
       }
 

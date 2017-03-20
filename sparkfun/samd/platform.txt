@@ -20,7 +20,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=SparkFun SAMD (32-bits ARM Cortex-M0+) Boards
-version=1.4.0
+version=1.3.2
 
 # Compile variables
 # -----------------
@@ -64,7 +64,6 @@ compiler.elf2hex.extra_flags=
 
 compiler.arm.cmsis.c.flags="-I{runtime.tools.CMSIS.path}/CMSIS/Include/" "-I{runtime.tools.CMSIS-Atmel.path}/CMSIS/Device/ATMEL/"
 compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS.path}/CMSIS/Lib/GCC/" -larm_cortexM0l_math
-#compiler.arm.cmsis.path="-I{runtime.tools.CMSIS.path}/CMSIS/Include/" "-I{runtime.tools.CMSIS.path}/Device/ATMEL/"
 
 # USB Flags
 # ---------
@@ -113,13 +112,14 @@ recipe.size.regex=\.text\s+([0-9]+).*
 #
 # BOSSA
 #
-tools.bossac.path={runtime.tools.bossac-1.4.0.path}
+tools.bossac.path={runtime.tools.bossac.path}
 tools.bossac.cmd=bossac
 tools.bossac.cmd.windows=bossac.exe
 
 tools.bossac.upload.params.verbose=-i -d
 tools.bossac.upload.params.quiet=
 tools.bossac.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U {upload.native_usb} -i -e -w -v "{build.path}/{build.project_name}.bin" -R
+
 tools.bossac_remote.upload.pattern=/usr/bin/run-bossac {upload.verbose} --port=ttyATH0 -U {upload.native_usb} -e -w -v /tmp/sketch.bin -R
 
 #

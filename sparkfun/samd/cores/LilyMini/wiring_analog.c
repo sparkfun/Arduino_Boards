@@ -102,67 +102,62 @@ static void syncTCC(Tcc* TCCx) {
  *
  * Warning : On Arduino Zero board the input/output voltage for SAMD21G18 is 3.3 volts maximum
  */
-void analogReference( eAnalogReference ulMode )
+void analogReference(eAnalogReference mode)
 {
   syncADC();
-  switch ( ulMode )
+  switch (mode)
   {
     case AR_INTERNAL:
     case AR_INTERNAL2V23:
       ADC->INPUTCTRL.bit.GAIN = ADC_INPUTCTRL_GAIN_1X_Val;      // Gain Factor Selection
-      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC0_Val; // | ADC_REFCTRL_REFCOMP; // 1/1.48 VDDANA = 1/1.48* 3V3 = 2.2297
+      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC0_Val; // 1/1.48 VDDANA = 1/1.48* 3V3 = 2.2297
       break;
 
     case AR_EXTERNAL:
       ADC->INPUTCTRL.bit.GAIN = ADC_INPUTCTRL_GAIN_1X_Val;      // Gain Factor Selection
-      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_AREFA_Val; // | ADC_REFCTRL_REFCOMP;
+      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_AREFA_Val;
       break;
 
     case AR_INTERNAL1V0:
       ADC->INPUTCTRL.bit.GAIN = ADC_INPUTCTRL_GAIN_1X_Val;      // Gain Factor Selection
-      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INT1V_Val; // | ADC_REFCTRL_REFCOMP;   // 1.0V voltage reference
+      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INT1V_Val;   // 1.0V voltage reference
       break;
 
     case AR_INTERNAL1V65:
       ADC->INPUTCTRL.bit.GAIN = ADC_INPUTCTRL_GAIN_1X_Val;      // Gain Factor Selection
-      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC1_Val; // | ADC_REFCTRL_REFCOMP; // 1/2 VDDANA = 0.5* 3V3 = 1.65V
+      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC1_Val; // 1/2 VDDANA = 0.5* 3V3 = 1.65V
       break;
 
     case AR_DEFAULT:
     default:
       ADC->INPUTCTRL.bit.GAIN = ADC_INPUTCTRL_GAIN_DIV2_Val;
-      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC1_Val | ADC_REFCTRL_REFCOMP; // 1/2 VDDANA = 0.5* 3V3 = 1.65V
+      ADC->REFCTRL.bit.REFSEL = ADC_REFCTRL_REFSEL_INTVCC1_Val; // 1/2 VDDANA = 0.5* 3V3 = 1.65V
       break;
   }
   analogRead(0); // Do a dummy conversion, necessary after reference change
 }
 
-uint32_t analogRead( uint32_t ulPin )
+uint32_t analogRead(uint32_t pin)
 {
   uint32_t valueRead = 0;
   uint32_t channel;
 
-  if ((ulPin >= 0x18)&&(ulPin <= 0x1C)) // Internal ADC sources
+  if ((pin >= 0x18)&&(pin <= 0x1C)) // Internal ADC sources
   {
-	channel = ulPin; // Grab source directly from parameter
+	channel = pin; // Grab source directly from parameter
   }
   else // External ADC source
   {
-    if ((ulPin > PINS_COUNT)||(g_APinDescription[ulPin].ulPinType == PIO_NOT_A_PIN)||(g_APinDescription[ulPin].ulADCChannelNumber == No_ADC_Channel))
+    if ((pin > PINS_COUNT)||(g_APinDescription[pin].ulPinType == PIO_NOT_A_PIN)||(g_APinDescription[pin].ulADCChannelNumber == No_ADC_Channel))
     {
       return 0;
     }
-  
- //   if ( ulPin < A0 )
- //   {
- //     ulPin += A0 ;
- //   }
- 
+
     // Mux pin to ADC
-    pinPeripheral(ulPin, PIO_ANALOG);
-	
+    pinPeripheral(pin, PIO_ANALOG);
+
 /*
-  if (ulPin == A0) // Disable DAC, if analogWrite(A0,dval) used previously the DAC is enabled
+  if (pin == A0) // Disable DAC, if analogWrite(A0,dval) used previously the DAC is enabled
   {
     syncDAC();
     DAC->CTRLA.bit.ENABLE = 0x00; // Disable DAC
@@ -170,16 +165,16 @@ uint32_t analogRead( uint32_t ulPin )
     syncDAC();
   }
 */
-	channel = g_APinDescription[ulPin].ulADCChannelNumber; // Input selection
+	channel = g_APinDescription[pin].ulADCChannelNumber; // Input selection
   }
 
   // Postpone IRQ past the ADC read to preserve the conversion (ADC hardware is depowered in sleep)
   __disable_irq();
-  
+
   syncADC();
   ADC->INPUTCTRL.bit.MUXPOS = channel;
   //ADC->INPUTCTRL.bit.MUXNEG = ADC_INPUTCTRL_MUXNEG_GND_Val; // Ground reference was set in init();
-   
+
   // Control A
   /*
    * Bit 1 ENABLE: Enable
@@ -192,7 +187,6 @@ uint32_t analogRead( uint32_t ulPin )
    * Before enabling the ADC, the asynchronous clock source must be selected and enabled, and the ADC reference must be
    * configured. The first conversion after the reference is changed must not be used.
    */
-
   syncADC();
   ADC->CTRLA.bit.ENABLE = 1;             // Enable ADC
 
@@ -200,9 +194,10 @@ uint32_t analogRead( uint32_t ulPin )
   // Start conversion
   syncADC();
   ADC->SWTRIG.bit.START = 1;
-  
+
   syncADC();
   // Clear the Data Ready flag
+//  ADC->INTFLAG.reg = ADC_INTFLAG_RESRDY;
   ADC->INTFLAG.bit.RESRDY = 1;
 
   // Start conversion again, since The first conversion after the reference is changed must not be used.
@@ -212,8 +207,7 @@ uint32_t analogRead( uint32_t ulPin )
   ADC->SWTRIG.bit.START = 1;
 
   // Store the value
-  while ( ADC->INTFLAG.bit.RESRDY == 0 );   // Waiting for conversion to complete
-
+  while (ADC->INTFLAG.bit.RESRDY == 0);   // Waiting for conversion to complete
   valueRead = ADC->RESULT.reg;
 
   syncADC();
@@ -231,60 +225,47 @@ uint32_t analogRead( uint32_t ulPin )
 // hardware support.  These are defined in the appropriate
 // pins_*.c file.  For the rest of the pins, we default
 // to digital output.
-void analogWrite( uint32_t ulPin, uint32_t ulValue )
+void analogWrite(uint32_t pin, uint32_t value)
 {
-  uint32_t attr = g_APinDescription[ulPin].ulPinAttribute ;
-/*
-  if ( (attr & PIN_ATTR_ANALOG) == PIN_ATTR_ANALOG )
-  {
-    if ( ulPin != PIN_A0 )  // Only 1 DAC on A0 (PA02)
-    {
-      return;
-    }
+  PinDescription pinDesc = g_APinDescription[pin];
+  uint32_t attr = pinDesc.ulPinAttribute;
 
-    ulValue = mapResolution(ulValue, _writeResolution, 10);
+// DAC removed in LilyMini for space / simplicity (use PWM)
 
-    syncDAC();
-    DAC->DATA.reg = ulValue & 0x3FF;  // DAC on 10 bits.
-    syncDAC();
-    DAC->CTRLA.bit.ENABLE = 0x01;     // Enable DAC
-    syncDAC();
-    return ;
-  }
-*/
-  if ( (attr & PIN_ATTR_PWM) == PIN_ATTR_PWM )
+  value = mapResolution(value, _writeResolution, 8);
+
+  if ((attr & PIN_ATTR_PWM) == PIN_ATTR_PWM)
   {
     if (attr & PIN_ATTR_TIMER) {
       #if !(ARDUINO_SAMD_VARIANT_COMPLIANCE >= 10603)
       // Compatibility for cores based on SAMD core <=1.6.2
-      if (g_APinDescription[ulPin].ulPinType == PIO_TIMER_ALT) {
-        pinPeripheral(ulPin, PIO_TIMER_ALT);
+      if (g_APinDescription[pin].ulPinType == PIO_TIMER_ALT) {
+        pinPeripheral(pin, PIO_TIMER_ALT);
       } else
       #endif
       {
-        pinPeripheral(ulPin, PIO_TIMER);
+        pinPeripheral(pin, PIO_TIMER);
       }
     } else {
       // We suppose that attr has PIN_ATTR_TIMER_ALT bit set...
-      pinPeripheral(ulPin, PIO_TIMER_ALT);
+      pinPeripheral(pin, PIO_TIMER_ALT);
     }
 
     Tc*  TCx  = 0 ;
     Tcc* TCCx = 0 ;
-    uint8_t Channelx = GetTCChannelNumber( g_APinDescription[ulPin].ulPWMChannel ) ;
-    if ( GetTCNumber( g_APinDescription[ulPin].ulPWMChannel ) >= TCC_INST_NUM )
+    uint8_t Channelx = GetTCChannelNumber( g_APinDescription[pin].ulPWMChannel ) ;
+    if ( GetTCNumber( g_APinDescription[pin].ulPWMChannel ) >= TCC_INST_NUM )
     {
-      TCx = (Tc*) GetTC( g_APinDescription[ulPin].ulPWMChannel ) ;
+      TCx = (Tc*) GetTC( g_APinDescription[pin].ulPWMChannel ) ;
     }
     else
     {
-      TCCx = (Tcc*) GetTC( g_APinDescription[ulPin].ulPWMChannel ) ;
+      TCCx = (Tcc*) GetTC( g_APinDescription[pin].ulPWMChannel ) ;
     }
 
     // Enable clocks according to TCCx instance to use
-    switch ( GetTCNumber( g_APinDescription[ulPin].ulPWMChannel ) )
+    switch ( GetTCNumber( g_APinDescription[pin].ulPWMChannel ) )
     {
-//#if defined(__SAMD11D14AM__) || defined(__SAMD11C14A__) || defined(__SAMD11D14AS__)
       case 0: // TCC0
         // Enable GCLK for TCC0 (timer counter input clock)
         GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TCC0 )) ;
@@ -295,37 +276,9 @@ void analogWrite( uint32_t ulPin, uint32_t ulValue )
         // Enable GCLK for TC1 and TC2 (timer counter input clock)
         GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TC1_TC2 )) ;
       break ;
-//#else
-
-/*      case 0: // TCC0
-      case 1: // TCC1
-        // Enable GCLK for TCC0 and TCC1 (timer counter input clock)
-        GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TCC0_TCC1 )) ;
-      break ;
-
-      case 2: // TCC2
-      case 3: // TC1
-        // Enable GCLK for TCC2 and TC1 (timer counter input clock)
-        GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TCC2_TC3 )) ;
-      break ;
-
-      case 4: // TC4
-      case 5: // TC5
-        // Enable GCLK for TC4 and TC5 (timer counter input clock)
-        GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TC4_TC5 ));
-      break ;
-
-      case 6: // TC6 (not available on Zero)
-      case 7: // TC7 (not available on Zero)
-        // Enable GCLK for TC6 and TC7 (timer counter input clock)
-        GCLK->CLKCTRL.reg = (uint16_t) (GCLK_CLKCTRL_CLKEN | GCLK_CLKCTRL_GEN_GCLK0 | GCLK_CLKCTRL_ID( GCM_TC6_TC7 ));
-      break ;
-*/
     }
 
-    while ( GCLK->STATUS.bit.SYNCBUSY == 1 ) ;
-
-    // ulValue = mapResolution(ulValue, _writeResolution, 8);
+    while (GCLK->STATUS.bit.SYNCBUSY == 1);
 
     // Set PORT
     if ( TCx )
@@ -340,7 +293,7 @@ void analogWrite( uint32_t ulPin, uint32_t ulValue )
       // Set TCx as normal PWM
       TCx->COUNT8.CTRLA.reg |= TC_CTRLA_WAVEGEN_NPWM;
       // Set TCx in waveform mode Normal PWM
-      TCx->COUNT8.CC[Channelx].reg = (uint8_t) ulValue;
+      TCx->COUNT8.CC[Channelx].reg = (uint8_t) value;
       syncTC_8(TCx);
       // Set PER to maximum counter value (resolution : 0xFF)
       TCx->COUNT8.PER.reg = 0xFF;
@@ -359,7 +312,7 @@ void analogWrite( uint32_t ulPin, uint32_t ulValue )
       TCCx->WAVE.reg |= TCC_WAVE_WAVEGEN_NPWM;
       syncTCC(TCCx);
       // Set TCx in waveform mode Normal PWM
-      TCCx->CC[Channelx].reg = (uint32_t)ulValue;
+      TCCx->CC[Channelx].reg = (uint32_t)value;
       syncTCC(TCCx);
       // Set PER to maximum counter value (resolution : 0xFF)
       TCCx->PER.reg = 0xFF;
@@ -368,20 +321,19 @@ void analogWrite( uint32_t ulPin, uint32_t ulValue )
       TCCx->CTRLA.reg |= TCC_CTRLA_ENABLE ;
       syncTCC(TCCx);
     }
-
-    return ;
+    return;
   }
 
   // -- Defaults to digital write
-  pinMode( ulPin, OUTPUT ) ;
-  // ulValue = mapResolution(ulValue, _writeResolution, 8);
-  if ( ulValue < 128 )
+  pinMode(pin, OUTPUT);
+
+  if (value < 128)
   {
-    digitalWrite( ulPin, LOW ) ;
+    digitalWrite(pin, LOW);
   }
   else
   {
-    digitalWrite( ulPin, HIGH ) ;
+    digitalWrite(pin, HIGH);
   }
 }
 

@@ -41,21 +41,6 @@ static char isEndpointHalt = 0;
 
 extern void (*gpf_isr)(void);
 
-
-static void (*usb_isr)(void) = NULL;
-
-void USB_Handler(void)
-{
-  if (usb_isr)
-    usb_isr();
-}
-
-void USB_SetHandler(void (*new_usb_isr)(void))
-{
-  usb_isr = new_usb_isr;
-}
-
-
 // USB_Handler ISR
 extern "C" void UDD_Handler(void) {
 	USBDevice.ISRHandler();

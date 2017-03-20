@@ -65,6 +65,7 @@ void init( void )
     // Capture error
     while ( 1 ) ;
   }
+  NVIC_SetPriority (SysTick_IRQn,  (1 << __NVIC_PRIO_BITS) - 2);  /* set Priority for Systick Interrupt (2nd lowest) */
 
   // Clock PORT for Digital I/O
 //	PM->APBBMASK.reg |= PM_APBBMASK_PORT ;
@@ -73,11 +74,9 @@ void init( void )
 //	PM->APBAMASK.reg |= PM_APBAMASK_EIC ;
 
   // Clock SERCOM for Serial
-
   PM->APBCMASK.reg |= PM_APBCMASK_SERCOM0 | PM_APBCMASK_SERCOM1 | PM_APBCMASK_SERCOM2 ;
 
   // Clock TC/TCC for Pulse and Analog
-
   PM->APBCMASK.reg |= PM_APBCMASK_TCC0 | PM_APBCMASK_TC1 | PM_APBCMASK_TC2 ;
 
   // Clock ADC/DAC for Analog
@@ -94,24 +93,22 @@ void init( void )
 	  pinMode( ul, INPUT ) ;
   }
 
-
-
   // Initialize Analog Controller
   // Setting clock
-  while(GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY) ;
+  while(GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY);
 
   GCLK->CLKCTRL.reg = GCLK_CLKCTRL_ID( GCM_ADC ) | // Generic Clock ADC
                       GCLK_CLKCTRL_GEN_GCLK0     | // Generic Clock Generator 0 is source
                       GCLK_CLKCTRL_CLKEN ;
 
-  while( ADC->STATUS.bit.SYNCBUSY == 1 ) ;         // Wait for synchronization of registers between the clock domains
+  while( ADC->STATUS.bit.SYNCBUSY == 1 );          // Wait for synchronization of registers between the clock domains
 
   ADC->CTRLB.reg = ADC_CTRLB_PRESCALER_DIV512 |    // Divide Clock by 512.
                    ADC_CTRLB_RESSEL_16BIT;         // 16 bits resolution for averaging
 
   ADC->SAMPCTRL.reg = 0x3f;                        // Set max Sampling Time Length
 
-  while( ADC->STATUS.bit.SYNCBUSY == 1 ) ;         // Wait for synchronization of registers between the clock domains
+  while( ADC->STATUS.bit.SYNCBUSY == 1 );          // Wait for synchronization of registers between the clock domains
 
   ADC->INPUTCTRL.reg = ADC_INPUTCTRL_MUXNEG_GND;   // No Negative input (Internal Ground)
 

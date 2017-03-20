@@ -36,7 +36,7 @@ void Dummy_Handler(void)
 
 /* Cortex-M0+ core handlers */
 void HardFault_Handler(void) __attribute__ ((weak, alias("Dummy_Handler")));
-void Reest_Handler    (void);
+void Reset_Handler    (void);
 void NMI_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void SVC_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void PendSV_Handler   (void) __attribute__ ((weak, alias("Dummy_Handler")));
@@ -59,20 +59,20 @@ void SERCOM3_Handler  (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void SERCOM4_Handler  (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void SERCOM5_Handler  (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void TCC0_Handler     (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TCC1_Handler     (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TCC2_Handler     (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TCC1_Handler     (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TCC2_Handler     (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void TC1_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void TC2_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TC3_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TC4_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TC5_Handler      (void) __attribute__ ((weak)); // Used in Tone.cpp
-void TC6_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void TC7_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TC3_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TC4_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TC5_Handler      (void) __attribute__ ((weak)); // Used in Tone.cpp
+//void TC6_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void TC7_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void ADC_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void AC_Handler       (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void DAC_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 void PTC_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
-void I2S_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
+//void I2S_Handler      (void) __attribute__ ((weak, alias("Dummy_Handler")));
 
 /* Initialize segments */
 extern uint32_t __etext;
@@ -124,6 +124,16 @@ __attribute__ ((section(".isr_vector"))) const DeviceVectors exception_table =
   (void*) AC_Handler,             /* 16 Analog Comparators */
   (void*) DAC_Handler,            /* 17 Digital Analog Converter */
   (void*) PTC_Handler,            /* 18 Peripheral Touch Controller */
+//  (void*) TC4_Handler,            /* 19 Basic Timer Counter 1 */
+//  (void*) TC5_Handler,            /* 20 Basic Timer Counter 2 */
+//  (void*) TC6_Handler,            /* 21 Basic Timer Counter 3 */
+//  (void*) TC7_Handler,            /* 22 Basic Timer Counter 4 */
+//  (void*) ADC_Handler,            /* 23 Analog Digital Converter */
+//  (void*) AC_Handler,             /* 24 Analog Comparators */
+//  (void*) DAC_Handler,            /* 25 Digital Analog Converter */
+//  (void*) PTC_Handler,            /* 26 Peripheral Touch Controller */
+//  (void*) I2S_Handler,            /* 27 Inter-IC Sound Interface */
+//  (void*) (0UL),                  /* Reserved */
 };
 
 extern int main(void);
@@ -151,7 +161,6 @@ void Reset_Handler(void)
 
   /* Initialize the C library */
   __libc_init_array();
-
   SystemInit();
 
   main();
@@ -170,15 +179,15 @@ void SysTick_Handler(void)
   SysTick_DefaultHandler();
 }
 
-static void (*usb_isr)(void) = NULL;
+//static void (*usb_isr)(void) = NULL;
 
-void USB_Handler(void)
-{
-  if (usb_isr)
-    usb_isr();
-}
+//void USB_Handler(void)
+//{
+//  if (usb_isr)
+//    usb_isr();
+//}
 
-void USB_SetHandler(void (*new_usb_isr)(void))
-{
-  usb_isr = new_usb_isr;
-}
+//void USB_SetHandler(void (*new_usb_isr)(void))
+//{
+//  usb_isr = new_usb_isr;
+//}

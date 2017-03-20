@@ -235,12 +235,13 @@ void initVariant()
 int main( void )
 {
   init();
-
-  initVariant(); 
+  initVariant();
 
   delay(1);
+#if defined(USBCON)
   USBDevice.init();
   USBDevice.attach();
+#endif
 
   setup();
 

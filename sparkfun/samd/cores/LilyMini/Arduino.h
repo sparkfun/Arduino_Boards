@@ -35,6 +35,7 @@ typedef uint16_t word;
 //
 #include "avr/pgmspace.h"
 #include "avr/interrupt.h"
+#include "avr/io.h"
 
 #include "binary.h"
 #include "itoa.h"
@@ -114,10 +115,15 @@ void loop( void ) ;
 
 #define bit(b) (1UL << (b))
 
+#if (ARDUINO_SAMD_VARIANT_COMPLIANCE >= 10606)
+// Interrupts
+#define digitalPinToInterrupt(P)   ( P )
+#endif
+
 // USB Device
 #include "USB/USBDesc.h"
 #include "USB/USBCore.h"
 #include "USB/USBAPI.h"
-#include "USB/USB_host.h"
+//#include "USB/USB_host.h" // removed for SAMD11
 
 #endif // Arduino_h

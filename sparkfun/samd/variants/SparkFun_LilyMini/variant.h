@@ -30,7 +30,7 @@
 #define VARIANT_MAINOSC		(32768ul)
 
 /** Master clock frequency */
-#define VARIANT_MCK			(48000000ul)
+#define VARIANT_MCK			  (48000000ul)
 
 /*----------------------------------------------------------------------------
  *        Headers
@@ -53,7 +53,7 @@ extern "C"
  *----------------------------------------------------------------------------*/
 
 // Number of pins defined in PinDescription array
-#define PINS_COUNT           (12u)
+#define PINS_COUNT           (13u)
 #define NUM_DIGITAL_PINS     (10u)
 #define NUM_ANALOG_INPUTS    (6u)
 #define NUM_ANALOG_OUTPUTS   (0u)

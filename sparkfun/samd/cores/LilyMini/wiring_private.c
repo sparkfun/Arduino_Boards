@@ -27,8 +27,6 @@ int pinPeripheral( uint32_t ulPin, EPioType ulPeripheral )
     return -1 ;
   }
 
-  noInterrupts(); // Avoid possible invalid interim pin state
-
   switch ( ulPeripheral )
   {
     case PIO_DIGITAL:
@@ -115,7 +113,6 @@ int pinPeripheral( uint32_t ulPin, EPioType ulPeripheral )
     break ;
   }
 
-  interrupts();
   return 0l ;
 }
 

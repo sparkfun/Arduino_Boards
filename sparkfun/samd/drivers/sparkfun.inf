@@ -47,7 +47,7 @@ Signature="$Windows NT$"
 Provider=%ManufacturerName%
 DriverPackageDisplayName=%DriverPackageDisplayName%
 CatalogFile=sparkfun.cat
-DriverVer=11/21/2016,1.2.3.0
+DriverVer=06/15/2015,1.2.2.0
 
 [Manufacturer]
 %ManufacturerName%=DeviceList, NTamd64, NTia64
@@ -61,24 +61,18 @@ DefaultDestDir=12
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
-LilyMini.sketch=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
-LilyMini=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DeviceList.NTamd64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
-LilyMini.sketch=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
-LilyMini=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DeviceList.NTia64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
-LilyMini.sketch=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
-LilyMini=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DriverInstall]
 include=mdmcpq.inf,usb.inf
