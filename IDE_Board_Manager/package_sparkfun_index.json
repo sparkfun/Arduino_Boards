@@ -222,8 +222,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.4.0.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.4.0.tar.bz2",
-		  "checksum": "SHA-256:06BBEFF9702C460E73BB297FBD5304340E18EBB983CE60EA4331FFB60B701D2E",
-          "size": "288696",
+		  "checksum": "SHA-256:C5FFF33FC410E4074A454CDDCE9242DBBDFAD1C1B387A14644C5A83D07DA4A54",
+          "size": "288760",
           "help": {
             "online": "https://forums.sparkfun.com"
           },
@@ -238,7 +238,7 @@
               "name": "SparkFun 9DoF Razor IMU M0"
             },
             {
-              "name": "SparkFun LilyMini"
+              "name": "LilyPad LilyMini"
             }
           ],
           "toolsDependencies": [
