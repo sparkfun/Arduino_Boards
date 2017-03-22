@@ -232,7 +232,7 @@ void analogWrite(uint32_t pin, uint32_t value)
 
 // DAC removed in LilyMini for space / simplicity (use PWM)
 
-  value = mapResolution(value, _writeResolution, 8);
+//  value = mapResolution(value, _writeResolution, 8);
 
   if ((attr & PIN_ATTR_PWM) == PIN_ATTR_PWM)
   {
