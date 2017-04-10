@@ -54,15 +54,15 @@
             }
           ],
           "toolsDependencies": []
-      },
-	          {
+        },
+        {
           "name": "SparkFun AVR Boards",
           "architecture": "avr",
           "version": "1.1.6",
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.6.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.6.tar.bz2",
-          "checksum": "SHA256:049FA0DF51602120EC1BDAC19F440FC0CC448C23BB277DD0D8DF855C52ACD483"
+          "checksum": "SHA256:049FA0DF51602120EC1BDAC19F440FC0CC448C23BB277DD0D8DF855C52ACD483",
           "size": "1159276",
           "help": {
             "online": "https://forums.sparkfun.com"
@@ -100,7 +100,7 @@
             }
           ],
           "toolsDependencies": []
-      },
+        },
         {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
           "architecture": "samd",
@@ -268,7 +268,7 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.4.0.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.4.0.tar.bz2",
-		  "checksum": "SHA-256:D2DBAFABE77F60A1A085A80DE3E086328681FE90F16D026B417554B3FB9EDFDD",
+          "checksum": "SHA-256:D2DBAFABE77F60A1A085A80DE3E086328681FE90F16D026B417554B3FB9EDFDD",
           "size": "288700",
           "help": {
             "online": "https://forums.sparkfun.com"
