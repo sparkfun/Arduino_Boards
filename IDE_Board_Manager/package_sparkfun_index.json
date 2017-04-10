@@ -62,7 +62,7 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfunboards.1.1.6.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.6.tar.bz2",
-          "checksum": "SHA256:049FA0DF51602120EC1BDAC19F440FC0CC448C23BB277DD0D8DF855C52ACD483",
+          "checksum": "SHA-256:049FA0DF51602120EC1BDAC19F440FC0CC448C23BB277DD0D8DF855C52ACD483",
           "size": "1159276",
           "help": {
             "online": "https://forums.sparkfun.com"
