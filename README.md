@@ -73,5 +73,5 @@ You're now ready to use SparkFun SAMD boards. They will appear at the bottom of 
 * Some boards such as the Arduino Pro and Pro Mini come in more than one flavor.  For these **you must select the correct processor** in the 'Tools' menu.
 * Information on compiling and programming the bootloaders can be found in the bootloaders directory.
 
-Have fun!<br>
-- Your friends at SparkFun
+**Have fun!**<br>
+\-Your friends at SparkFun
