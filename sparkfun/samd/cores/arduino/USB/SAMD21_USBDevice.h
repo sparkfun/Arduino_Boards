@@ -108,7 +108,6 @@ public:
 	inline void epBank1EnableStalled(ep_t ep)          { usb.DeviceEndpoint[ep].EPINTENSET.bit.STALL1 = 1; }
 	inline void epBank0EnableTransferComplete(ep_t ep) { usb.DeviceEndpoint[ep].EPINTENSET.bit.TRCPT0 = 1; }
 	inline void epBank1EnableTransferComplete(ep_t ep) { usb.DeviceEndpoint[ep].EPINTENSET.bit.TRCPT1 = 1; }
-
 	inline void epBank0DisableSetupReceived(ep_t ep)    { usb.DeviceEndpoint[ep].EPINTENCLR.bit.RXSTP = 1; }
 	inline void epBank0DisableStalled(ep_t ep)          { usb.DeviceEndpoint[ep].EPINTENCLR.bit.STALL0 = 1; }
 	inline void epBank1DisableStalled(ep_t ep)          { usb.DeviceEndpoint[ep].EPINTENCLR.bit.STALL1 = 1; }
