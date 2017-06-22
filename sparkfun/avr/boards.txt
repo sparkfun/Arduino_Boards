@@ -220,7 +220,7 @@ digitalsandbox.build.mcu=atmega328p
 # Can run at less than 5V on battery, so run at only 8MHz
 digitalsandbox.build.f_cpu=8000000L 
 digitalsandbox.build.core=arduino:arduino
-digitalsandbox.build.variant=arduino:standard
+digitalsandbox.build.variant=digitalsandbox
 
 
 ################################################################################

@@ -36,6 +36,8 @@ samd21Breakout.sketch.name="SparkFun SAMD21 Breakout"
 samd21Breakout.bootloader.name="SparkFun SAMD21 Bootloader"
 samd21IMU.sketch.name="SparkFun 9DoF Razor IMU M0"
 samd21IMU.bootloader.name="SparkFun 9DoF Razor IMU M0 BL"
+LilyMini.sketch.name="SparkFun LilyMini"
+LilyMini.bootloader.name="SparkFun LilyMini BL"
 
 [DefaultInstall]
 CopyINF=sparkfun.inf
@@ -47,7 +49,8 @@ Signature="$Windows NT$"
 Provider=%ManufacturerName%
 DriverPackageDisplayName=%DriverPackageDisplayName%
 CatalogFile=sparkfun.cat
-DriverVer=06/15/2015,1.2.2.0
+DriverVer=04/27/2017,1.2.0.0
+;DriverVer=11/21/2016,1.2.3.0
 
 [Manufacturer]
 %ManufacturerName%=DeviceList, NTamd64, NTia64
@@ -61,22 +64,28 @@ DefaultDestDir=12
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
+%LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
+%LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DeviceList.NTamd64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
+%LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
+%LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DeviceList.NTia64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
 %samd21Breakout.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0D21
 %samd21IMU.sketch.name%=DriverInstall, USB\VID_1B4F&PID_9D0F&MI_00
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
+%LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
+%LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
 
 [DriverInstall]
 include=mdmcpq.inf,usb.inf
-CopyFiles = FakeModemCopyFileSection
+CopyFiles=FakeModemCopyFileSection
 AddReg=DriverAddReg
 
 [DriverAddReg]
@@ -96,3 +105,14 @@ ErrorControl=1
 ServiceBinary=%12%\usbser.sys
 LoadOrderGroup=Base
 
+[DDInstall.NT]
+include=mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection 
+
+[DDInstall.NT.Services]
+include=mdmcpq.inf
+AddService=usbser, 0x00000000, LowerFilter_Service_Inst 
+
+[DDInstall.NT.HW]
+include=mdmcpq.inf
+AddReg=LowerFilterAddReg

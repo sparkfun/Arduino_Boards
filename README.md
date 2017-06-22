@@ -1,6 +1,8 @@
 # SparkFun Arduino Boards
 
-This repository contains support for the following SparkFun Arduino-compatible development boards:
+This repository contains support for the following SparkFun Arduino-compatible development boards.
+
+**IMPORTANT NOTE:** These board files have been updated for compatibility with Arduino version 1.8 and higher. Some boards (e.g. SAMD) may not compile correctly with earlier versions of Arduino. If you need compatibility with earlier versions of Arduino, you can choose previous releases of these boards from the Boards Manager.
 
 #### AVR Boards
 
@@ -21,43 +23,55 @@ This repository contains support for the following SparkFun Arduino-compatible d
 
 * [SparkFun SAMD21 Dev Breakout](https://www.sparkfun.com/products/13672)
 * [SparkFun SAMD21 Mini Breakout](https://www.sparkfun.com/products/13664)
+* [SparkFun 9DoF Razor IMU M0 (SAMD21)](https://www.sparkfun.com/products/14001)
+* [SparkFun LilyMini ProtoSnap (SAMD11)](https://www.sparkfun.com/products/14063)
+* [SparkFun LilyMini (SAMD11)](https://www.sparkfun.com/products/14064)
 
 #### ESP8266 Boards
 
 * [ESP8266 Thing](https://www.sparkfun.com/products/13231)
 * [ESP8266 WiFi Shield](https://www.sparkfun.com/products/13287)
 
-Each board will be added as an entry to the Arduino **Tools** > **Board** menu.
-
-![Example image](example.png)
-
 ### Installation Instructions
 
-To add board support for our products, go to **File** > **Preferences**, and paste this URL into the 'Additional Boards Manager URLs' input field:
+To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
 	https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
 
-![Adding a board manager list](https://cdn.sparkfun.com/assets/learn_tutorials/4/5/4/arduino-board-add.png)
+![Location of Additional Boards Manager URL input field](prefs-arrow.png)
 
-This field can be found in 'Preferences...' under the Arduino File menu.
+If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
 
-Now, under the **Tools** > **Board** > **Boards Manager...**, if you type in "sparkfun", you will see an option to install board files for SparkFun Arduino compatible boards. Click "Install" to add these to your list.
+### AVR and ESP Installation Instructions
 
-**NOTE: If you are using Arduino 1.6.6 and the link isn't working for you, change "https" at the beginning of the link to "http" and try again. We're working to figure out why this is happening in version 1.6.6.**
+Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**.
 
-![SparkFun Boards image](https://cdn.sparkfun.com/assets/learn_tutorials/4/5/4/sparkfun-arduino-board-install.png)
+![Boards Manager Menu](manager-menu.png)
 
-Now, when you select the Boards list, you will see a collection of new boards for SparkFun.
+If you type "sparkfun" (without quotes) into the "filter your search" field, you will see options to install SparkFun's AVR and ESP board files. Click in the desired box, and click the "Install" button that appears. Once installed, the boards will appear at the bottom of the board list.
 
-![SparkFun Boards List](boards_list.png)
+![Sparkfun Boards](sparkfunboards.png)
 
-### Cleaning up the Boards Menu
+### SAMD Installation Instructions
 
-Each entry in the boards list is defined in [boards.txt](https://github.com/sparkfun/Arduino_Boards/blob/master/sparkfun/avr/boards.txt). If you want to de-clutter the menu, you can comment out a board by inserting a `#` at the beginning of each line.
+When installing SAMD boards, you will need to first install Arduino SAMD support, then SparkFun's SAMD boards.
+
+Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**. Now type "samd" (without quotes) into the "filter your search" field at the top of the window. Two entries should show up, one for Arduino SAMD boards, and one for SparkFun SAMD boards. We'll install both of these, starting with Arduino SAMD boards.
+
+Click anywhere in the "Arduino SAMD Boards" box, and click "Install". This is a large installation and will take a while.
+
+![Arduino SAMD Boards](manager-arrow.png)
+
+Now click anywhere in the "SparkFun SAMD Boards" box, and click "Install". This is a small installation and will happen much faster.
+
+![SparkFun SAMD Boards](manager-arrow2.png)
+
+You're now ready to use SparkFun SAMD boards. They will appear at the bottom of the board list.
 
 ### Notes
 
-* **Please note: This will only work under Arduino IDE versions 1.5 and up.**
-* Some boards such as the Pro Micro and the Mega Pro come in more than one form.  For these **you must select the correct processor** in the 'Tools' menu.
+* Some boards such as the Arduino Pro and Pro Mini come in more than one flavor.  For these **you must select the correct processor** in the 'Tools' menu.
 * Information on compiling and programming the bootloaders can be found in the bootloaders directory.
-* **Bugs introduced in the Arduino IDE version 1.6.6 through at least 1.6.9 produce errors indicating there is something wrong with these files. This can be resolved by reverting back to 1.6.5-r5. So far all reports seem to indicated that 1.6.10 has also fixed the issues. These intermittent issues are difficult to reliably reproduce.**
+
+**Have fun!**<br>
+\-Your friends at SparkFun

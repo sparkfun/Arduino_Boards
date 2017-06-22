@@ -57,8 +57,6 @@ void calibrateADC()
  */
 void init( void )
 {
-  uint32_t ul ;
-
   // Set Systick to 1ms interval, common to all Cortex-M variants
   if ( SysTick_Config( SystemCoreClock / 1000 ) )
   {
@@ -83,7 +81,7 @@ void init( void )
   PM->APBCMASK.reg |= PM_APBCMASK_ADC | PM_APBCMASK_DAC ;
 
   // Setup all pins (digital and analog) in INPUT mode (default is nothing)
-  for ( ul = 0 ; ul < NUM_DIGITAL_PINS ; ul++ )
+  for (uint32_t ul = 0 ; ul < NUM_DIGITAL_PINS ; ul++ )
   {
 	  pinMode( ul, INPUT ) ;
   }
