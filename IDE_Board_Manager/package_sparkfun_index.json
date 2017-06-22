@@ -268,8 +268,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.4.0.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.4.0.tar.bz2",
-          "checksum": "SHA-256:D2DBAFABE77F60A1A085A80DE3E086328681FE90F16D026B417554B3FB9EDFDD",
-          "size": "288700",
+          "checksum": "SHA-256:B3F09095478EFD13388E2A786021D2FC1C1FA7A6236CC7B28152E4DDB94561B2",
+          "size": "289527",
           "help": {
             "online": "https://forums.sparkfun.com"
           },
