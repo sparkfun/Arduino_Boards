@@ -1,3 +1,13 @@
+/*
+LilyPad Prototyping Board
+Demo (Factory-Installed) Code
+SparkFun Electronics
+https://www.sparkfun.com/products/14346
+
+This code is covered by the MTT license and is completely free for any use.
+
+******************************************************************************/
+
 #define EXTLED5 5 
 #define EXTLED6 6 
 #define EXTLED7 7 
@@ -21,7 +31,6 @@
 #define LUXPIN A2
 
 #define DELAY_A_MS 2
-
 
 #define NOTE_B0  31
 #define NOTE_C1  33
@@ -123,8 +132,6 @@ int noteDurations[] = {
   4, 8, 8, 4, 4, 4, 4, 4
 };
 
-
-
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LUXPIN, INPUT);
@@ -139,7 +146,9 @@ void setup() {
   analogWrite(INTLEDB, 0);
 
 }
+
 int modeSelected = 0;
+
 void loop()
 {
 int luxReading;
