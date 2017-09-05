@@ -1,5 +1,5 @@
 /******************************************************************************
-LilyPad Prototyping Board Activity x: Using the LilyPad Buzzer
+LilyPad ProtoSnap Plus Activity x: Using the LilyPad Buzzer
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

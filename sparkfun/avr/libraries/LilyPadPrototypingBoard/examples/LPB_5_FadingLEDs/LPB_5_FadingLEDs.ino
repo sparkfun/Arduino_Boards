@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 6: Fading LEDs
+LilyPad ProtoSnap Plus Activity 6: Fading LEDs
 SparkFun Electronics
 https://www.sparkfun.com/products/14346 
 

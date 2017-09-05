@@ -1,9 +1,9 @@
 /*
-LilyPad Prototyping Board Activity 1: Blink
+LilyPad ProtoSnap Plus Activity 1: Blink
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 
-Turns on the LEDs attached to the LilyPad Prototyping Board's sew tab 6 on for one 
+Turns on the LEDs attached to the LilyPad ProtoSnap Plus's sew tab 6 on for one 
 second,then off for one second, forever.
 
 This sketch was written by SparkFun Electronics,

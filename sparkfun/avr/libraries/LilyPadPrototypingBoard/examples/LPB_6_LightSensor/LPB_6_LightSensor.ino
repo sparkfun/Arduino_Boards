@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 7: Reading a Light Sensor
+LilyPad ProtoSnap Plus Activity 7: Reading a Light Sensor
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

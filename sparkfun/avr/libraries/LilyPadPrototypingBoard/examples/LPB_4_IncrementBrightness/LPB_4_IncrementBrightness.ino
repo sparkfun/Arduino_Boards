@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 5: Incrementing Brightness
+LilyPad ProtoSnap Plus Activity 5: Incrementing Brightness
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

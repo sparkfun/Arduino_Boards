@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 3: Color Mixing
+LilyPad ProtoSnap Plus Activity 3: Color Mixing
 SparkFun Electronics
 https://www.sparkfun.com/products/14346 
 

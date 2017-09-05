@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 2: Buttons and Switches
+LilyPad ProtoSnap Plus Activity 2: Buttons and Switches
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

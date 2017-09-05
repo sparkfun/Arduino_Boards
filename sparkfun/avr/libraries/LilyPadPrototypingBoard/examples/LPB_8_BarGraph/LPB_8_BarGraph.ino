@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 8: Bar Graph
+LilyPad ProtoSnap Plus Activity 8: Bar Graph
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

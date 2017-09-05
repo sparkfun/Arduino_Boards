@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 8: Night-Light with Light Sensor
+LilyPad ProtoSnap Plus Activity 8: Night-Light with Light Sensor
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

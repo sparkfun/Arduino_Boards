@@ -347,10 +347,10 @@ atmega128rfa1.build.core=arduino:arduino
 atmega128rfa1.build.variant=rf128
 
 ################################################################################
-###################### LilyPad Prototyping Board ###############################
+####################### LilyPad Arduino USB Plus ###############################
 ################################################################################
 
-LilyPadProtoUSB.name=LilyPad Prototyping Board
+LilyPadProtoUSB.name=LilyPad Arduino USB Plus
 LilyPadProtoUSB.vid.0=0x1B4F
 LilyPadProtoUSB.pid.0=0x0110
 
@@ -375,7 +375,7 @@ LilyPadProtoUSB.build.mcu=atmega32u4
 LilyPadProtoUSB.build.f_cpu=8000000L
 LilyPadProtoUSB.build.vid=0x1B4F
 LilyPadProtoUSB.build.pid=0x0110
-LilyPadProtoUSB.build.usb_product="LilyPad Prototyping Board"
+LilyPadProtoUSB.build.usb_product="LilyPad Arduino USB Plus"
 LilyPadProtoUSB.build.board=AVR_LILYPAD_PROTOTYPING_BOARD
 LilyPadProtoUSB.build.core=arduino:arduino
 LilyPadProtoUSB.build.variant=lilypadprototypingboard

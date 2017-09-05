@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board Activity 10: LilyPixel
+LilyPad ProtoSnap Plus Activity 10: LilyPixel
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
 

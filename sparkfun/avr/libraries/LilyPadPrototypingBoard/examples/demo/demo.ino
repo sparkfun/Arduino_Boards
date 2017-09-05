@@ -1,5 +1,5 @@
 /*
-LilyPad Prototyping Board
+LilyPad ProtoSnap Plus
 Demo (Factory-Installed) Code
 SparkFun Electronics
 https://www.sparkfun.com/products/14346
