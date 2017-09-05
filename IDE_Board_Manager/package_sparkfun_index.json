@@ -157,8 +157,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyProtoBoard/IDE_Board_Manager/sparkfunboards.1.1.8.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.8.tar.bz2",
-          "checksum": "SHA-256:5227002DB975C1C664775BED3B5841535A0DD396DFD9DDF936854153E658F4A3",
-          "size": "1238349",
+          "checksum": "SHA-256:5BA8B82D2146A265CE2882F8C6FD9D62EA844AA69B1EE48DF6C20B0D3786C38D",
+          "size": "1238243",
           "help": {
             "online": "https://forums.sparkfun.com"
           },
