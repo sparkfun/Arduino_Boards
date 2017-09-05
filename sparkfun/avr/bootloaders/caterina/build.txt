@@ -21,4 +21,4 @@ make PID=0x920B F_CPU=16000000
 copy Caterina.hex Caterina-minibench.hex
 make clean
 make PID=0x0110 F_CPU=8000000
-copy Caterina.hex Caterina-lilypadprototypingboard.hex
+copy Caterina.hex Caterina-lilypadusbplus.hex

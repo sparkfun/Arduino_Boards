@@ -367,7 +367,7 @@ LilyPadProtoUSB.bootloader.tool=avrdude
 LilyPadProtoUSB.bootloader.low_fuses=0xff
 LilyPadProtoUSB.bootloader.high_fuses=0xd8
 LilyPadProtoUSB.bootloader.extended_fuses=0xce
-LilyPadProtoUSB.bootloader.file=caterina/Caterina-lilypadprototypingboard.hex
+LilyPadProtoUSB.bootloader.file=caterina/Caterina-lilypadusbplus.hex
 LilyPadProtoUSB.bootloader.unlock_bits=0x3F
 LilyPadProtoUSB.bootloader.lock_bits=0x2F
 
@@ -378,5 +378,5 @@ LilyPadProtoUSB.build.pid=0x0110
 LilyPadProtoUSB.build.usb_product="LilyPad Arduino USB Plus"
 LilyPadProtoUSB.build.board=AVR_LILYPAD_PROTOTYPING_BOARD
 LilyPadProtoUSB.build.core=arduino:arduino
-LilyPadProtoUSB.build.variant=lilypadprototypingboard
+LilyPadProtoUSB.build.variant=lilypadusbplus
 LilyPadProtoUSB.build.extra_flags={build.usb_flags}
