@@ -345,3 +345,38 @@ atmega128rfa1.build.f_cpu=16000000L
 atmega128rfa1.build.board=ATMEGA128RFA1_DEV_BOARD
 atmega128rfa1.build.core=arduino:arduino
 atmega128rfa1.build.variant=rf128
+
+################################################################################
+############################# LilyPad USB Plus #################################
+################################################################################
+
+LilyPadProtoUSB.name=LilyPad USB Plus
+LilyPadProtoUSB.vid.0=0x1B4F
+LilyPadProtoUSB.pid.0=0x0110
+
+LilyPadProtoUSB.upload.tool=avrdude
+LilyPadProtoUSB.upload.protocol=avr109
+LilyPadProtoUSB.upload.maximum_size=28672
+LilyPadProtoUSB.upload.maximum_data_size=2560
+LilyPadProtoUSB.upload.speed=57600
+LilyPadProtoUSB.upload.disable_flushing=true
+LilyPadProtoUSB.upload.use_1200bps_touch=true
+LilyPadProtoUSB.upload.wait_for_upload_port=true
+
+LilyPadProtoUSB.bootloader.tool=avrdude
+LilyPadProtoUSB.bootloader.low_fuses=0xff
+LilyPadProtoUSB.bootloader.high_fuses=0xd8
+LilyPadProtoUSB.bootloader.extended_fuses=0xce
+LilyPadProtoUSB.bootloader.file=caterina/Caterina-lilypadusbplus.hex
+LilyPadProtoUSB.bootloader.unlock_bits=0x3F
+LilyPadProtoUSB.bootloader.lock_bits=0x2F
+
+LilyPadProtoUSB.build.mcu=atmega32u4
+LilyPadProtoUSB.build.f_cpu=8000000L
+LilyPadProtoUSB.build.vid=0x1B4F
+LilyPadProtoUSB.build.pid=0x0110
+LilyPadProtoUSB.build.usb_product="LilyPad USB Plus"
+LilyPadProtoUSB.build.board=AVR_LILYPAD_ARDUINO_USB_PLUS_BOARD
+LilyPadProtoUSB.build.core=arduino:arduino
+LilyPadProtoUSB.build.variant=lilypadusbplus
+LilyPadProtoUSB.build.extra_flags={build.usb_flags}

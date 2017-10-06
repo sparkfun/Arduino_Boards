@@ -18,6 +18,7 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [RedBot](https://www.sparkfun.com/products/12097)
 * [Serial 7-Segment Display](https://www.sparkfun.com/products/11441)
 * [ATmega128RFA1 Development Board](https://www.sparkfun.com/products/11197)
+* [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
 
 #### SAMD (ARM Cortex-M0+) Boards
 

@@ -60,7 +60,7 @@
           "architecture": "avr",
           "version": "1.1.6",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfunboards.1.1.6.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.6.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.6.tar.bz2",
           "checksum": "SHA-256:049FA0DF51602120EC1BDAC19F440FC0CC448C23BB277DD0D8DF855C52ACD483",
           "size": "1159276",
@@ -97,6 +97,55 @@
             },
             {
               "name": "ATmega128RFA1 Dev Board"
+            }
+          ],
+          "toolsDependencies": []
+        },
+        {
+          "name": "SparkFun AVR Boards",
+          "architecture": "avr",
+          "version": "1.1.7",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.7.tar.bz2",
+          "archiveFileName": "sparkfunboards.1.1.7.tar.bz2",
+          "checksum": "SHA-256:16A9CA03A7869C424562795504B82FEED0FB6A7D4A63FC94280FBBA44132257C",
+          "size": "1236343",
+          "help": {
+            "online": "https://forums.sparkfun.com"
+          },
+          "boards": [
+            {
+              "name": "RedBoard"
+            },
+            {
+              "name": "MaKey MaKey"
+            },
+            {
+              "name": "Pro Micro"
+            },
+            {
+              "name": "Fio v3"
+            },
+            {
+              "name": "Qduino Mini"
+            },
+            {
+              "name": "Digital Sandbox"
+            },
+            {
+              "name": "Mega Pro"
+            },
+            {
+              "name": "RedBot"
+            },
+            {
+              "name": "Serial 7-segment Display"
+            },
+            {
+              "name": "ATmega128RFA1 Dev Board"
+            },
+            {
+              "name": "LilyPad USB Plus"
             }
           ],
           "toolsDependencies": []
@@ -266,7 +315,7 @@
           "architecture": "samd",
           "version": "1.4.0",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/IDE_Board_Manager/sparkfun-samd-1.4.0.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.4.0.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.4.0.tar.bz2",
           "checksum": "SHA-256:968918117E6EA9C7F3982F83E07B6459663AB844779855B5E175E19461C16691",
           "size": "289555",
@@ -303,21 +352,21 @@
           "systems": [
             {
               "host": "i686-mingw32",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
               "archiveFileName": "bossac-1.4.0-win.zip",
               "checksum": "SHA-256:BCA6503F5DBB1F96693AFD0701A759ECFB3BE5B9FB3F9D901CA17853B224F4EB",
               "size": "314705"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
               "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
               "checksum": "SHA-256:BB8F398BF84C5F31880FE9A2C7AE0174592516CE4821B49744B426AA968ADA10",
               "size": "225696"
             },
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyMini_testing/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
               "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
               "checksum": "SHA-256:D0F225846D7BC80A74324D783CDB35C42A7F85EAD73CC016C0CC767B0AA5E81C",
               "size": "74461"
