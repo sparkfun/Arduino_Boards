@@ -106,7 +106,7 @@
           "architecture": "avr",
           "version": "1.1.7",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/LilyProtoBoard/IDE_Board_Manager/sparkfunboards.1.1.7.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.7.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.7.tar.bz2",
           "checksum": "SHA-256:16A9CA03A7869C424562795504B82FEED0FB6A7D4A63FC94280FBBA44132257C",
           "size": "1236343",
