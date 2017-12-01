@@ -153,12 +153,12 @@
         {
           "name": "SparkFun AVR Boards",
           "architecture": "avr",
-          "version": "1.1.8.beta",
+          "version": "1.1.8",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.8.beta.tar.bz2",
-          "archiveFileName": "sparkfunboards.1.1.8.beta.tar.bz2",
-          "checksum": "SHA-256:15699A30A9A6701B0658611939B8CBB8A2B1FE60F5F9A1636253C80A41D11B57",
-          "size": "1238535",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.8.tar.bz2",
+          "archiveFileName": "sparkfunboards.1.1.8.tar.bz2",
+          "checksum": "SHA-256:AA4266C32AA2E9B0573FA34A1B3CD22DC643302846BC7932CEE5F84B179B4A91",
+          "size": "1238104",
           "help": {
             "online": "https://forums.sparkfun.com"
           },
