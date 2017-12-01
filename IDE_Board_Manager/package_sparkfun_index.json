@@ -151,6 +151,55 @@
           "toolsDependencies": []
         },
         {
+          "name": "SparkFun AVR Boards",
+          "architecture": "avr",
+          "version": "1.1.8.beta",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.8.beta.tar.bz2",
+          "archiveFileName": "sparkfunboards.1.1.8.beta.tar.bz2",
+          "checksum": "SHA-256:15699A30A9A6701B0658611939B8CBB8A2B1FE60F5F9A1636253C80A41D11B57",
+          "size": "1238535",
+          "help": {
+            "online": "https://forums.sparkfun.com"
+          },
+          "boards": [
+            {
+              "name": "RedBoard"
+            },
+            {
+              "name": "MaKey MaKey"
+            },
+            {
+              "name": "Pro Micro"
+            },
+            {
+              "name": "Fio v3"
+            },
+            {
+              "name": "Qduino Mini"
+            },
+            {
+              "name": "Digital Sandbox"
+            },
+            {
+              "name": "Mega Pro"
+            },
+            {
+              "name": "RedBot"
+            },
+            {
+              "name": "Serial 7-segment Display"
+            },
+            {
+              "name": "ATmega128RFA1 Dev Board"
+            },
+            {
+              "name": "LilyPad USB Plus"
+            }
+          ],
+          "toolsDependencies": []
+        },
+        {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
           "architecture": "samd",
           "version": "1.0.0",
