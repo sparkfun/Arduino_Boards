@@ -155,7 +155,7 @@
           "architecture": "avr",
           "version": "1.1.8",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfunboards.1.1.8.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/1712-testing/IDE_Board_Manager/sparkfunboards.1.1.8.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.8.tar.bz2",
           "checksum": "SHA-256:522B066702B84D9DCCA878764B47427884C91F952BABE8C20CA7B9BECE736FFA",
           "size": "1238115",
