@@ -157,8 +157,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/1712-testing/IDE_Board_Manager/sparkfunboards.1.1.8.tar.bz2",
           "archiveFileName": "sparkfunboards.1.1.8.tar.bz2",
-          "checksum": "SHA-256:522B066702B84D9DCCA878764B47427884C91F952BABE8C20CA7B9BECE736FFA",
-          "size": "1238115",
+          "checksum": "SHA-256:23D479AF10DC97F4DB8EA8AD514FE92C4391EADD8D9DD5EF1D49A70EA05255C3",
+          "size": "1238017",
           "help": {
             "online": "https://forums.sparkfun.com"
           },
