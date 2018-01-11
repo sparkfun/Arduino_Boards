@@ -156,23 +156,7 @@ static const uint8_t A11 = PIN_A11;
 //This identifies the register
 #define digitalPinToPCMSK(p) ((((p) == 1) || ((p) == 4) || ((p) == 6) || ((p) == 8) || ((p) == 12) || ((p) == 21) || ((p) == 22) || ((p) == 23) || ((p) == A4) || ((p) == A8) || ((p) == A10)) ? (&PCMSK0) : ((uint8_t *)0))
 //This returns bit position:
-#define digitalPinToPCMSKbit(p) ( ((p) == 1) ? 0 : ((p) == 21) ? 1 : ((p) == 22) ? 2 : ((p) == 23) ? 3 : ((p) == 6) ? 7 : (((p) == 4)||((p) == A4)) ? 4 : (((p) == 8)||((p) == A8)) ? 5 : (((p) == 12)||((p) == A10)) ? 6 )
-
-
-//#define digitalPinToPCMSKbit(p) ( 
-//((p) >= 8 && (p) <= 11) ?
-//(p) - 4 :
-//((p) == 14 ?
-//3 : 
-//((p) == 15 ? 
-//1 : 
-//((p) == 16 ? 
-//2 : 
-//((p) == 17 ? 
-//0 : 
-//(p - A8 + 4)))))
-
-
+#define digitalPinToPCMSKbit(p) ( ((p) == 1) ? 0 : ((p) == 21) ? 1 : ((p) == 22) ? 2 : ((p) == 23) ? 3 : ((p) == 6) ? 7 : (((p) == 4)||((p) == A4)) ? 4 : (((p) == 8)||((p) == A8)) ? 5 : (((p) == 12)||((p) == A10)) ? 6 : (p - A8 + 4) )
 
 //	__AVR_ATmega32U4__ has an unusual mapping of pins to channels
 extern const uint8_t PROGMEM analog_pin_to_channel_PGM[];
