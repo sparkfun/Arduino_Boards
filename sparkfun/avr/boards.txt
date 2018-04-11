@@ -28,7 +28,7 @@ RedBoard.bootloader.file=optiboot/optiboot_atmega328.hex
 
 RedBoard.build.mcu=atmega328p
 RedBoard.build.f_cpu=16000000L
-RedBoard.build.board=REDBOARD
+RedBoard.build.board=AVR_UNO
 RedBoard.build.core=arduino:arduino
 RedBoard.build.variant=arduino:standard
 
@@ -218,7 +218,7 @@ digitalsandbox.bootloader.tool=arduino:avrdude
 
 digitalsandbox.build.mcu=atmega328p
 # Can run at less than 5V on battery, so run at only 8MHz
-digitalsandbox.build.f_cpu=8000000L 
+digitalsandbox.build.f_cpu=8000000L
 digitalsandbox.build.core=arduino:arduino
 digitalsandbox.build.variant=digitalsandbox
 
