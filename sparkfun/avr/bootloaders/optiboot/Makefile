@@ -53,6 +53,7 @@ ifeq ($(ENV), arduino)
 TOOLROOT = ../../../tools
 GCCROOT = $(TOOLROOT)/avr/bin/
 AVRDUDE_CONF = -C$(TOOLROOT)/avr/etc/avrdude.conf
+endif
 
 ifeq ($(OS), windows)
 # On windows, SOME of the tool paths will need to have backslashes instead
