@@ -380,3 +380,29 @@ LilyPadProtoUSB.build.board=AVR_LILYPAD_ARDUINO_USB_PLUS_BOARD
 LilyPadProtoUSB.build.core=arduino:arduino
 LilyPadProtoUSB.build.variant=lilypadusbplus
 LilyPadProtoUSB.build.extra_flags={build.usb_flags}
+
+
+################################################################################
+################################### SerLCD v2 ##################################
+################################################################################
+SerLCDv2.name=SparkFun SerLCD v2
+
+SerLCDv2.upload.tool=avrdude
+SerLCDv2.upload.protocol=arduino
+SerLCDv2.upload.maximum_size=32256
+SerLCDv2.upload.maximum_data_size=2048
+SerLCDv2.upload.speed=115200
+
+SerLCDv2.bootloader.tool=avrdude
+SerLCDv2.bootloader.low_fuses=0xFF
+SerLCDv2.bootloader.high_fuses=0xDE
+SerLCDv2.bootloader.extended_fuses=0xFD
+SerLCDv2.bootloader.unlock_bits=0x3F
+SerLCDv2.bootloader.lock_bits=0x0F
+SerLCDv2.bootloader.file=optiboot/optiboot_SerLCDv2.hex
+
+SerLCDv2.build.mcu=atmega328p
+SerLCDv2.build.f_cpu=11059200L
+SerLCDv2.build.board=AVR_UNO
+SerLCDv2.build.core=arduino:arduino
+SerLCDv2.build.variant=arduino:standard
