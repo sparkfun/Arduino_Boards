@@ -63,7 +63,7 @@ fixpath = $(subst /,\,$1)
 SHELL = cmd.exe
 endif
 
-else ifeq ($(ENV), arduinodev)
+ifeq ($(ENV), arduinodev)
 # Arduino IDE source code environment.  Use the unpacked compilers created
 # by the build (you'll need to do "ant build" first.)
 ifeq ($(OS), macosx)
