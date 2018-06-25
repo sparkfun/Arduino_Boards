@@ -29,7 +29,7 @@ Roshamglo.bootloader.tool=arduino:avrdude
 Roshamglo.bootloader.low_fuses=0xE2
 Roshamglo.bootloader.high_fuses=0xDD
 Roshamglo.bootloader.extended_fuses=0xFE
-Roshamglo.bootloader.file=attiny/releases/t84_sparkfun.hex
+Roshamglo.bootloader.file=attiny/releases/t84_roshamglo.hex
 
 ################################################################################
 ################################### Atto84 #####################################
@@ -58,4 +58,4 @@ Atto84.bootloader.tool=arduino:avrdude
 Atto84.bootloader.low_fuses=0xE2
 Atto84.bootloader.high_fuses=0xDD
 Atto84.bootloader.extended_fuses=0xFE
-Atto84.bootloader.file=attiny/releases/t84_sparkfun.hex
+Atto84.bootloader.file=attiny/releases/t84_default.hex
