@@ -496,7 +496,7 @@
                },
                "boards":[
                   { "name":"Roshamglo" },
-				  { "name":"Atto84" },
+				  { "name":"Atto84" }
                ],
                "toolsDependencies":[
                   {
