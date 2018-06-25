@@ -485,17 +485,18 @@
             {
                "name":"SparkFun ATtiny Boards",
                "architecture":"tiny",
-               "version":"0.1.2",
+               "version":"0.1.3",
                "category":"Contributed",
-               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.2.tar.bz2",
-               "archiveFileName":"sparkfun-tiny-0.1.2.tar.bz2",
-               "checksum":"SHA-256:3C4E5AF98D49A492FD417E96F9815EC09838438877FEB83F1D49652A58D17522",
-               "size":"531940",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.3.tar.bz2",
+               "archiveFileName":"sparkfun-tiny-0.1.3.tar.bz2",
+               "checksum":"SHA-256:2F1A54831040E66EB98C6A6501F4AE98B71D23F183E8E43869603A3DD12E3D33",
+               "size":"691198",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },
                "boards":[
-                  { "name":"Roshamglo" }
+                  { "name":"Roshamglo" },
+				  { "name":"Atto84" }
                ],
                "toolsDependencies":[
                   {
