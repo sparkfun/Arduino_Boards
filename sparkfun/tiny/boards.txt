@@ -30,3 +30,32 @@ Roshamglo.bootloader.low_fuses=0xE2
 Roshamglo.bootloader.high_fuses=0xDD
 Roshamglo.bootloader.extended_fuses=0xFE
 Roshamglo.bootloader.file=attiny/releases/t84_roshamglo.hex
+
+################################################################################
+################################### Atto84$ ####################################
+################################################################################
+Roshamglo.name=SparkX Atto84 (ATtiny84, 3.3V, 8MHz)
+
+#Roshamglo.vid.0=0x1B4F
+#Roshamglo.pid.1=0x0014
+
+#Roshamglo.upload.using=micronucleusprog
+Roshamglo.upload.protocol=usb
+Roshamglo.upload.tool=micronucleus
+Roshamglo.upload.maximum_size=6144
+
+Roshamglo.build.mcu=attiny84
+Roshamglo.build.f_cpu=8000000L
+Roshamglo.build.vid=0x1B4F
+Roshamglo.build.pid=0x0014
+Roshamglo.build.usb_manufacturer="SparkFun Electronics"
+Roshamglo.build.usb_product="SparkX Atto84"
+Roshamglo.build.board=ATTO84
+Roshamglo.build.core=arduino
+Roshamglo.build.variant=atto84
+
+Roshamglo.bootloader.tool=arduino:avrdude
+Roshamglo.bootloader.low_fuses=0xE2
+Roshamglo.bootloader.high_fuses=0xDD
+Roshamglo.bootloader.extended_fuses=0xFE
+Roshamglo.bootloader.file=attiny/releases/t84_default.hex
