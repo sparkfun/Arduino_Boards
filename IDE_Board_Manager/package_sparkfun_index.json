@@ -485,12 +485,12 @@
             {
                "name":"SparkFun ATtiny Boards",
                "architecture":"tiny",
-               "version":"0.1.4",
+               "version":"0.1.5",
                "category":"Contributed",
-               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.4.tar.bz2",
-               "archiveFileName":"sparkfun-tiny-0.1.4.tar.bz2",
-               "checksum":"SHA-256:B03D4F6D994BA9E3E5C0F099DD2FFFAA0EE4A8A54B5ACC1FD8DC2B27CD5F5B56",
-               "size":"728431",
+               "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.5.tar.bz2",
+               "archiveFileName":"sparkfun-tiny-0.1.5.tar.bz2",
+               "checksum":"SHA-256:0C383B46B9DCB04BA1C21C0DBDF9AA81FE94C0477102B44703F3C89807AD1912",
+               "size":"765765",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },

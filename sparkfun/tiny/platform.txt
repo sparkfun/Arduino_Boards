@@ -1,7 +1,7 @@
 # SparkFun AVR ATtiny platforms
 
 name=SparkFun ATtiny Boards
-version=0.1.4
+version=0.1.5
 
 # AVR compile variables
 # ---------------------

@@ -51,7 +51,7 @@ Atto84.build.pid=0x0014
 Atto84.build.usb_manufacturer="SparkFun Electronics"
 Atto84.build.usb_product="SparkX Atto84"
 Atto84.build.board=ATTO84
-Atto84.build.core=arduino
+Atto84.build.core=tiny
 Atto84.build.variant=atto84
 
 Atto84.bootloader.tool=arduino:avrdude
