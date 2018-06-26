@@ -489,8 +489,8 @@
                "category":"Contributed",
                "url":"https://github.com/sparkfun/Arduino_Boards/raw/tiny/IDE_Board_Manager/sparkfun-tiny-0.1.5.tar.bz2",
                "archiveFileName":"sparkfun-tiny-0.1.5.tar.bz2",
-               "checksum":"SHA-256:0C383B46B9DCB04BA1C21C0DBDF9AA81FE94C0477102B44703F3C89807AD1912",
-               "size":"765765",
+               "checksum":"SHA-256:7C7514DA18F0CFEEB0C94ADF67BD05BFAC18D5BB253D0A8543D33720D56787A3",
+               "size":"798516",
                "help":{
                   "online":"https://forums.sparkfun.com"
                },

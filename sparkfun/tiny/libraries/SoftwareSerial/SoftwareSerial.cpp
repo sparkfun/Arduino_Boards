@@ -48,7 +48,7 @@ http://arduiniana.org.
 // Statics
 //
 SoftwareSerial *SoftwareSerial::active_object = 0;
-uint8_t SoftwareSerial::_receive_buffer[_SS_MAX_RX_BUFF]; 
+char SoftwareSerial::_receive_buffer[_SS_MAX_RX_BUFF]; 
 volatile uint8_t SoftwareSerial::_receive_buffer_tail = 0;
 volatile uint8_t SoftwareSerial::_receive_buffer_head = 0;
 
@@ -57,9 +57,9 @@ volatile uint8_t SoftwareSerial::_receive_buffer_head = 0;
 //
 // This function generates a brief pulse
 // for debugging or measuring on an oscilloscope.
-#if _DEBUG
 inline void DebugPulse(uint8_t pin, uint8_t count)
 {
+#if _DEBUG
   volatile uint8_t *pport = portOutputRegister(digitalPinToPort(pin));
 
   uint8_t val = *pport;
@@ -68,10 +68,8 @@ inline void DebugPulse(uint8_t pin, uint8_t count)
     *pport = val | digitalPinToBitMask(pin);
     *pport = val;
   }
-}
-#else
-inline void DebugPulse(uint8_t, uint8_t) {}
 #endif
+}
 
 //
 // Private methods
@@ -225,7 +223,7 @@ inline void SoftwareSerial::handle_interrupt()
 }
 
 #if defined(PCINT0_vect)
-ISR(PCINT0_vect)
+ISR(PCINT0_vect) 
 {
   SoftwareSerial::handle_interrupt();
 }
@@ -270,7 +268,7 @@ void SoftwareSerial::setTX(uint8_t tx)
 {
   // First write, then set output. If we do this the other way around,
   // the pin would be output low for a short while before switching to
-  // output high. Now, it is input with pullup for a short while, which
+  // output hihg. Now, it is input with pullup for a short while, which
   // is fine. With inverse logic, either order is fine.
   digitalWrite(tx, _inverse_logic ? LOW : HIGH);
   pinMode(tx, OUTPUT);
@@ -469,7 +467,13 @@ size_t SoftwareSerial::write(uint8_t b)
 
 void SoftwareSerial::flush()
 {
-  // There is no tx buffering, simply return
+  if (!isListening())
+    return;
+
+  uint8_t oldSREG = SREG;
+  cli();
+  _receive_buffer_head = _receive_buffer_tail = 0;
+  SREG = oldSREG;
 }
 
 int SoftwareSerial::peek()

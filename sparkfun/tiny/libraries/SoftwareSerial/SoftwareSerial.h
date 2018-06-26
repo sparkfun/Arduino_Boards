@@ -39,10 +39,7 @@ http://arduiniana.org.
 * Definitions
 ******************************************************************************/
 
-#ifndef _SS_MAX_RX_BUFF
 #define _SS_MAX_RX_BUFF 64 // RX buffer size
-#endif
-
 #ifndef GCC_VERSION
 #define GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
 #endif
@@ -69,17 +66,18 @@ private:
   uint16_t _inverse_logic:1;
 
   // static data
-  static uint8_t _receive_buffer[_SS_MAX_RX_BUFF]; 
+  static char _receive_buffer[_SS_MAX_RX_BUFF]; 
   static volatile uint8_t _receive_buffer_tail;
   static volatile uint8_t _receive_buffer_head;
   static SoftwareSerial *active_object;
 
   // private methods
-  inline void recv() __attribute__((__always_inline__));
+  void recv() __attribute__((__always_inline__));
   uint8_t rx_pin_read();
+  void tx_pin_write(uint8_t pin_state) __attribute__((__always_inline__));
   void setTX(uint8_t transmitPin);
   void setRX(uint8_t receivePin);
-  inline void setRxIntMsk(bool enable) __attribute__((__always_inline__));
+  void setRxIntMsk(bool enable) __attribute__((__always_inline__));
 
   // Return num - sub, or 1 if the result would be < 1
   static uint16_t subtract_cap(uint16_t num, uint16_t sub);
