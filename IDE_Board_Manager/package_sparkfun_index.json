@@ -344,7 +344,7 @@
               "name": "LilyPad USB Plus"
             },
             {
-              "name": "Serial LCD"
+              "name": "SerLCD"
             }
           ],
           "toolsDependencies": []
