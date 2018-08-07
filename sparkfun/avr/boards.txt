@@ -383,26 +383,26 @@ LilyPadProtoUSB.build.extra_flags={build.usb_flags}
 
 
 ################################################################################
-################################### SerLCD v2 ##################################
+################################### SerLCD #####################################
 ################################################################################
-SerLCDv2.name=SparkFun SerLCD v2
+SerLCD.name=SparkFun SerLCD
 
-SerLCDv2.upload.tool=avrdude
-SerLCDv2.upload.protocol=arduino
-SerLCDv2.upload.maximum_size=32256
-SerLCDv2.upload.maximum_data_size=2048
-SerLCDv2.upload.speed=115200
+SerLCD.upload.tool=avrdude
+SerLCD.upload.protocol=arduino
+SerLCD.upload.maximum_size=32256
+SerLCD.upload.maximum_data_size=2048
+SerLCD.upload.speed=115200
 
-SerLCDv2.bootloader.tool=avrdude
-SerLCDv2.bootloader.low_fuses=0xFF
-SerLCDv2.bootloader.high_fuses=0xDE
-SerLCDv2.bootloader.extended_fuses=0xFD
-SerLCDv2.bootloader.unlock_bits=0x3F
-SerLCDv2.bootloader.lock_bits=0x0F
-SerLCDv2.bootloader.file=optiboot/optiboot_SerLCDv2.hex
+SerLCD.bootloader.tool=avrdude
+SerLCD.bootloader.low_fuses=0xFF
+SerLCD.bootloader.high_fuses=0xDE
+SerLCD.bootloader.extended_fuses=0xFD
+SerLCD.bootloader.unlock_bits=0x3F
+SerLCD.bootloader.lock_bits=0x0F
+SerLCD.bootloader.file=optiboot/optiboot_SerLCD.hex
 
-SerLCDv2.build.mcu=atmega328p
-SerLCDv2.build.f_cpu=11059200L
-SerLCDv2.build.board=AVR_UNO
-SerLCDv2.build.core=arduino:arduino
-SerLCDv2.build.variant=arduino:standard
+SerLCD.build.mcu=atmega328p
+SerLCD.build.f_cpu=11059200L
+SerLCD.build.board=AVR_UNO
+SerLCD.build.core=arduino:arduino
+SerLCD.build.variant=arduino:standard
