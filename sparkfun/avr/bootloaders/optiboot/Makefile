@@ -24,10 +24,10 @@ PROGRAM    = optiboot
 # Arduino user IDE setup, or the Arduino source tree.
 # Uncomment this next lines to build within the arduino environment,
 # using the arduino-included avrgcc toolset (mac and pc)
-# ENV ?= arduino
+ENV ?= arduino
 # ENV ?= arduinodev
 # OS ?= macosx
-# OS ?= windows
+OS ?= windows
 
 
 # enter the parameters for the avrdude isp tool
@@ -53,6 +53,7 @@ ifeq ($(ENV), arduino)
 TOOLROOT = ../../../tools
 GCCROOT = $(TOOLROOT)/avr/bin/
 AVRDUDE_CONF = -C$(TOOLROOT)/avr/etc/avrdude.conf
+endif
 
 ifeq ($(OS), windows)
 # On windows, SOME of the tool paths will need to have backslashes instead
@@ -63,7 +64,7 @@ fixpath = $(subst /,\,$1)
 SHELL = cmd.exe
 endif
 
-else ifeq ($(ENV), arduinodev)
+ifeq ($(ENV), arduinodev)
 # Arduino IDE source code environment.  Use the unpacked compilers created
 # by the build (you'll need to do "ant build" first.)
 ifeq ($(OS), macosx)
