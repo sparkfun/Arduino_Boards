@@ -20,7 +20,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=SparkFun SAMD (32-bits ARM Cortex-M0+) Boards
-version=1.4.0
+version=1.5.0
 
 # Compile variables
 # -----------------
@@ -32,6 +32,7 @@ compiler.warning_flags.more=-Wall
 compiler.warning_flags.all=-Wall -Wextra
 
 compiler.path={runtime.tools.arm-none-eabi-gcc.path}/bin/
+#compiler.path={runtime.tools.arm-none-eabi-gcc-4.8.3-2014q1.path}/bin/
 compiler.c.cmd=arm-none-eabi-gcc
 compiler.c.flags=-mcpu={build.mcu} -mthumb -c -g -Os {compiler.warning_flags} -std=gnu11 -ffunction-sections -fdata-sections -nostdlib --param max-inline-insns-single=500 -MMD
 compiler.c.elf.cmd=arm-none-eabi-gcc
@@ -75,7 +76,6 @@ build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANU
 # numeric vendor ID if available or by board's specific value.
 build.usb_manufacturer="Unknown"
 
-
 # Compile patterns
 # ----------------
 
@@ -111,7 +111,6 @@ recipe.output.save_file={build.project_name}.{build.variant}.{build.preferred_ou
 ## Compute size
 recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
 recipe.size.regex=\.text\s+([0-9]+).*
-
 
 # Uploader tools
 # --------------
