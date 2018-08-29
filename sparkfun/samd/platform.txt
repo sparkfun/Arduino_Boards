@@ -20,7 +20,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=SparkFun SAMD (32-bits ARM Cortex-M0+) Boards
-version=1.4.0
+version=1.5.0
 
 # Compile variables
 # -----------------
@@ -75,7 +75,6 @@ build.usb_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} -DUSBCON '-DUSB_MANU
 # numeric vendor ID if available or by board's specific value.
 build.usb_manufacturer="Unknown"
 
-
 # Compile patterns
 # ----------------
 
@@ -111,7 +110,6 @@ recipe.output.save_file={build.project_name}.{build.variant}.{build.preferred_ou
 ## Compute size
 recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
 recipe.size.regex=\.text\s+([0-9]+).*
-
 
 # Uploader tools
 # --------------
@@ -150,7 +148,8 @@ tools.bossac.upload.network_pattern="{network_cmd}" -address {serial.port} -port
 # OpenOCD sketch upload
 #
 
-tools.openocd.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
+#tools.openocd.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
+#tools.openocd.path={runtime.tools.openocd}
 tools.openocd.cmd=bin/openocd
 tools.openocd.cmd.windows=bin/openocd.exe
 
@@ -179,7 +178,8 @@ tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.verbose} -s "{path}/
 # FIXME: this programmer is a workaround for default options being overwritten by uploadUsingPreferences
 #
 
-tools.openocd-withbootsize.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
+#tools.openocd-withbootsize.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
+tools.openocd-withbootsize.path={runtime.tools.openocd}
 tools.openocd-withbootsize.cmd=bin/openocd
 tools.openocd-withbootsize.cmd.windows=bin/openocd.exe
 
