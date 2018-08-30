@@ -544,14 +544,14 @@
           ]
         },
         {
-          "name": "SparkFun SAMD Boards",
+          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
           "architecture": "samd",
           "version": "1.5.0",
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.5.0.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.5.0.tar.bz2",
-          "checksum": "SHA-256:0EC1574A319C1D561322C9E6FF1515B594956BC6B2CF6C92266F4D36684CBBF8",
-          "size": "322453",
+          "checksum": "SHA-256:05C4FBC7CC924BED99B9A2618F57FAA1DDEA210AFFB7AFEE57639E6B9FEB445C",
+          "size": "322443",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "maintainer": "SparkFun Electronics (dependency: Arduino SAMD Boards 1.6.19)",
+      "maintainer": "SparkFun Electronics",
       "help": {
         "online": "http://SparkFun.com"
       },
