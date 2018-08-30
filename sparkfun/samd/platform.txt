@@ -148,7 +148,7 @@ tools.bossac.upload.network_pattern="{network_cmd}" -address {serial.port} -port
 # OpenOCD sketch upload
 #
 
-#tools.openocd.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
+tools.openocd.path={runtime.tools.openocd-0.9.0-arduino6-static.path}
 #tools.openocd.path={runtime.tools.openocd}
 tools.openocd.cmd=bin/openocd
 tools.openocd.cmd.windows=bin/openocd.exe
