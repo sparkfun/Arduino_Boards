@@ -38,6 +38,8 @@ samd21IMU.sketch.name="SparkFun 9DoF Razor IMU M0"
 samd21IMU.bootloader.name="SparkFun 9DoF Razor IMU M0 BL"
 LilyMini.sketch.name="SparkFun LilyMini"
 LilyMini.bootloader.name="SparkFun LilyMini BL"
+samd21ProRF.sketch.name="SparkFun SAMD21 Pro RF"
+samd21ProRF.bootloader.name="SparkFun SAMD21 Pro RF BL"
 
 [DefaultInstall]
 CopyINF=sparkfun.inf
@@ -66,6 +68,8 @@ DefaultDestDir=12
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 %LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
 %LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
+%samd21ProRF.sketch.name%=DriverInstall, USB\VID_1B4F&PID_214F&MI_00
+%samd21ProRF.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_215F
 
 [DeviceList.NTamd64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
@@ -74,6 +78,8 @@ DefaultDestDir=12
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 %LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
 %LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
+%samd21ProRF.sketch.name%=DriverInstall, USB\VID_1B4F&PID_214F&MI_00
+%samd21ProRF.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_215F
 
 [DeviceList.NTia64]
 %samd21Breakout.sketch.name%=DriverInstall, USB\VID_1B4F&PID_8D21&MI_00
@@ -82,6 +88,8 @@ DefaultDestDir=12
 %samd21IMU.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_9D0E
 %LilyMini.sketch.name%=DriverInstall, USB\VID_1B4F&PID_0101&MI_00
 %LilyMini.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_0100
+%samd21ProRF.sketch.name%=DriverInstall, USB\VID_1B4F&PID_214F&MI_00
+%samd21ProRF.bootloader.name%=DriverInstall, USB\VID_1B4F&PID_215F
 
 [DriverInstall]
 include=mdmcpq.inf,usb.inf
