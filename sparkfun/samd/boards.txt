@@ -140,7 +140,7 @@ samd21_proRF.upload.wait_for_upload_port=true
 samd21_proRF.upload.native_usb=true
 samd21_proRF.build.mcu=cortex-m0plus
 samd21_proRF.build.f_cpu=48000000L
-samd21_proRF.build.usb_product="SFE SAMD21"
+samd21_proRF.build.usb_product="SFE SAMD21 Pro RF"
 samd21_proRF.build.usb_manufacturer="SparkFun"
 samd21_proRF.build.board=SAMD_ZERO
 samd21_proRF.build.core=arduino
@@ -153,5 +153,5 @@ samd21_proRF.build.extra_combine_flags=
 samd21_proRF.build.vid=0x1B4F
 samd21_proRF.build.pid=0x214F
 samd21_proRF.bootloader.tool=openocd
-samd21_proRF.bootloader.file=zero/SparkFun_SAMD21_Dev.bin
+samd21_proRF.bootloader.file=zero/Sparkfun_SAMD21_ProRF.bin
 

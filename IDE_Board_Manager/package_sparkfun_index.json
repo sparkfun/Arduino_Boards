@@ -631,8 +631,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.5.1.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.5.1.tar.bz2",
-          "checksum": "SHA-256:ACB0087FB2361C5D02AE5891607FBE6CEDE40012F47B969808EC51921A288A4F",
-          "size": "328884",
+          "checksum": "SHA-256:774052679A88EA43F5CEA2BAD88398E7310D4B879B8745613648D9F09BCB26DA",
+          "size": "323505",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
@@ -655,7 +655,38 @@
           ],
           "toolsDependencies": [
           ]
-        }
+        },
+        {
+          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
+          "architecture": "samd",
+          "version": "1.5.2",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.5.2.tar.bz2",
+          "archiveFileName": "sparkfun-samd-1.5.2.tar.bz2",
+          "checksum": "SHA-256:AB0F5486D0EFAE48E47716C7B01340F3E503D55CFD6872FFD3DBEB28E4095F2B",
+          "size": "328665",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            }
+          ],
+          "toolsDependencies": [
+          ]
       ],
       "tools": [
         {
