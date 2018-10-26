@@ -31,6 +31,8 @@
   #include "board_definitions_sparkfun_samd21dev.h"
 #elif defined(BOARD_ID_sparkfun_samd21_proRF)
   #include "board_definitions_sparkfun_samd21_proRF.h"
+#elif defined(BOARD_ID_sparkfun_samd21_proRF_1w)
+  #include "board_definitions_sparkfun_samd21_proRF_1w.h"
 #else
   #error You must define a BOARD_ID and add the corresponding definitions in board_definitions.h
 #endif
