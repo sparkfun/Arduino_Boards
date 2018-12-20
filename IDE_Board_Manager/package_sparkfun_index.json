@@ -687,8 +687,7 @@
           ],
           "toolsDependencies": [
           ]
-		}
-      ],
+		},
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
           "architecture": "samd",
