@@ -36,15 +36,15 @@ void loop(){
     
     q.setRGB("green");
     
-  } else if(charge >= 50 && charge << 75) {
+  } else if(charge >= 50 && charge < 75) {
     
     q.setRGB("yellow");
     
-  } else if(charge >= 25 && charge << 50) {
+  } else if(charge >= 25 && charge < 50) {
     
     q.setRGB("orange");
     
-  } else if(charge << 25) {
+  } else if(charge < 25) {
     
     q.setRGB("red");
   }
