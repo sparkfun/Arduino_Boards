@@ -20,12 +20,15 @@ void setup()
 
 void loop()
 {
-  Wire.requestFrom(2, 6);    // request 6 bytes from slave device #2
+  Wire.beginTransmission(0x28);
+  Wire.write(0xFD);
+  Wire.requestFrom(0x28, 1);    // request 6 bytes from slave device #2
+  Wire.endTransmission();
 
   while(Wire.available())    // slave may send less than requested
   { 
-    char c = Wire.read(); // receive a byte as character
-    Serial.print(c);         // print the character
+    uint8_t c = Wire.read(); // receive a byte as character
+    Serial.println(c, HEX);         // print the character
   }
 
   delay(500);

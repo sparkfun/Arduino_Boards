@@ -20,7 +20,7 @@
 # https://github.com/arduino/Arduino/wiki/Arduino-IDE-1.5---3rd-party-Hardware-specification
 
 name=SparkFun SAMD (32-bits ARM Cortex-M0+) Boards
-version=1.5.0
+version=1.6.0
 
 # Compile variables
 # -----------------
@@ -64,7 +64,7 @@ compiler.S.extra_flags=
 compiler.ar.extra_flags=
 compiler.elf2hex.extra_flags=
 
-compiler.arm.cmsis.c.flags="-I{runtime.tools.CMSIS-4.5.0.path}/CMSIS/Include/" "-I{runtime.tools.CMSIS-Atmel-1.1.0.path}/CMSIS/Device/ATMEL/"
+compiler.arm.cmsis.c.flags="-I{runtime.tools.CMSIS-4.5.0.path}/CMSIS/Include/" "-I{runtime.tools.CMSIS-Atmel-1.2.0.path}/CMSIS/Device/ATMEL/"
 compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-4.5.0.path}/CMSIS/Lib/GCC/" -larm_cortexM0l_math
 
 # USB Flags
@@ -143,6 +143,18 @@ tools.bossac_remote.upload.pattern=/usr/bin/run-bossac {upload.verbose} --port=t
 
 tools.bossac.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
 tools.bossac.upload.network_pattern="{network_cmd}" -address {serial.port} -port 65280 -username arduino -password "{network.password}" -sketch "{build.path}/{build.project_name}.bin" -upload /sketch -b
+
+# v1.8.0
+
+tools.bossac18.path={runtime.tools.bossac-1.8.0-48-gb176eee.path}
+tools.bossac18.cmd=bossac
+
+tools.bossac18.upload.params.verbose=-i -d
+tools.bossac18.upload.params.quiet=
+tools.bossac18.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U -i --offset={upload.offset} -w -v "{build.path}/{build.project_name}.bin" -R
+
+tools.bossac18.network_cmd={runtime.tools.arduinoOTA.path}/bin/arduinoOTA
+tools.bossac18.upload.network_pattern="{network_cmd}" -address {serial.port} -port 65280 -username arduino -password "{network.password}" -sketch "{build.path}/{build.project_name}.bin" -upload /sketch -b
 
 #
 # OpenOCD sketch upload

@@ -211,3 +211,37 @@ RedBoard_Turbo.build.vid=0x1B4F
 RedBoard_Turbo.build.pid=0x0015
 RedBoard_Turbo.bootloader.tool=openocd
 RedBoard_Turbo.bootloader.file=turbo/bootloader-sparkfun-redboard-turbo-v2.0.0-adafruit.4-12-g2d4ec73-dirty.bin
+
+
+samd51_thing_plus.name=SparkFun SAMD51 Thing Plus
+samd51_thing_plus.vid.0=0x1B4F
+samd51_thing_plus.pid.0=0x0016
+samd51_thing_plus.vid.1=0x1B4F
+samd51_thing_plus.pid.1=0xF016
+samd51_thing_plus.upload.tool=bossac18
+samd51_thing_plus.upload.protocol=sam-ba
+samd51_thing_plus.upload.maximum_size=507904
+samd51_thing_plus.upload.offset=0x4000
+samd51_thing_plus.upload.use_1200bps_touch=true
+samd51_thing_plus.upload.wait_for_upload_port=true
+samd51_thing_plus.upload.native_usb=true
+samd51_thing_plus.build.mcu=cortex-m4
+samd51_thing_plus.build.f_cpu=120000000L
+samd51_thing_plus.build.usb_product="SparkFun SAMD51 Thing Plus"
+samd51_thing_plus.build.usb_manufacturer="SparkFun Electronics"
+samd51_thing_plus.build.board=SAMD51_THING_PLUS
+samd51_thing_plus.build.core=arduino51
+samd51_thing_plus.build.extra_flags=-D__SAMD51J20A__ -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+samd51_thing_plus.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+samd51_thing_plus.build.openocdscript=openocd_scripts/arduino_zero.cfg
+samd51_thing_plus.build.variant=SparkFun_SAMD51_Thing_Plus
+samd51_thing_plus.build.variant_system_lib=
+samd51_thing_plus.build.vid=0x1B4F
+samd51_thing_plus.build.pid=0xF016
+samd51_thing_plus.bootloader.tool=openocd
+samd51_thing_plus.bootloader.file=SAMD51/bootloader-sfe-samd51-thing-v2.0.0-34-ga8591b7-dirty.bin
+samd51_thing_plus.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+samd51_thing_plus.menu.cache.on=Enabled
+samd51_thing_plus.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+samd51_thing_plus.menu.cache.off=Disabled
+samd51_thing_plus.menu.cache.off.build.cache_flags=
