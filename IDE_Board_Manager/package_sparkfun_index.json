@@ -24,7 +24,7 @@
           "boards": [
             { "name": "SparkFun Artemis Module" },
             { "name": "SparkFun BlackBoard Artemis" },
-            { "name": "SparkFun BlackBoard Artemis Mega" },
+            { "name": "SparkFun BlackBoard Artemis ATP" },
             { "name": "SparkFun BlackBoard Artemis Nano" },
             { "name": "SparkFun Edge" }
           ],
