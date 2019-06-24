@@ -802,7 +802,7 @@
           ]
 		},
         {
-          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
+          "name": "SparkFun SAMD Boards",
           "architecture": "samd",
           "version": "1.6.1",
           "category": "Contributed",
@@ -862,66 +862,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-		]
-		}
-      ],
-      "tools": [
-        {
-          "version": "8-2018-q4-major", 
-          "name": "arm-none-eabi-gcc", 
-          "systems": [
-            {
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460", 
-              "host": "i386-apple-darwin11", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "size": "111430151"
-            }, 
-            {
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52", 
-              "host": "i686-linux-gnu", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "size": "107253352"
-            }, 
-            {
-              "url": "https://static.sparkfun.com/large/win32_aneg-8-2018_2018-q4-major.zip", 
-              "checksum": "SHA-256:93be44e2e12e66eee309370afb4d6c4333cbd09e9ff2cd335942c2910f0b613f", 
-              "host": "i686-mingw32", 
-              "archiveFileName": "win32_aneg-8-2018_2018-q4-major.zip", 
-              "size": "135765494"
-            }
-          ]
-        },
-        {
-          "name": "bossac",
-          "version": "1.4.0",
-          "systems": [
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
-              "archiveFileName": "bossac-1.4.0-win.zip",
-              "checksum": "SHA-256:BCA6503F5DBB1F96693AFD0701A759ECFB3BE5B9FB3F9D901CA17853B224F4EB",
-              "size": "314705"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
-              "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
-              "checksum": "SHA-256:BB8F398BF84C5F31880FE9A2C7AE0174592516CE4821B49744B426AA968ADA10",
-              "size": "225696"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
-              "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
-              "checksum": "SHA-256:D0F225846D7BC80A74324D783CDB35C42A7F85EAD73CC016C0CC767B0AA5E81C",
-              "size": "74461"
-            }
-          ]
-        }
-      ]
-    },
+			]
+		},
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -929,8 +871,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.6.2.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.6.2.tar.bz2",
-          "checksum": "SHA-256:9DCA52BB59C46FA346AE1B61FA90AAA01346BF1ACDFF986829DD421B7444A65D",
-          "size": "1619895",
+          "checksum": "SHA-256:C06952DC372B9C42B4B308C44449979AC6B4F8B87356C45061E3B1CBCC699B2D",
+          "size": "1619901",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
@@ -983,10 +925,37 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-		]
+			]
 		}
       ],
       "tools": [
+        {
+          "version": "8-2018-q4-major", 
+          "name": "arm-none-eabi-gcc", 
+          "systems": [
+            {
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
+              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460", 
+              "host": "i386-apple-darwin11", 
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
+              "size": "111430151"
+            }, 
+            {
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
+              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52", 
+              "host": "i686-linux-gnu", 
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
+              "size": "107253352"
+            }, 
+            {
+              "url": "https://static.sparkfun.com/large/win32_aneg-8-2018_2018-q4-major.zip", 
+              "checksum": "SHA-256:93be44e2e12e66eee309370afb4d6c4333cbd09e9ff2cd335942c2910f0b613f", 
+              "host": "i686-mingw32", 
+              "archiveFileName": "win32_aneg-8-2018_2018-q4-major.zip", 
+              "size": "135765494"
+            }
+          ]
+        },
         {
           "name": "bossac",
           "version": "1.4.0",
