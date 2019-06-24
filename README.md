@@ -4,6 +4,13 @@ This repository contains support for the following SparkFun Arduino-compatible d
 
 **IMPORTANT NOTE:** These board files have been updated for compatibility with Arduino version 1.8 and higher. Some boards (e.g. SAMD) may not compile correctly with earlier versions of Arduino. If you need compatibility with earlier versions of Arduino, you can choose previous releases of these boards from the Boards Manager.
 
+#### Apollo3 Boards
+* [Artemis Module]()
+* [Blackboard Artemis]()
+* [Blackboard Artemis Mega]()
+* [Blackboard Artemis Nano]()
+* [Edge]()
+
 #### AVR Boards
 
 * [RedBoard](https://www.sparkfun.com/products/12757)
@@ -44,13 +51,13 @@ To add board support for our products, start Arduino and open the Preferences wi
 
 If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
 
-### AVR and ESP Installation Instructions
+### Apollo3, AVR, and ESP Installation Instructions
 
 Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**.
 
 ![Boards Manager Menu](manager-menu.png)
 
-If you type "sparkfun" (without quotes) into the "filter your search" field, you will see options to install SparkFun's AVR and ESP board files. Click in the desired box, and click the "Install" button that appears. Once installed, the boards will appear at the bottom of the board list.
+If you type "sparkfun" (without quotes) into the "filter your search" field, you will see options to install SparkFun's Apollo3, AVR, and ESP board files. Click in the desired box, and click the "Install" button that appears. Once installed, the boards will appear at the bottom of the board list.
 
 ![Sparkfun Boards](sparkfunboards.png)
 

@@ -10,6 +10,52 @@
       },
       "platforms": [
         {
+          "name": "SparkFun Apollo3 Boards",
+          "architecture": "apollo3",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/1.0.0.zip",
+          "archiveFileName": "Arduino_Apollo3-1.0.0.zip",
+          "checksum": "SHA-256:36f0e04e2f2d2b281622d0f7fc1c41f38f1a24b6824c3f2f2b568cb29eb9fb6b",
+          "size": "66433091",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            { "name": "SparkFun Artemis Module" },
+            { "name": "SparkFun BlackBoard Artemis" },
+            { "name": "SparkFun BlackBoard Artemis ATP" },
+            { "name": "SparkFun BlackBoard Artemis Nano" },
+            { "name": "SparkFun Edge" }
+          ],
+          "toolsDependencies": [
+            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+          ]
+        },
+        {
+          "name": "SparkFun Apollo3 Boards",
+          "architecture": "apollo3",
+          "version": "0.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/0.0.0.zip",
+          "archiveFileName": "Arduino_Apollo3-0.0.0.zip",
+          "checksum": "SHA-256:4cece2fcfff35e7b9d8ef1c433cf7fde3b94ae8ad9b1f9eb0fb5ee8b8abd5231",
+          "size": "45062118",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            { "name": "SparkFun Artemis Module" },
+            { "name": "SparkFun BlackBoard Artemis" },
+            { "name": "SparkFun BlackBoard Artemis Mega" },
+            { "name": "SparkFun BlackBoard Artemis Nano" },
+            { "name": "SparkFun Edge" }
+          ],
+          "toolsDependencies": [
+            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+          ]
+        },
+        {
           "name": "SparkFun AVR Boards",
           "architecture": "avr",
           "version": "1.1.5",
@@ -820,6 +866,33 @@
 		}
       ],
       "tools": [
+        {
+          "version": "8-2018-q4-major", 
+          "name": "arm-none-eabi-gcc", 
+          "systems": [
+            {
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
+              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460", 
+              "host": "i386-apple-darwin11", 
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
+              "size": "111430151"
+            }, 
+            {
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
+              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52", 
+              "host": "i686-linux-gnu", 
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
+              "size": "107253352"
+            }, 
+            {
+              "url": "https://static.sparkfun.com/large/win32_aneg-8-2018_2018-q4-major.zip", 
+              "checksum": "SHA-256:93be44e2e12e66eee309370afb4d6c4333cbd09e9ff2cd335942c2910f0b613f", 
+              "host": "i686-mingw32", 
+              "archiveFileName": "win32_aneg-8-2018_2018-q4-major.zip", 
+              "size": "135765494"
+            }
+          ]
+        },
         {
           "name": "bossac",
           "version": "1.4.0",
