@@ -20,9 +20,9 @@ void setup()
 
 void loop()
 {
-  Wire.beginTransmission(0x28);
-  Wire.write(0xFD);
-  Wire.requestFrom(0x28, 1);    // request 6 bytes from slave device #2
+  Wire.beginTransmission(0x69);
+  Wire.write(0x14);
+  Wire.requestFrom(0x69, 1);    // request 6 bytes from slave device #2
   Wire.endTransmission();
 
   while(Wire.available())    // slave may send less than requested
