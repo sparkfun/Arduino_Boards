@@ -14,10 +14,10 @@
           "architecture": "apollo3",
           "version": "1.0.2",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/1.0.2.zip",
-          "archiveFileName": "Arduino_Apollo3-1.0.2.zip",
-          "checksum": "SHA-256:87a21dd1860eedb809467602f95e8138aaf72aa126fe0682afd26c29d50b2012",
-          "size": "47669251",
+          "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/1.0.2.tar.gz",
+          "archiveFileName": "Arduino_Apollo3-1.0.2.tar.gz",
+          "checksum": "SHA-256:db4cd549fd712b211cd52e3861ef5aa9e0a7e76f499b9d4fd247dab01dcc467a",
+          "size": "47507443",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
