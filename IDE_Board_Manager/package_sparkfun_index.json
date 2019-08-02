@@ -1056,7 +1056,7 @@
             {
               "host": "i686-mingw32",
               "url": "https://developer.arm.com/-/media/Files/downloads/gnu-rm/8-2018q4/gcc-arm-none-eabi-8-2018-q4-major-win32.zip?revision=ab9cb8f8-6a9d-4a6e-818a-295f5d1ca982?product=GNU%20Arm%20Embedded%20Toolchain,ZIP,,Windows,8-2018-q4-major", 
-              "checksum": "SHA-256:93be44e2e12e66eee309370afb4d6c4333cbd09e9ff2cd335942c2910f0b613f", 
+              "checksum": "SHA-256:be5e2f68549efaecb79bdc34ff03c06f27deb2fcec3badddb5729cfb5ce43d6b", 
               "archiveFileName": "win32_aneg-8-2018_2018-q4-major.zip", 
               "size": "135765494"
             }
