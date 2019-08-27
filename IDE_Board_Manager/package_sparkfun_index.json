@@ -12,6 +12,29 @@
         {
           "name": "SparkFun Apollo3 Boards",
           "architecture": "apollo3",
+          "version": "1.0.7",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/v1.0.7_ble-beta.tar.gz",
+          "archiveFileName": "Arduino_Apollo3-1.0.7_ble-beta.tar.gz",
+          "checksum": "SHA-256:c7e80c9bb27eae22f7632afb37dcce0c6c52e897e7e21ab0359b079e1304a51c",
+          "size": "48108459",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            { "name": "SparkFun Artemis Module" },
+            { "name": "SparkFun BlackBoard Artemis" },
+            { "name": "SparkFun BlackBoard Artemis ATP" },
+            { "name": "SparkFun BlackBoard Artemis Nano" },
+            { "name": "SparkFun Edge" }
+          ],
+          "toolsDependencies": [
+            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+          ]
+        },
+        {
+          "name": "SparkFun Apollo3 Boards",
+          "architecture": "apollo3",
           "version": "1.0.6",
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/v1.0.6.tar.gz",
