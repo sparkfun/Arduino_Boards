@@ -5,10 +5,10 @@ This repository contains support for the following SparkFun Arduino-compatible d
 **IMPORTANT NOTE:** These board files have been updated for compatibility with Arduino version 1.8 and higher. Some boards (e.g. SAMD) may not compile correctly with earlier versions of Arduino. If you need compatibility with earlier versions of Arduino, you can choose previous releases of these boards from the Boards Manager.
 
 #### Apollo3 Boards
-* [Artemis Module]()
-* [Blackboard Artemis]()
-* [Blackboard Artemis Mega]()
-* [Blackboard Artemis Nano]()
+* [Artemis Module](https://www.sparkfun.com/products/15484)
+* [Redboard Artemis](https://www.sparkfun.com/products/15444)
+* [Redboard Artemis ATP](https://www.sparkfun.com/products/15442)
+* [Redboard Artemis Nano](https://www.sparkfun.com/products/15443)
 * [Edge]()
 
 #### AVR Boards
