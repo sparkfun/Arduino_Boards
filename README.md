@@ -35,6 +35,7 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [SparkFun LilyMini ProtoSnap (SAMD11)](https://www.sparkfun.com/products/14063)
 * [SparkFun LilyMini (SAMD11)](https://www.sparkfun.com/products/14064)
 * [SparkFun SAMD21 Pro RF LoRa 915MHz](https://www.sparkfun.com/products/14916)
+* [SparkFun Qwiic Micro](https://www.sparkfun.com/products/15423)
 
 #### ESP8266 Boards
 
