@@ -163,6 +163,16 @@ class SPIClass {
   #define SPI_CLOCK_DIV32  96
   #define SPI_CLOCK_DIV64  192
   #define SPI_CLOCK_DIV128 255
-#endif
+#endif /* F_CPU == 48000000 */
+#if F_CPU == 120000000
+  #define SPI_CLOCK_DIV2   15
+  #define SPI_CLOCK_DIV4   30
+  #define SPI_CLOCK_DIV8   60
+  #define SPI_CLOCK_DIV16  120
+  #define SPI_CLOCK_DIV32  240
+  #define SPI_CLOCK_DIV64  480
+  #define SPI_CLOCK_DIV128 960
+#endif /* F_CPU == 120000000 */
+
 
 #endif
