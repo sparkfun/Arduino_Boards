@@ -1446,7 +1446,7 @@
         {
           "category": "Contributed",
           "name": "SparkFun ESP8266 Boards",
-          "url": "https://github.com/sparkfun/Arduino_Boards/blob/master/IDE_Board_Manager/sparkfun-esp8266-2.1.1.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-2.1.1.tar.bz2",
           "checksum": "SHA-256:DF1833914C6F52CD7AF5E418FFC4CED96DE944A1F7BE4021B961F7493E491270",
           "help": {
             "online": "https://learn.sparkfun.com"
