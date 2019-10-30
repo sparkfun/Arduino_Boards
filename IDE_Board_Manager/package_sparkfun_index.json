@@ -1446,14 +1446,14 @@
         {
           "category": "Contributed",
           "name": "SparkFun ESP8266 Boards",
-          "url": "https://cdn.sparkfun.com/assets/learn_tutorials/4/9/5/sparkfun-esp8266-2.1.0.tar.bz2",
-          "checksum": "SHA-256:FE3E0504B38A5A4C912801A3E4633380A666DC77B8D3043548187AF8675477DA",
+          "url": "https://github.com/sparkfun/Arduino_Boards/blob/master/IDE_Board_Manager/sparkfun-esp8266-2.1.1.tar.bz2",
+          "checksum": "SHA-256:DF1833914C6F52CD7AF5E418FFC4CED96DE944A1F7BE4021B961F7493E491270",
           "help": {
             "online": "https://learn.sparkfun.com"
           },
-          "version": "2.1.0",
+          "version": "2.1.1",
           "architecture": "esp8266",
-          "archiveFileName": "sparkfun-esp8266-2.1.0.tar.bz2",
+          "archiveFileName": "sparkfun-esp8266-2.1.1.tar.bz2",
           "boards": [
             {
               "name": "SparkFun Blynk Board - ESP8266"
@@ -1485,48 +1485,55 @@
               "name": "mkspiffs"
             }
           ],
-          "size": "5436076"
+          "size": "1905124"
         }
       ],
       "tools": [
         {
-          "version": "1.20.0-26-gb404fb9-2",
-          "name": "xtensa-lx106-elf-gcc",
+          "version": "1.20.0-26-gb404fb9-2", 
+          "name": "xtensa-lx106-elf-gcc", 
           "systems": [
             {
-              "url": "http://arduino.esp8266.com/win32-xtensa-lx106-elf-gb404fb9-2.tar.gz",
-              "checksum": "SHA-256:10476b9c11a7a90f40883413ddfb409f505b20692e316c4e597c4c175b4be09c",
-              "host": "i686-mingw32",
-              "archiveFileName": "win32-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/win32-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "checksum": "SHA-256:10476b9c11a7a90f40883413ddfb409f505b20692e316c4e597c4c175b4be09c", 
+              "host": "i686-mingw32", 
+              "archiveFileName": "win32-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
               "size": "153527527"
-            },
+            }, 
             {
-              "url": "http://arduino.esp8266.com/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
-              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6",
-              "host": "x86_64-apple-darwin",
-              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6", 
+              "host": "x86_64-apple-darwin", 
+              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
               "size": "35385382"
-            },
+            }, 
             {
-              "url": "http://arduino.esp8266.com/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
-              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6",
-              "host": "i386-apple-darwin",
-              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6", 
+              "host": "i386-apple-darwin", 
+              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
               "size": "35385382"
-            },
+            }, 
             {
-              "url": "http://arduino.esp8266.com/linux64-xtensa-lx106-elf-gb404fb9.tar.gz",
-              "checksum": "SHA-256:46f057fbd8b320889a26167daf325038912096d09940b2a95489db92431473b7",
-              "host": "x86_64-pc-linux-gnu",
-              "archiveFileName": "linux64-xtensa-lx106-elf-gb404fb9.tar.gz",
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux64-xtensa-lx106-elf-gb404fb9.tgz", 
+              "checksum": "SHA-256:46f057fbd8b320889a26167daf325038912096d09940b2a95489db92431473b7", 
+              "host": "x86_64-pc-linux-gnu", 
+              "archiveFileName": "linux64-xtensa-lx106-elf-gb404fb9.tar.gz", 
               "size": "30262903"
-            },
+            }, 
             {
-              "url": "http://arduino.esp8266.com/linux32-xtensa-lx106-elf.tar.gz",
-              "checksum": "SHA-256:b24817819f0078fb05895a640e806e0aca9aa96b47b80d2390ac8e2d9ddc955a",
-              "host": "i686-pc-linux-gnu",
-              "archiveFileName": "linux32-xtensa-lx106-elf.tar.gz",
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux32-xtensa-lx106-elf.tar.gz", 
+              "checksum": "SHA-256:b24817819f0078fb05895a640e806e0aca9aa96b47b80d2390ac8e2d9ddc955a", 
+              "host": "i686-pc-linux-gnu", 
+              "archiveFileName": "linux32-xtensa-lx106-elf.tar.gz", 
               "size": "32734156"
+            }, 
+            {
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz", 
+              "checksum": "SHA-256:f693946288f2ffa17288ef75ae16fa08573993f2b0a2a5e6bc35a68dc6087443", 
+              "host": "arm-linux-gnueabihf", 
+              "archiveFileName": "linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz", 
+              "size": "34938475"
             }
           ]
         },
