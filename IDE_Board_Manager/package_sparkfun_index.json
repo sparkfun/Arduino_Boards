@@ -1446,14 +1446,14 @@
         {
           "category": "Contributed",
           "name": "SparkFun ESP8266 Boards",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-2.1.1.tar.bz2",
-          "checksum": "SHA-256:DF1833914C6F52CD7AF5E418FFC4CED96DE944A1F7BE4021B961F7493E491270",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp8266-2.1.2.tar.bz2",
+          "checksum": "SHA-256:6A3722A50B09DCEF92818B5C0E5A6C752E84181F1ABFD0959DACC39D8E2F1C94",
           "help": {
             "online": "https://learn.sparkfun.com"
           },
-          "version": "2.1.1",
+          "version": "2.1.2",
           "architecture": "esp8266",
-          "archiveFileName": "sparkfun-esp8266-2.1.1.tar.bz2",
+          "archiveFileName": "sparkfun-esp8266-2.1.2.tar.bz2",
           "boards": [
             {
               "name": "SparkFun Blynk Board - ESP8266"
@@ -1485,7 +1485,7 @@
               "name": "mkspiffs"
             }
           ],
-          "size": "1905124"
+          "size": "1905291"
         }
       ],
       "tools": [
