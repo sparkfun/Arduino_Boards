@@ -166,6 +166,10 @@ static const uint8_t FLASH_SCK  = PIN_SPI1_SCK ;
 #define PIN_WIRE_SCL         (21u)
 #define PERIPH_WIRE          sercom3
 #define WIRE_IT_HANDLER      SERCOM3_Handler
+#define WIRE_IT_HANDLER_0    SERCOM3_0_Handler
+#define WIRE_IT_HANDLER_1    SERCOM3_1_Handler
+#define WIRE_IT_HANDLER_2    SERCOM3_2_Handler
+#define WIRE_IT_HANDLER_3    SERCOM3_3_Handler
 
 static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
