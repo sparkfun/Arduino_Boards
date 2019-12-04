@@ -38,9 +38,17 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [SparkFun Qwiic Micro](https://www.sparkfun.com/products/15423)
 
 #### ESP8266 Boards
-
+	_These boards are supported by [Espressif](https://github.com/esp8266/Arduino)_. :+1:
 * [ESP8266 Thing](https://www.sparkfun.com/products/13231)
+* [ESP8266 Thing Dev](https://www.sparkfun.com/products/13711)  
 * [ESP8266 WiFi Shield](https://www.sparkfun.com/products/13287)
+* [SparkFun Blynk](https://www.sparkfun.com/products/13794)
+
+#### ESP32 Boards
+	_These boards are supported by [Espressif](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)_. :+1:
+* [SparkFun Thing Plus - ESP32 WROOM](https://www.sparkfun.com/products/14689)
+* [SparkFun ESP32 Thing](https://www.sparkfun.com/products/13907)
+* [SparkFun LoRa Gateway - 1-Channel (ESP32](https://www.sparkfun.com/products/15006)
 
 ### Installation Instructions
 
@@ -52,13 +60,13 @@ To add board support for our products, start Arduino and open the Preferences wi
 
 If there is already an URL from another manufacturer in that field, click the button at the right end of the field. This will open an editing window allowing you to paste the above URL onto a new line.
 
-### Apollo3, AVR, and ESP Installation Instructions
+### Apollo3 and AVR Installation Instructions
 
 Open the Boards Manager window by selecting **Tools** > **Board**, scroll to the top of the board list, and select **Boards Manager**.
 
 ![Boards Manager Menu](manager-menu.png)
 
-If you type "sparkfun" (without quotes) into the "filter your search" field, you will see options to install SparkFun's Apollo3, AVR, and ESP board files. Click in the desired box, and click the "Install" button that appears. Once installed, the boards will appear at the bottom of the board list.
+If you type "sparkfun" (without quotes) into the "filter your search" field, you will see options to install SparkFun's Apollo3 and AVR board files. Click in the desired box, and click the "Install" button that appears. Once installed, the boards will appear at the bottom of the board list.
 
 ![Sparkfun Boards](sparkfunboards.png)
 
@@ -77,6 +85,16 @@ Now click anywhere in the "SparkFun SAMD Boards" box, and click "Install". This 
 ![SparkFun SAMD Boards](manager-arrow2.png)
 
 You're now ready to use SparkFun SAMD boards. They will appear at the bottom of the board list.
+
+### ESP Boards?
+
+All support for our ESP based boards are supported within their respective Espressif's Repository. 
+
+Our ESP8266 based boards: [Blynk](https://www.sparkfun.com/products/13794), [ESP8266 Thing](https://www.sparkfun.com/products/13231), or [ESP8266 Thing Dev](https://www.sparkfun.com/products/13711)  
+	* You can install the board files by following the instructions [here](https://github.com/esp8266/Arduino).
+
+Our ESP32 based boards Boards: [SparkFun Thing Plus - ESP32 WROOM](https://www.sparkfun.com/products/14689), [SparkFun ESP32 Thing](https://www.sparkfun.com/products/13907), [SparkFun LoRa Gateway - 1-Channel (ESP32](https://www.sparkfun.com/products/15006)
+	* You can install the board files by following the instructions [here](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
 
 ### Notes
 
