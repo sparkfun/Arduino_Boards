@@ -1274,6 +1274,56 @@
               "version": "1.2.0"
             }
 			    ]
+		    },
+        {
+          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
+          "architecture": "samd",
+          "version": "1.7.4",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.7.4.tar.bz2",
+          "archiveFileName": "sparkfun-samd-1.7.4.tar.bz2",
+          "checksum": "SHA-256:3EA7A59316A8E59D7F552E9714C74DA9D16F9CFE420294BC5F0007B6512D8FD0",
+          "size": "1695731",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            { "name": "SparkFun SAMD21 Mini Breakout" },
+            { "name": "SparkFun SAMD21 Dev Breakout" },
+            { "name": "SparkFun 9DoF Razor IMU M0" },
+            { "name": "LilyPad LilyMini" },
+            { "name": "Sparkfun SAMD21 Pro RF" },
+            { "name": "Sparkfun RedBoard Turbo" },
+            { "name": "Sparkfun SAMD51 Thing Plus" },
+            { "name": "Sparkfun Qwiic Micro" }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+			    ]
 		    }
       ],
       "tools": [
