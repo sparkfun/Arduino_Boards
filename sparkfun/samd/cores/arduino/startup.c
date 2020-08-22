@@ -227,6 +227,7 @@ void SystemInit( void )
   /* ----------------------------------------------------------------------------------------------
    * 5) Switch Generic Clock Generator 0 to DFLL48M. CPU will run at 48MHz.
    */
+#if F_CPU != 8000000L
   GCLK->GENDIV.reg = GCLK_GENDIV_ID( GENERIC_CLOCK_GENERATOR_MAIN ) ; // Generic Clock Generator 0
 
   while ( GCLK->STATUS.reg & GCLK_STATUS_SYNCBUSY )
@@ -245,6 +246,7 @@ void SystemInit( void )
   {
     /* Wait for synchronization */
   }
+#endif
 
   /* ----------------------------------------------------------------------------------------------
    * 6) Modify PRESCaler value of OSC8M to have 8MHz
@@ -277,7 +279,8 @@ void SystemInit( void )
   PM->APBBSEL.reg = PM_APBBSEL_APBBDIV_DIV1_Val ;
   PM->APBCSEL.reg = PM_APBCSEL_APBCDIV_DIV1_Val ;
 
-  SystemCoreClock=VARIANT_MCK ;
+  //SystemCoreClock=VARIANT_MCK ;
+  SystemCoreClock = F_CPU;
 
   /* ----------------------------------------------------------------------------------------------
    * 8) Load ADC factory calibration values
