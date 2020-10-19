@@ -798,6 +798,39 @@
           ],
           "toolsDependencies": []
         },
+		{
+          "name": "SparkFun ESP32 Boards",
+          "architecture": "esp32",
+          "version": "1.0.0",
+          "category": "Contributed",
+		  "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp32-1.0.0.tar.bz2",
+          "archiveFileName": "sparkfun-esp32-1.0.0.tar.bz2",
+          "checksum": "SHA-256:030ee494bdf5ae8870042704e99ba0e27313c42f90a284babeaaac9a2deeb6a1",
+          "size": "33167738",
+          "boards": [
+            { "name": "SparkFun ESP32 Thing" },
+			{ "name": "SparkFun ESP32 Thing Plus"},
+			{ "name": "SparkFun ESP32 MicroMod"},
+			{ "name": "SparkFun Lora Gateway 1-Channel" }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "esp32", 
+              "version": "1.22.0-80-g6c4433a-5.2.0", 
+              "name": "xtensa-esp32-elf-gcc"
+            }, 
+            {
+              "packager": "esp32", 
+              "version": "2.6.1", 
+              "name": "esptool_py"
+            }, 
+            {
+              "packager": "esp32", 
+              "version": "0.2.3", 
+              "name": "mkspiffs"
+            }
+          ]
+		},
         {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
           "architecture": "samd",
