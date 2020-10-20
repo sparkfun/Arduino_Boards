@@ -16,7 +16,7 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Apollo3/archive/v1.2.1.tar.gz",
           "archiveFileName": "Arduino_Apollo3-1.2.1.tar.gz",
-          "checksum": "SHA-256:89c19130dd1826cccfc25c2ade1c455cbb496ce79d287549f37f47df45529e8c",
+          "checksum": "SHA-256:9f9dbf796bb694d5dd7b674a82ee2ea8079a21926567b64c68b0e20936dd7d8e",
           "size": "73180870",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
