@@ -275,3 +275,36 @@ qwiic_micro_samd21e.build.pid=0xF019
 qwiic_micro_samd21e.bootloader.tool=openocd
 qwiic_micro_samd21e.bootloader.file=QwiicMicro/bootloader-sparkfun-qwiic-micro-v3.4.0-gfbd9bd1-dirty.bin
   
+micromod_samd51.name=SparkFun SAMD51 MicroMod
+micromod_samd51.vid.0=0x1B4F
+micromod_samd51.pid.0=0x0020
+micromod_samd51.vid.1=0x1B4F
+micromod_samd51.pid.1=0xF020
+micromod_samd51.upload.tool=bossac18
+micromod_samd51.upload.protocol=sam-ba
+micromod_samd51.upload.maximum_size=507904
+micromod_samd51.upload.offset=0x4000
+micromod_samd51.upload.use_1200bps_touch=true
+micromod_samd51.upload.wait_for_upload_port=true
+micromod_samd51.upload.native_usb=true
+micromod_samd51.build.mcu=cortex-m4
+micromod_samd51.build.f_cpu=120000000L
+micromod_samd51.build.usb_product="SparkFun SAMD51 MicroMod"
+micromod_samd51.build.usb_manufacturer="SparkFun Electronics"
+micromod_samd51.build.board=SAMD51_MICROMOD
+micromod_samd51.build.core=arduino51
+micromod_samd51.build.extra_flags=-D__SAMD51J20A__ -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+micromod_samd51.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+micromod_samd51.build.openocdscript=openocd_scripts/arduino_zero.cfg
+micromod_samd51.build.variant=SparkFun SAMD51 MicroMod
+micromod_samd51.build.variant_system_lib=
+micromod_samd51.build.vid=0x1B4F
+micromod_samd51.build.pid=0xF020
+micromod_samd51.bootloader.tool=openocd
+micromod_samd51.bootloader.file=SAMD51/bootloader-sparkfun-samd51-micromod-v3.4.0-65-gdf89a1f-dirty.bin
+micromod_samd51.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+micromod_samd51.menu.cache.on=Enabled
+micromod_samd51.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+micromod_samd51.menu.cache.off=Disabled
+micromod_samd51.menu.cache.off.build.cache_flags=
+
