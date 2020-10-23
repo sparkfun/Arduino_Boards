@@ -296,7 +296,7 @@ micromod_samd51.build.core=arduino51
 micromod_samd51.build.extra_flags=-D__SAMD51J20A__ -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 micromod_samd51.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 micromod_samd51.build.openocdscript=openocd_scripts/arduino_zero.cfg
-micromod_samd51.build.variant=SparkFun SAMD51 MicroMod
+micromod_samd51.build.variant=SparkFun_SAMD51_MicroMod
 micromod_samd51.build.variant_system_lib=
 micromod_samd51.build.vid=0x1B4F
 micromod_samd51.build.pid=0xF020
