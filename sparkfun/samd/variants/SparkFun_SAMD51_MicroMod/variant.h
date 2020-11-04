@@ -80,6 +80,19 @@ extern "C"
  */
 // #define digitalPinToTimer(P)
 
+// General Purpose Pins
+#define G0  2
+#define G1  3
+#define G2  4
+#define G3  5
+#define G4  6
+#define G5  7
+#define G6  8
+#define G7  9
+#define G8  19
+#define G9  11
+#define G11 29
+
 // LEDs
 //-------------------------------------------
 #define PIN_LED_13           (13u)

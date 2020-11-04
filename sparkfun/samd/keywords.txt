@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring Map For SAMD51
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+G0	LITERAL1
+G1	LITERAL1
+G2	LITERAL1
+G3	LITERAL1
+G4	LITERAL1
+G5	LITERAL1
+G6	LITERAL1
+G7	LITERAL1
+G8	LITERAL1
+G9	LITERAL1
+G11	LITERAL1
+
+
