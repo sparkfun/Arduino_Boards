@@ -198,6 +198,10 @@ const PinDescription g_APinDescription[]=
   
   // 44 - RGB LED
   { PORTA,  30, PIO_DIGITAL, (PIN_ATTR_DIGITAL), No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }	// 44: RGB LED
+
+  //45
+  { PORTB, 3, PIO_SERCOM_ALT, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // 31/RX: SERCOM5/PAD[3]
+
 } ;
 
 const void* g_apTCInstances[TCC_INST_NUM+TC_INST_NUM]={ TCC0, TCC1, TCC2, TC3, TC4, TC5 } ;
