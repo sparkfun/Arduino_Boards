@@ -89,9 +89,14 @@ extern "C"
 #define G5  7
 #define G6  8
 #define G7  9
-#define G8  19
+#define G8  10
 #define G9  11
 #define G11 29
+#define PWM0 19
+#define PWM1 20 
+#define BATT_VIN 21 
+#define CS 48 
+#define CS1 52 
 
 // LEDs
 //-------------------------------------------
