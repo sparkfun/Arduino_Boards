@@ -81,6 +81,13 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // General Purpose Pins
+#define D0 0
+#define D1 1
+#define D2 2
+#define D3 3
+#define D4 4
+#define D5 5
+
 #define G0  2
 #define G1  3
 #define G2  4
@@ -92,11 +99,22 @@ extern "C"
 #define G8  10
 #define G9  11
 #define G11 29
+
 #define PWM0 19
 #define PWM1 20 
+
 #define BATT_VIN 21 
+#define POWER_CONTROL 12
+
 #define CS 48 
 #define CS1 52 
+#define I2CINT 12
+
+#define AUD_OUT 40
+#define AUD_IN 41
+#define AUD_BCLK 42
+#define AUD_LRCLK 44
+#define AUD_MCLK 43
 
 // LEDs
 //-------------------------------------------
