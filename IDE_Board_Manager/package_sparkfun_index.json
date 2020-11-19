@@ -22,18 +22,40 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun Artemis Dev Kit" },
-            { "name": "SparkFun Artemis MicroMod" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun Artemis Dev Kit"
+            },
+            {
+              "name": "SparkFun Artemis MicroMod"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -49,17 +71,37 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun Artemis Dev Kit" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun Artemis Dev Kit"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -75,16 +117,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -100,16 +160,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -125,16 +203,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -150,16 +246,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -175,16 +289,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -200,16 +332,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" }
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -225,16 +375,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -250,16 +418,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -275,16 +461,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -300,16 +504,34 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun RedBoard Artemis" },
-            { "name": "SparkFun RedBoard Artemis ATP" },
-            { "name": "SparkFun RedBoard Artemis Nano" },
-            { "name": "SparkFun Artemis Thing Plus" },
-            { "name": "SparkFun Edge" },
-            { "name": "SparkFun Edge2" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun RedBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Artemis Thing Plus"
+            },
+            {
+              "name": "SparkFun Edge"
+            },
+            {
+              "name": "SparkFun Edge2"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -325,14 +547,28 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun BlackBoard Artemis" },
-            { "name": "SparkFun BlackBoard Artemis ATP" },
-            { "name": "SparkFun BlackBoard Artemis Nano" },
-            { "name": "SparkFun Edge" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Edge"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -348,14 +584,28 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun BlackBoard Artemis" },
-            { "name": "SparkFun BlackBoard Artemis ATP" },
-            { "name": "SparkFun BlackBoard Artemis Nano" },
-            { "name": "SparkFun Edge" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis ATP"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Edge"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -371,14 +621,28 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun Artemis Module" },
-            { "name": "SparkFun BlackBoard Artemis" },
-            { "name": "SparkFun BlackBoard Artemis Mega" },
-            { "name": "SparkFun BlackBoard Artemis Nano" },
-            { "name": "SparkFun Edge" }
+            {
+              "name": "SparkFun Artemis Module"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis Mega"
+            },
+            {
+              "name": "SparkFun BlackBoard Artemis Nano"
+            },
+            {
+              "name": "SparkFun Edge"
+            }
           ],
           "toolsDependencies": [
-            { "packager": "SparkFun", "name": "arm-none-eabi-gcc", "version": "8-2018-q4-major" } 
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "8-2018-q4-major"
+            }
           ]
         },
         {
@@ -825,39 +1089,47 @@
           ],
           "toolsDependencies": []
         },
-		{
+        {
           "name": "SparkFun ESP32 Boards",
           "architecture": "esp32",
           "version": "1.0.0",
           "category": "Contributed",
-		  "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp32-1.0.0.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-esp32-1.0.0.tar.bz2",
           "archiveFileName": "sparkfun-esp32-1.0.0.tar.bz2",
           "checksum": "SHA-256:030ee494bdf5ae8870042704e99ba0e27313c42f90a284babeaaac9a2deeb6a1",
           "size": "33167738",
           "boards": [
-            { "name": "SparkFun ESP32 Thing" },
-			{ "name": "SparkFun ESP32 Thing Plus"},
-			{ "name": "SparkFun ESP32 MicroMod"},
-			{ "name": "SparkFun Lora Gateway 1-Channel" }
+            {
+              "name": "SparkFun ESP32 Thing"
+            },
+            {
+              "name": "SparkFun ESP32 Thing Plus"
+            },
+            {
+              "name": "SparkFun ESP32 MicroMod"
+            },
+            {
+              "name": "SparkFun Lora Gateway 1-Channel"
+            }
           ],
           "toolsDependencies": [
             {
-              "packager": "esp32", 
-              "version": "1.22.0-80-g6c4433a-5.2.0", 
+              "packager": "esp32",
+              "version": "1.22.0-80-g6c4433a-5.2.0",
               "name": "xtensa-esp32-elf-gcc"
-            }, 
+            },
             {
-              "packager": "esp32", 
-              "version": "2.6.1", 
+              "packager": "esp32",
+              "version": "2.6.1",
               "name": "esptool_py"
-            }, 
+            },
             {
-              "packager": "esp32", 
-              "version": "0.2.3", 
+              "packager": "esp32",
+              "version": "0.2.3",
               "name": "mkspiffs"
             }
           ]
-		},
+        },
         {
           "name": "SparkFun SAMD Boards (dependency: Arduino SAMD Boards 1.6.5)",
           "architecture": "samd",
@@ -1078,8 +1350,7 @@
               "name": "LilyPad LilyMini"
             }
           ],
-          "toolsDependencies": [
-          ]
+          "toolsDependencies": []
         },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
@@ -1110,8 +1381,7 @@
               "name": "Sparkfun SAMD21 Pro RF"
             }
           ],
-          "toolsDependencies": [
-          ]
+          "toolsDependencies": []
         },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
@@ -1142,9 +1412,8 @@
               "name": "Sparkfun SAMD21 Pro RF"
             }
           ],
-          "toolsDependencies": [
-          ]
-		},
+          "toolsDependencies": []
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
           "architecture": "samd",
@@ -1174,9 +1443,8 @@
               "name": "Sparkfun SAMD21 Pro RF"
             }
           ],
-          "toolsDependencies": [
-          ]
-		},
+          "toolsDependencies": []
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.6.19)",
           "architecture": "samd",
@@ -1209,9 +1477,8 @@
               "name": "Sparkfun RedBoard Turbo"
             }
           ],
-          "toolsDependencies": [
-          ]
-		},
+          "toolsDependencies": []
+        },
         {
           "name": "SparkFun SAMD Boards",
           "architecture": "samd",
@@ -1248,7 +1515,7 @@
             }
           ],
           "toolsDependencies": [
-                   {
+            {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
               "version": "4.8.3-2014q1"
@@ -1273,8 +1540,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			]
-		},
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1311,7 +1578,7 @@
             }
           ],
           "toolsDependencies": [
-                   {
+            {
               "packager": "arduino",
               "name": "arm-none-eabi-gcc",
               "version": "4.8.3-2014q1"
@@ -1336,8 +1603,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			]
-		},
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1351,14 +1618,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1386,8 +1669,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			]
-		},
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1401,14 +1684,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1451,14 +1750,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1486,8 +1801,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    },
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1501,14 +1816,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1536,8 +1867,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    },
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1551,14 +1882,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1586,8 +1933,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    },
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1601,14 +1948,30 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1636,8 +1999,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    },
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1651,15 +2014,33 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" },
-            { "name": "SparkFun SAMD51 MicroMod" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            },
+            {
+              "name": "SparkFun SAMD51 MicroMod"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1687,8 +2068,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    },
+          ]
+        },
         {
           "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
@@ -1702,15 +2083,33 @@
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
           "boards": [
-            { "name": "SparkFun SAMD21 Mini Breakout" },
-            { "name": "SparkFun SAMD21 Dev Breakout" },
-            { "name": "SparkFun 9DoF Razor IMU M0" },
-            { "name": "LilyPad LilyMini" },
-            { "name": "Sparkfun SAMD21 Pro RF" },
-            { "name": "Sparkfun RedBoard Turbo" },
-            { "name": "Sparkfun SAMD51 Thing Plus" },
-            { "name": "Sparkfun Qwiic Micro" },
-            { "name": "SparkFun SAMD51 MicroMod" }
+            {
+              "name": "SparkFun SAMD21 Mini Breakout"
+            },
+            {
+              "name": "SparkFun SAMD21 Dev Breakout"
+            },
+            {
+              "name": "SparkFun 9DoF Razor IMU M0"
+            },
+            {
+              "name": "LilyPad LilyMini"
+            },
+            {
+              "name": "Sparkfun SAMD21 Pro RF"
+            },
+            {
+              "name": "Sparkfun RedBoard Turbo"
+            },
+            {
+              "name": "Sparkfun SAMD51 Thing Plus"
+            },
+            {
+              "name": "Sparkfun Qwiic Micro"
+            },
+            {
+              "name": "SparkFun SAMD51 MicroMod"
+            }
           ],
           "toolsDependencies": [
             {
@@ -1738,87 +2137,8 @@
               "name": "CMSIS-Atmel",
               "version": "1.2.0"
             }
-			    ]
-		    }
-      ],
-      "tools": [
-        {
-          "version": "8-2018-q4-major", 
-          "name": "arm-none-eabi-gcc", 
-          "systems": [
-            {
-              "host": "x86_64-apple-darwin", 
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "size": "111430151"
-            }, 
-            {
-              "host": "i386-apple-darwin11", 
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2", 
-              "size": "111430151"
-            }, 
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "size": "107253352"
-            }, 
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2", 
-              "size": "107253352"
-            }, 
-            {
-              "host": "i686-mingw32",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip", 
-              "checksum": "SHA-256:98f47ed254ce31942408028c3a4a75ad4ee9fe7f318daecafb8c101bc19a6e23", 
-              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip", 
-              "size": "135448870"
-            }
           ]
         },
-        {
-          "name": "bossac",
-          "version": "1.4.0",
-          "systems": [
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
-              "archiveFileName": "bossac-1.4.0-win.zip",
-              "checksum": "SHA-256:BCA6503F5DBB1F96693AFD0701A759ECFB3BE5B9FB3F9D901CA17853B224F4EB",
-              "size": "314705"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
-              "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
-              "checksum": "SHA-256:BB8F398BF84C5F31880FE9A2C7AE0174592516CE4821B49744B426AA968ADA10",
-              "size": "225696"
-            },
-            {
-              "host": "x86_64-apple-darwin",
-              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
-              "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
-              "checksum": "SHA-256:D0F225846D7BC80A74324D783CDB35C42A7F85EAD73CC016C0CC767B0AA5E81C",
-              "size": "74461"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "maintainer": "SparkFun Electronics",
-      "help": {
-        "online": "http://SparkFun.com"
-      },
-      "websiteURL": "https://github.com/sparkfun/Arduino_Boards",
-      "platforms": [
         {
           "category": "Contributed",
           "name": "SparkFun ESP8266 Boards",
@@ -1866,49 +2186,117 @@
       ],
       "tools": [
         {
-          "version": "1.20.0-26-gb404fb9-2", 
-          "name": "xtensa-lx106-elf-gcc", 
+          "version": "8-2018-q4-major",
+          "name": "arm-none-eabi-gcc",
           "systems": [
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/win32-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
-              "checksum": "SHA-256:10476b9c11a7a90f40883413ddfb409f505b20692e316c4e597c4c175b4be09c", 
-              "host": "i686-mingw32", 
-              "archiveFileName": "win32-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "host": "x86_64-apple-darwin",
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "size": "111430151"
+            },
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "size": "111430151"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "size": "107253352"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "size": "107253352"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
+              "checksum": "SHA-256:98f47ed254ce31942408028c3a4a75ad4ee9fe7f318daecafb8c101bc19a6e23",
+              "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
+              "size": "135448870"
+            }
+          ]
+        },
+        {
+          "name": "bossac",
+          "version": "1.4.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-win.zip",
+              "archiveFileName": "bossac-1.4.0-win.zip",
+              "checksum": "SHA-256:BCA6503F5DBB1F96693AFD0701A759ECFB3BE5B9FB3F9D901CA17853B224F4EB",
+              "size": "314705"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-linux64.tar.bz2",
+              "archiveFileName": "bossac-1.4.0-linux64.tar.bz2",
+              "checksum": "SHA-256:BB8F398BF84C5F31880FE9A2C7AE0174592516CE4821B49744B426AA968ADA10",
+              "size": "225696"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/sparkfun/samd-tools/bossac/bossac-1.4.0-osx.tar.bz2",
+              "archiveFileName": "bossac-1.4.0-osx.tar.bz2",
+              "checksum": "SHA-256:D0F225846D7BC80A74324D783CDB35C42A7F85EAD73CC016C0CC767B0AA5E81C",
+              "size": "74461"
+            }
+          ]
+        },
+        {
+          "version": "1.20.0-26-gb404fb9-2",
+          "name": "xtensa-lx106-elf-gcc",
+          "systems": [
+            {
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/win32-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "checksum": "SHA-256:10476b9c11a7a90f40883413ddfb409f505b20692e316c4e597c4c175b4be09c",
+              "host": "i686-mingw32",
+              "archiveFileName": "win32-xtensa-lx106-elf-gb404fb9-2.tar.gz",
               "size": "153527527"
-            }, 
+            },
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
-              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6", 
-              "host": "x86_64-apple-darwin", 
-              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6",
+              "host": "x86_64-apple-darwin",
+              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
               "size": "35385382"
-            }, 
+            },
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
-              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6", 
-              "host": "i386-apple-darwin", 
-              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz", 
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
+              "checksum": "SHA-256:0cf150193997bd1355e0f49d3d49711730035257bc1aee1eaaad619e56b9e4e6",
+              "host": "i386-apple-darwin",
+              "archiveFileName": "osx-xtensa-lx106-elf-gb404fb9-2.tar.gz",
               "size": "35385382"
-            }, 
+            },
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux64-xtensa-lx106-elf-gb404fb9.tgz", 
-              "checksum": "SHA-256:46f057fbd8b320889a26167daf325038912096d09940b2a95489db92431473b7", 
-              "host": "x86_64-pc-linux-gnu", 
-              "archiveFileName": "linux64-xtensa-lx106-elf-gb404fb9.tar.gz", 
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux64-xtensa-lx106-elf-gb404fb9.tgz",
+              "checksum": "SHA-256:46f057fbd8b320889a26167daf325038912096d09940b2a95489db92431473b7",
+              "host": "x86_64-pc-linux-gnu",
+              "archiveFileName": "linux64-xtensa-lx106-elf-gb404fb9.tar.gz",
               "size": "30262903"
-            }, 
+            },
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux32-xtensa-lx106-elf.tar.gz", 
-              "checksum": "SHA-256:b24817819f0078fb05895a640e806e0aca9aa96b47b80d2390ac8e2d9ddc955a", 
-              "host": "i686-pc-linux-gnu", 
-              "archiveFileName": "linux32-xtensa-lx106-elf.tar.gz", 
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linux32-xtensa-lx106-elf.tar.gz",
+              "checksum": "SHA-256:b24817819f0078fb05895a640e806e0aca9aa96b47b80d2390ac8e2d9ddc955a",
+              "host": "i686-pc-linux-gnu",
+              "archiveFileName": "linux32-xtensa-lx106-elf.tar.gz",
               "size": "32734156"
-            }, 
+            },
             {
-              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz", 
-              "checksum": "SHA-256:f693946288f2ffa17288ef75ae16fa08573993f2b0a2a5e6bc35a68dc6087443", 
-              "host": "arm-linux-gnueabihf", 
-              "archiveFileName": "linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz", 
+              "url": "https://github.com/esp8266/Arduino/releases/download/2.3.0/linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz",
+              "checksum": "SHA-256:f693946288f2ffa17288ef75ae16fa08573993f2b0a2a5e6bc35a68dc6087443",
+              "host": "arm-linux-gnueabihf",
+              "archiveFileName": "linuxarm-xtensa-lx106-elf-g46f160f-2.tar.gz",
               "size": "34938475"
             }
           ]
@@ -2118,9 +2506,7 @@
             }
           ]
         }
-      ],
-      "email": "TechSupport@SparkFun.com",
-      "name": "Sparkfun"
+      ]
     }
   ]
 }
