@@ -1945,7 +1945,7 @@
 			    ]
 		    },
         {
-          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.2)",
+          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
           "architecture": "samd",
           "version": "1.8.2",
           "category": "Contributed",
@@ -1953,6 +1953,57 @@
           "archiveFileName": "sparkfun-samd-1.8.2.tar.bz2",
           "checksum": "SHA-256:D3EC50E06BF1A8F9A58CBEE5AFB9797180964F6BD794BE252FF71A6459731A59",
           "size": "2841065",
+          "help": {
+            "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
+          },
+          "boards": [
+            { "name": "SparkFun SAMD21 Mini Breakout" },
+            { "name": "SparkFun SAMD21 Dev Breakout" },
+            { "name": "SparkFun 9DoF Razor IMU M0" },
+            { "name": "LilyPad LilyMini" },
+            { "name": "Sparkfun SAMD21 Pro RF" },
+            { "name": "Sparkfun RedBoard Turbo" },
+            { "name": "Sparkfun SAMD51 Thing Plus" },
+            { "name": "Sparkfun Qwiic Micro" },
+            { "name": "SparkFun SAMD51 MicroMod" }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "4.8.3-2014q1"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.9.0-arduino"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+			    ]
+		    },
+        {
+          "name": "SparkFun SAMD Boards  (dependency: Arduino SAMD Boards 1.8.1)",
+          "architecture": "samd",
+          "version": "1.8.3",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/master/IDE_Board_Manager/sparkfun-samd-1.8.3.tar.bz2",
+          "archiveFileName": "sparkfun-samd-1.8.3.tar.bz2",
+          "checksum": "SHA-256:74393DAD50FCFDCCF36EC15FA1CC4354258E9050BDB1C1692E58F0C21F82C2D6",
+          "size": "2840829",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
           },
