@@ -48,7 +48,8 @@ _These boards are supported by [Espressif](https://github.com/esp8266/Arduino)_.
 _These boards are supported by [Espressif](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)._ :+1:
 * [SparkFun Thing Plus - ESP32 WROOM](https://www.sparkfun.com/products/14689)
 * [SparkFun ESP32 Thing](https://www.sparkfun.com/products/13907)
-* [SparkFun LoRa Gateway - 1-Channel (ESP32](https://www.sparkfun.com/products/15006)
+* [SparkFun LoRa Gateway - 1-Channel (ESP32)](https://www.sparkfun.com/products/15006)
+* [SparkFun MicroMod ESP32 Processor](https://www.sparkfun.com/products/16781)
 
 ### Installation Instructions
 
