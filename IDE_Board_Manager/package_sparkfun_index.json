@@ -2086,8 +2086,8 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/STM32_testing/IDE_Board_Manager/sparkfun-stm32-1.0.0.tar.bz2",
           "archiveFileName": "sparkfun-stm32-1.0.0.tar.bz2",
-          "checksum": "SHA-256:b96a23f291de08e5d4f39eade76cdc17242147614542f9c70184dc766b3a211b",
-          "size": "4937000",
+          "checksum": "SHA-256:2ea9f35f66fbb73b26698319f202391b525d1cceb7a8fe2be454e89dc6e5b922",
+          "size": "4982552",
           "boards": [
             { "name": "SparkFun STM32 Thing Plus" },
             { "name": "SparkFun STM32 MicroMod"},
