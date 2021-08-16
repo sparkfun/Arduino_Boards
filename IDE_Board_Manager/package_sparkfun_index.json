@@ -2116,7 +2116,7 @@
           "architecture": "stm32",
           "version": "2.0.0",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/STM32_testing/IDE_Board_Manager/sparkfun-stm32-2.0.0.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-stm32-2.0.0.tar.bz2",
           "archiveFileName": "sparkfun-stm32-2.0.0.tar.bz2",
           "checksum": "SHA-256:B896703B553C925A2F04E23611919356F02D10DA6B545A513CD3C0FEF65540E3",
           "size": "4910455",
