@@ -55,7 +55,7 @@ _These boards are supported by [Espressif](https://github.com/espressif/arduino-
 
 To add board support for our products, start Arduino and open the Preferences window (**File** > **Preferences**). Now copy and paste the following URL into the 'Additional Boards Manager URLs' input field:
 
-	https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
+	https://raw.githubusercontent.com/sparkfun/Arduino_Boards/main/IDE_Board_Manager/package_sparkfun_index.json
 
 ![Location of Additional Boards Manager URL input field](prefs-arrow.png)
 
