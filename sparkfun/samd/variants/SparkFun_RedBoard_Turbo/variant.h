@@ -223,5 +223,8 @@ extern Uart Serial1;
 #define SERIAL_PORT_HARDWARE        Serial1
 #define SERIAL_PORT_HARDWARE_OPEN   Serial1
 
+// map Serial to SerialUSB
+#define Serial                      SerialUSB
+
 #endif /* _VARIANT_ARDUINO_ZERO_ */
 
