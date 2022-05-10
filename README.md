@@ -9,7 +9,7 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [Redboard Artemis](https://www.sparkfun.com/products/15444)
 * [Redboard Artemis ATP](https://www.sparkfun.com/products/15442)
 * [Redboard Artemis Nano](https://www.sparkfun.com/products/15443)
-* [Edge]()
+* [Edge](https://www.sparkfun.com/products/15170)
 
 #### AVR Boards
 
