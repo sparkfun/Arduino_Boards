@@ -214,6 +214,36 @@ RedBoard_Turbo.build.pid=0x0015
 RedBoard_Turbo.bootloader.tool=openocd
 RedBoard_Turbo.bootloader.file=turbo/bootloader-sparkfun-redboard-turbo-v2.0.0-adafruit.4-12-g2d4ec73-dirty.bin
 
+LoRaSerial.name=SparkFun LoRaSerial
+LoRaSerial.vid.0=0x1B4F
+LoRaSerial.pid.0=0x002A
+LoRaSerial.vid.1=0x1B4F
+LoRaSerial.pid.1=0x002B
+LoRaSerial.upload.tool=bossac
+LoRaSerial.upload.protocol=sam-ba
+LoRaSerial.upload.maximum_size=262144
+LoRaSerial.upload.maximum_data_size=32768
+LoRaSerial.upload.offset=0x2000
+LoRaSerial.upload.use_1200bps_touch=true
+LoRaSerial.upload.wait_for_upload_port=true
+LoRaSerial.upload.native_usb=true
+LoRaSerial.build.mcu=cortex-m0plus
+LoRaSerial.build.f_cpu=48000000L
+LoRaSerial.build.usb_product="LoRaSerial"
+LoRaSerial.build.usb_manufacturer="SparkFun"
+LoRaSerial.build.board=SAMD_ZERO
+LoRaSerial.build.core=arduino
+LoRaSerial.build.extra_flags=-D__SAMD21G18A__ {build.usb_flags}
+LoRaSerial.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+LoRaSerial.build.openocdscript=openocd_scripts/arduino_zero.cfg
+LoRaSerial.build.variant=SparkFun_LoRaSerial
+LoRaSerial.build.variant_system_lib=
+LoRaSerial.build.extra_combine_flags=
+LoRaSerial.build.vid=0x1B4F
+LoRaSerial.build.pid=0x002A
+LoRaSerial.bootloader.tool=openocd
+LoRaSerial.bootloader.file=loraserial/SparkFun-LoRaSerial-UF2-Bootloader.elf
+
 
 samd51_thing_plus.name=SparkFun SAMD51 Thing Plus
 samd51_thing_plus.vid.0=0x1B4F
