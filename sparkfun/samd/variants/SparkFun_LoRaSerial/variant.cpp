@@ -170,7 +170,7 @@ const PinDescription g_APinDescription[]=
   // 30..41 - Extra UART
   // ----------------------
   // 30/31 - Extra UART
-  /*Placeholder - not broken out */ { PORTB, 22, PIO_SERCOM_ALT, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // 30/TX: SERCOM5/PAD[2]
+  /*Placeholder - not broken out */ { PORTB, 22, PIO_SERCOM_ALT, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_6 }, // 30/TX: SERCOM5/PAD[2]
   /*Placeholder - not broken out */ { PORTB, 23, PIO_SERCOM_ALT, PIN_ATTR_NONE, No_ADC_Channel, NOT_ON_PWM, NOT_ON_TIMER, EXTERNAL_INT_NONE }, // 31/RX: SERCOM5/PAD[3]
 
   // 32/33 I2C (SDA/SCL and also EDBG:SDA/SCL)
