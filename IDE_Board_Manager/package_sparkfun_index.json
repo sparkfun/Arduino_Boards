@@ -2398,6 +2398,39 @@
               "name": "xpack-arm-none-eabi-gcc"
             }
           ]
+        },
+		{
+          "name": "SparkFun STM32 Boards",
+          "architecture": "stm32",
+          "version": "2.1.0",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-stm32-2.1.0.tar.bz2",
+          "archiveFileName": "sparkfun-stm32-2.1.0.tar.bz2",
+          "checksum": "SHA-256:7fce5c41b0c645134c9ec640636329594d5750fc82e2e4a61f2d605bb5633872",
+          "size": "4955866",
+          "boards": [
+            { "name": "SparkFun STM32 Thing Plus" },
+            { "name": "SparkFun STM32 MicroMod"},
+			{ "name": "SparkFun STM32 MicroMod DFU"},
+            { "name": "Generic F405RG" }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "SparkFun", 
+              "version": "5.7.0", 
+              "name": "CMSIS"
+            }, 
+            {
+              "packager": "SparkFun", 
+              "version": "2.0.0", 
+              "name": "STM32Tools"
+            }, 
+            {
+              "packager": "SparkFun", 
+              "version": "9.3.1-1.3", 
+              "name": "xpack-arm-none-eabi-gcc"
+            }
+          ]
         }
       ],
       "tools": [
