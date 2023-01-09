@@ -2411,7 +2411,7 @@
           "boards": [
             { "name": "SparkFun STM32 Thing Plus" },
             { "name": "SparkFun STM32 MicroMod"},
-			{ "name": "SparkFun STM32 MicroMod DFU"},
+            { "name": "SparkFun STM32 MicroMod DFU"},
             { "name": "Generic F405RG" }
           ],
           "toolsDependencies": [
