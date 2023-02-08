@@ -2947,7 +2947,7 @@
           "architecture": "samd",
           "version": "1.8.9",
           "category": "Contributed",
-          "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-samd-1.8.8.tar.bz2",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-samd-1.8.9.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.8.9.tar.bz2",
           "checksum": "SHA-256:44750D687647DD165A5A598F15A403E18DC8AD77C1BFE17BD208540530BADF08",
           "size": "2937086",
