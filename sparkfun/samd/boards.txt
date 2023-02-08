@@ -248,7 +248,7 @@ LoRaSerial.build.extra_combine_flags=
 LoRaSerial.build.vid=0x1B4F
 LoRaSerial.build.pid=0x002A
 LoRaSerial.bootloader.tool=openocd
-LoRaSerial.bootloader.file=loraserial/SparkFun-LoRaSerial-UF2-Bootloader.elf
+LoRaSerial.bootloader.file=loraserial/SparkFun-LoRaSerial-UF2-Bootloader.bin
 
 
 samd51_thing_plus.name=SparkFun SAMD51 Thing Plus
@@ -284,6 +284,7 @@ samd51_thing_plus.menu.cache.on=Enabled
 samd51_thing_plus.menu.cache.on.build.cache_flags=-DENABLE_CACHE
 samd51_thing_plus.menu.cache.off=Disabled
 samd51_thing_plus.menu.cache.off.build.cache_flags=
+samd51_thing_plus.bootloader.file=SAMD51/bootloader-sfe-samd51-thing-v2.0.0-34-ga8591b7-dirty.bin
 
 qwiic_micro_samd21e.name=SparkFun Qwiic Micro
 qwiic_micro_samd21e.vid.0=0x1B4F
@@ -313,7 +314,7 @@ qwiic_micro_samd21e.build.extra_combine_flags=
 qwiic_micro_samd21e.build.vid=0x1B4F
 qwiic_micro_samd21e.build.pid=0xF019
 qwiic_micro_samd21e.bootloader.tool=openocd
-qwiic_micro_samd21e.bootloader.file=QwiicMicro/bootloader-sparkfun-qwiic-micro-v3.4.0-gfbd9bd1-dirty.bin
+qwiic_micro_samd21e.bootloader.file=QwiicMicro/bootloader-sparkfun-qwiic-micro-v3.4.0-53-gfbd9bd1-dirty.bin
 
 QwiicBridge.name=SparkFun Qwiic USB Bridge
 QwiicBridge.vid.0=0x1B4F
@@ -343,7 +344,7 @@ QwiicBridge.build.extra_combine_flags=
 QwiicBridge.build.vid=0x1B4F
 QwiicBridge.build.pid=0x0D24
 QwiicBridge.bootloader.tool=openocd
-QwiicBridge.bootloader.file=QwiicBridge/bootloader-sparkfun-qwiic-bridge-.elf
+QwiicBridge.bootloader.file=QwiicBridge/bootloader-sparkfun-qwiic-bridge.bin
   
 micromod_samd51.name=SparkFun SAMD51 MicroMod
 micromod_samd51.vid.0=0x1B4F
@@ -378,4 +379,5 @@ micromod_samd51.menu.cache.on=Enabled
 micromod_samd51.menu.cache.on.build.cache_flags=-DENABLE_CACHE
 micromod_samd51.menu.cache.off=Disabled
 micromod_samd51.menu.cache.off.build.cache_flags=
+micromod_samd51.bootloader.file=SAMD51/bootloader-sparkfun-samd51-micromod-v3.4.0-65-gdf89a1f-dirty.bin
 
