@@ -248,8 +248,7 @@ LoRaSerial.build.extra_combine_flags=
 LoRaSerial.build.vid=0x1B4F
 LoRaSerial.build.pid=0x002A
 LoRaSerial.bootloader.tool=openocd
-LoRaSerial.bootloader.file=loraserial/SparkFun-LoRaSerial-UF2-Bootloader.bin
-
+LoRaSerial.bootloader.file=LoRaSerial/SparkFun-LoRaSerial-UF2-Bootloader.bin
 
 samd51_thing_plus.name=SparkFun SAMD51 Thing Plus
 samd51_thing_plus.vid.0=0x1B4F
@@ -278,7 +277,6 @@ samd51_thing_plus.build.variant_system_lib=
 samd51_thing_plus.build.vid=0x1B4F
 samd51_thing_plus.build.pid=0xF016
 samd51_thing_plus.bootloader.tool=openocd
-samd51_thing_plus.bootloader.file=SAMD51/bootloader-sfe-samd51-thing-v2.0.0-34-ga8591b7-dirty.bin
 samd51_thing_plus.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
 samd51_thing_plus.menu.cache.on=Enabled
 samd51_thing_plus.menu.cache.on.build.cache_flags=-DENABLE_CACHE
@@ -373,7 +371,6 @@ micromod_samd51.build.variant_system_lib=
 micromod_samd51.build.vid=0x1B4F
 micromod_samd51.build.pid=0xF020
 micromod_samd51.bootloader.tool=openocd
-micromod_samd51.bootloader.file=SAMD51/bootloader-sparkfun-samd51-micromod-v3.4.0-65-gdf89a1f-dirty.bin
 micromod_samd51.compiler.arm.cmsis.ldflags="-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
 micromod_samd51.menu.cache.on=Enabled
 micromod_samd51.menu.cache.on.build.cache_flags=-DENABLE_CACHE
