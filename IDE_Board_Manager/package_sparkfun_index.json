@@ -3130,6 +3130,38 @@
               "name": "xpack-arm-none-eabi-gcc"
             }
           ]
+        },
+        {
+          "name": "SparkFun nRF52 boards using Adafruit nRF52 core",
+          "architecture": "nrf52",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-nrf52-1.0.0.tar.bz2",
+          "archiveFileName": "sparkfun-nrf52-1.0.0.tar.bz2",
+          "checksum": "SHA-256:132d7b14433daf5cf8ae2db4f52e32e7e18eb0f8f038836c6948c1ead2be7597",
+          "size": "16458697",
+          "boards": [
+            {
+              "name": "SparkFun Thing Plus NINA-B306"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "SparkFun",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2019q4"
+            },
+            {
+              "packager": "SparkFun",
+              "name": "nrfjprog",
+              "version": "9.4.0"
+            },
+            {
+              "packager": "SparkFun",
+              "name": "CMSIS",
+              "version": "5.7.0"
+            }
+          ]
         }
       ],
       "tools": [
@@ -3171,6 +3203,54 @@
               "checksum": "SHA-256:98f47ed254ce31942408028c3a4a75ad4ee9fe7f318daecafb8c101bc19a6e23",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
               "size": "135448870"
+            }
+          ]
+        },
+        {
+          "name": "arm-none-eabi-gcc",
+          "version": "9-2019q4",
+          "systems": [
+            {
+              "host": "arm-linux-gnueabihf",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2019-q4-major-linuxarm.tar.bz2",
+              "checksum": "SHA-256:34180943d95f759c66444a40b032f7dd9159a562670fc334f049567de140c51b",
+              "size": "96613739"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "url": "https://github.com/adafruit/arduino-board-index/releases/download/build-tools/gcc-arm-none-eabi-9-2019-q4-major-aarch64-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-9-2019-q4-major-aarch64-linux.tar.bz2",
+              "checksum": "MD5:0dfa059aae18fcf7d842e30c525076a4",
+              "size": "128670769"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/adafruit/arduino-board-index/releases/download/build-tools/gcc-arm-none-eabi-9-2019-q4-major-win32.zip",
+              "archiveFileName": "gcc-arm-none-eabi-9-2019-q4-major-win32.zip",
+              "checksum": "MD5:9d60cbb0e358ab6a9d3c9e5dc3624dd2",
+              "size": "153520070"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/adafruit/arduino-board-index/releases/download/build-tools/gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-9-2019-q4-major-mac.tar.bz2",
+              "checksum": "MD5:241b64f0578db2cf146034fc5bcee3d4",
+              "size": "116770520"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/adafruit/arduino-board-index/releases/download/build-tools/gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-9-2019-q4-major-x86_64-linux.tar.bz2",
+              "checksum": "MD5:fe0029de4f4ec43cf7008944e34ff8cc",
+              "size": "116802378"
+            },
+            {
+              "host": "i686-pc-linux-gnu",
+              "url": "http://downloads.arduino.cc/tools/gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-7-2018-q2-update-linux32.tar.bz2",
+              "checksum": "SHA-256:090a0bc2b1956bc49392dff924a6c30fa57c88130097b1972204d67a45ce3cf3",
+              "size": "97427309"
             }
           ]
         },
@@ -3451,6 +3531,54 @@
               "archiveFileName": "xpack-arm-none-eabi-gcc-9.3.1-1.3-linux-x32.tar.gz",
               "checksum": "SHA-256:1950c7b0b4e35bacec32450158ec192ac469189a5fb27c2fd7c01e9603e50e64",
               "size": "154309058"
+            }
+          ]
+        },
+        {
+          "name": "nrfjprog",
+          "version": "9.4.0",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "checksum": "MD5:04f65e24f36d55d10b71c1ebf49cd070",
+              "size": "362222",
+              "archiveFileName": "nrfjprog-9.4.0-mac.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-mac.tar.bz2"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "checksum": "MD5:9cf73f1f78cb8e249ed4e6f963d08a35",
+              "size": "177428",
+              "archiveFileName": "nrfjprog-9.4.0-linux32.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux32.tar.bz2"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "checksum": "MD5:da3c7b348e0c22766f175a4a9cca0d19",
+              "size": "190020",
+              "archiveFileName": "nrfjprog-9.4.0-linux64.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-linux64.tar.bz2"
+            },
+            {
+              "host": "i686-mingw32",
+              "checksum": "MD5:8352392ae0272173e1508d1218f51671",
+              "size": "851576",
+              "archiveFileName": "nrfjprog-9.4.0-win32.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-9.4.0-win32.tar.bz2"
+            },
+            {
+              "host": "arm-linux-gnueabihf",
+              "checksum": "MD5:3703bed3c1114e8f4ef1b0b2d65aeb0a",
+              "size": "2794097",
+              "archiveFileName": "nrfjprog-10.15.0-arm.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-10.15.0-arm.tar.bz2"
+            },
+            {
+              "host": "aarch64-linux-gnu",
+              "checksum": "MD5:3703bed3c1114e8f4ef1b0b2d65aeb0a",
+              "size": "2794097",
+              "archiveFileName": "nrfjprog-10.15.0-arm.tar.bz2",
+              "url": "https://github.com/adafruit/Adafruit_nRF52_Arduino/releases/download/gcc-5_2-2015q4/nrfjprog-10.15.0-arm.tar.bz2"
             }
           ]
         }
