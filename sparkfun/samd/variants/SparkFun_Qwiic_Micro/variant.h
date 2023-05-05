@@ -110,9 +110,9 @@ static const uint8_t DAC0 = PIN_DAC0;
  */
 
 // Serial
-#define PIN_SERIAL_TX       (16ul)
-#define PIN_SERIAL_RX       (17ul)
-#define PAD_SERIAL_TX       (UART_TX_PAD_0)
+#define PIN_SERIAL_TX       (17ul) // Transmit can only be on PAD0 or PAD2
+#define PIN_SERIAL_RX       (16ul) // Receive can be on any pins. 
+#define PAD_SERIAL_TX       (UART_TX_PAD_0) 
 #define PAD_SERIAL_RX       (SERCOM_RX_PAD_1)
 
 /*
