@@ -3237,7 +3237,7 @@
           "category": "Contributed",
           "url": "https://github.com/sparkfun/Arduino_Boards/raw/main/IDE_Board_Manager/sparkfun-samd-1.8.13.tar.bz2",
           "archiveFileName": "sparkfun-samd-1.8.13.tar.bz2",
-          "checksum": "SHA-256:5cff4d33754f7b431e1edac81e87d6b5b5e709c4c2d7aafd983f38d15b8fdfbe",
+          "checksum": "SHA-256:226fd5bba05a7842db47e6d0b0d880d15fa9a7180b8bb48f0c1611b9abcceb48",
           "size": "2950780",
           "help": {
             "online": "https://learn.sparkfun.com/tutorials/installing-arduino-ide/board-add-ons-with-arduino-board-manager"
