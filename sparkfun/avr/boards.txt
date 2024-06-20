@@ -6,6 +6,7 @@
 #
 
 menu.cpu=Processor
+menu.reset_method=Reset method
 
 ################################################################################
 ################################### RedBoard ###################################
@@ -81,7 +82,6 @@ promicro.upload.maximum_size=28672
 promicro.upload.maximum_data_size=2560
 promicro.upload.speed=57600
 promicro.upload.disable_flushing=true
-promicro.upload.use_1200bps_touch=true
 promicro.upload.wait_for_upload_port=true
 
 promicro.bootloader.tool=avrdude
@@ -97,6 +97,12 @@ promicro.build.mcu=atmega32u4
 promicro.build.usb_product="SparkFun Pro Micro"
 promicro.build.vid=0x1b4f
 promicro.build.extra_flags={build.usb_flags}
+
+promicro.menu.reset_method.1200bps_touch=1200bps touch
+promicro.menu.reset_method.1200bps_touch.upload.use_1200bps_touch=true
+promicro.menu.reset_method.manual=Manual
+promicro.menu.reset_method.1200bps_touch.upload.use_1200bps_touch=false
+# Note: wait_for_upload_port has no effect when use_1200bps_touch=false
 
 ######################### Pro Micro 3.3V / 8MHz ################################
 promicro.menu.cpu.8MHzatmega32U4=ATmega32U4 (3.3V, 8 MHz)
