@@ -3459,35 +3459,35 @@
           "systems": [
             {
               "host": "x86_64-apple-darwin",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "url": "https://cdn.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
               "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
               "size": "111430151"
             },
             {
               "host": "i386-apple-darwin11",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
+              "url": "https://cdn.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
               "checksum": "SHA-256:0b528ed24db9f0fa39e5efdae9bcfc56bf9e07555cb267c70ff3fee84ec98460",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-mac.tar.bz2",
               "size": "111430151"
             },
             {
               "host": "i686-linux-gnu",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "url": "https://cdn.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
               "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
               "size": "107253352"
             },
             {
               "host": "x86_64-pc-linux-gnu",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
+              "url": "https://cdn.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
               "checksum": "SHA-256:fb31fbdfe08406ece43eef5df623c0b2deb8b53e405e2c878300f7a1f303ee52",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-linux.tar.bz2",
               "size": "107253352"
             },
             {
               "host": "i686-mingw32",
-              "url": "https://static.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
+              "url": "https://cdn.sparkfun.com/large/gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
               "checksum": "SHA-256:98f47ed254ce31942408028c3a4a75ad4ee9fe7f318daecafb8c101bc19a6e23",
               "archiveFileName": "gcc-arm-none-eabi-8-2018-q4-major-win32-modified.zip",
               "size": "135448870"
